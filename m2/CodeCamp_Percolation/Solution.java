@@ -20,7 +20,7 @@ class Percolation {
      */
     private int listsize;
     /**
-     * int variable
+     * int variable.
      */
     private int first;
     /**
@@ -162,3 +162,5 @@ public final class Solution {
          && per.numberOfOpenSites() != 0);
     }
 }
+
+
