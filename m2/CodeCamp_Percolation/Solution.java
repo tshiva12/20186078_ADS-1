@@ -8,15 +8,15 @@ class Percolation {
 	 */
 	private boolean[] list;
 	/**
-	 * boolean WeightedQuickUnionUF
+	 * boolean WeightedQuickUnionUF.
 	 */
 	private WeightedQuickUnionUF weight;
 	/**
-	 * int variable
+	 * int variable.
 	 */
 	private int n;
 	/**
-	 * int variable
+	 * int variable.
 	 */
 	private int listsize;
 	/**
@@ -24,11 +24,11 @@ class Percolation {
 	 */
 	private int first;
 	/**
-	 * int variable
+	 * int variable.
 	 */
 	private int last;
 	/**
-	 * int variable
+	 * int variable.
 	 */
 	private int count;
 	/**
@@ -36,7 +36,7 @@ class Percolation {
 	 *
 	 * @param      n1    The n 1
 	 */
-	public Percolation(final int n1) {
+	Percolation(final int n1) {
 		this.n = n1;
 		this.count = 0;
 		this.listsize = n1 * n1;
@@ -138,14 +138,22 @@ class Percolation {
  * Class for solution.
  */
 public final class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
+		//default constructor.
+	}
 	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int n = Integer.parseInt(scan.nextLine());
 		Percolation per = new Percolation(n);
-		while(scan.hasNext()) {
+		while (scan.hasNext()) {
 			String[] tokens = scan.nextLine().split(" ");
-			per.open(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]));
+			per.open(Integer.parseInt(tokens[0]),
+			 Integer.parseInt(tokens[1]));
 		}
-		System.out.println(per.percolates() && per.numberOfOpenSites() != 0);
+		System.out.println(per.percolates()
+		 && per.numberOfOpenSites() != 0);
 	}
 }
