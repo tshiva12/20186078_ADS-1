@@ -1,42 +1,72 @@
-// public class Percolation {
-//    public Percolation(int n)                // create n-by-n grid, with all sites blocked
-//    public    void open(int row, int col)    // open site (row, col) if it is not open already
-//    public boolean isOpen(int row, int col)  // is site (row, col) open?
-//    public boolean isFull(int row, int col)  // is site (row, col) full?
-//    public     int numberOfOpenSites()       // number of open sites
-//    public boolean percolates()              // does the system percolate?
-// }
-
-
-// You can implement the above API to solve the problem
 import java.util.Scanner;
+/**
+ * Class for percolation.
+ */
 class Percolation {
+	/**
+	 * boolean array.
+	 */
 	private boolean[] list;
+	/**
+	 * boolean WeightedQuickUnionUF
+	 */
 	private WeightedQuickUnionUF weight;
+	/**
+	 * int variable
+	 */
 	private int n;
-	private int size;
+	/**
+	 * int variable
+	 */
+	private int listsize;
+	/**
+	 * int variable
+	 */
 	private int first;
+	/**
+	 * int variable
+	 */
 	private int last;
+	/**
+	 * int variable
+	 */
 	private int count;
-	public Percolation(int n1) {
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      n1    The n 1
+	 */
+	public Percolation(final int n1) {
 		this.n = n1;
 		this.count = 0;
-		this.size = n1 * n1;
-		this.first = size;
-		this.last = size + 1;
-		weight = new WeightedQuickUnionUF((size + 2));
-		list = new boolean[size];
+		this.listsize = n1 * n1;
+		this.first = listsize;
+		this.last = listsize + 1;
+		weight = new WeightedQuickUnionUF((listsize + 2));
+		list = new boolean[listsize];
 		for (int i = 0; i < n; i++) {
 			weight.union(first, i);
-			weight.union(last, size - i - 1);
+			weight.union(last, listsize - i - 1);
 		}
 	}
-	private void linkOpenSites(int row, int col) {
+	/**
+	 * Links open sites.
+	 *
+	 * @param      row   The row
+	 * @param      col   The col
+	 */
+	private void linkOpenSites(final int row, final int col) {
 		if (list[col] && !weight.connected(row, col)) {
 			weight.union(row, col);
 		}
 	}
-	public void open(int row, int col) {
+	/**
+	 * Open.
+	 *
+	 * @param      row   The row
+	 * @param      col   The col
+	 */
+	public void open(final int row, final int col) {
 		int index = Dim(row, col);
 		list[index] = true;
 		count++;
@@ -46,7 +76,7 @@ class Percolation {
 		}
 		int bottom = index + n;
 		int top = index - n;
-		if (bottom < size) {
+		if (bottom < listsize) {
 			linkOpenSites(index, bottom);
 		}
 		if (top >= 0) {
@@ -65,25 +95,53 @@ class Percolation {
 		linkOpenSites(index, index + 1);
 		linkOpenSites(index, index - 1);
 	}
-	public boolean isOpen(int row, int col) {
+	/**
+	 * Determines if open.
+	 *
+	 * @param      row   The row
+	 * @param      col   The col
+	 *
+	 * @return     True if open, False otherwise.
+	 */
+	public boolean isOpen(final int row, final int col) {
 		return list[Dim(row, col)];
 	}
+	/**
+	 * number of open sites.
+	 *
+	 * @return     return count of number of open sites.
+	 */
 	public int numberOfOpenSites() {
 		return count;
 	}
+	/**
+	 * percolates.
+	 *
+	 * @return     return boolean value.
+	 */
 	public boolean percolates() {
 		return weight.connected(first, last);
 	}
-	public int Dim(int row, int col) {
+	/**
+	 * 1D array.
+	 *
+	 * @param      row   The row
+	 * @param      col   The col
+	 *
+	 * @return     return 1D array.
+	 */
+	public int Dim(final int row, final int col) {
 		return n * (row - 1) + col - 1;
 	}
-} 
-public class Solution {
-	public static void main(String[] args) {
+}
+/**
+ * Class for solution.
+ */
+public final class Solution {
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int n = Integer.parseInt(scan.nextLine());
 		Percolation per = new Percolation(n);
-		int i = 0;
 		while(scan.hasNext()) {
 			String[] tokens = scan.nextLine().split(" ");
 			per.open(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]));
