@@ -18,7 +18,7 @@ class Sortlist {
 	 * @param      l1    The l 1
 	 * @param      l2    The l 2
 	 */
-	Sortlist(int[] l1, int[] l2) {
+	Sortlist(final int[] l1, final int[] l2) {
 		this.listone = l1;
 		this.listtwo = l2;
 	}
@@ -30,7 +30,7 @@ class Sortlist {
 	 *
 	 * @return     return sorted array.
 	 */
-	public String sort(int[] lis1, int[] lis2) {
+	public String sort(final int[] lis1, final int[] lis2) {
 		int i = 0, j = 0, k = 0;
 		int[] list = new int[lis1.length + lis2.length];
 		while (i < lis1.length && j < lis2.length) {
@@ -56,14 +56,19 @@ class Sortlist {
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
 	/**
 	 * Constructs the object.
 	 */
 	private Solution() {
 		//default constructor.
 	}
-	public static void main(String[] args) {
+	/**
+	 * main function.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int size1 = Integer.parseInt(scan.nextLine());
 		int size2 = Integer.parseInt(scan.nextLine());
