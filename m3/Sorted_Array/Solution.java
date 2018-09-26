@@ -41,11 +41,11 @@ class Sortlist {
         }
         while (i < lis1.length) {
             list[k++] = lis1[i++];
-            System.out.println(lis1);
+            System.out.println(list);
         }
         while (j < lis2.length) {
             list[k++] = lis2[j++];
-            System.out.println(lis2);
+            System.out.println(list);
         }
         String result = "";
         int z = 0;
