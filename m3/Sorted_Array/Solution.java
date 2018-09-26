@@ -1,12 +1,35 @@
 import java.util.Scanner;
 import java.util.Arrays;
+/**
+ * Class for sortlist.
+ */
 class Sortlist {
+	/**
+	 * integer array.
+	 */
 	private int[] listone;
+	/**
+	 * integer array.
+	 */
 	private int[] listtwo;
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      l1    The l 1
+	 * @param      l2    The l 2
+	 */
 	Sortlist(int[] l1, int[] l2) {
 		this.listone = l1;
 		this.listtwo = l2;
 	}
+	/**
+	 * sort method.
+	 *
+	 * @param      lis1  The lis 1
+	 * @param      lis2  The lis 2
+	 *
+	 * @return     return sorted array.
+	 */
 	public String sort(int[] lis1, int[] lis2) {
 		int i = 0, j = 0, k = 0;
 		int[] list = new int[lis1.length + lis2.length];
@@ -30,7 +53,16 @@ class Sortlist {
 		return result;
 	}
 }
+/**
+ * Class for solution.
+ */
 public class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
+		//default constructor.
+	}
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int size1 = Integer.parseInt(scan.nextLine());
