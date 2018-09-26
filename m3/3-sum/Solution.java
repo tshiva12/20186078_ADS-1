@@ -26,7 +26,7 @@ public final class Solution {
         int count = 0;
         for (int i = 0; i < num - 2; i++) {
             int j = i + 1;
-            int k = num - 2;
+            int k = num - 1;
             while (j < k) {
                 if (array[i] + array[j] + array[k] == 0) {
                     count++;
