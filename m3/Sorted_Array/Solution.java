@@ -48,7 +48,7 @@ class Sortlist {
         String result = "";
         for (int z = 0; z < list.length - 1; z++) {
             result += list[z] + ",";
-        }
+        } result += list + ",";
         return result;
     }
 }
