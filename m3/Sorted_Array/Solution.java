@@ -36,16 +36,14 @@ class Sortlist {
             if (lis1[i] < lis2[j]) {
                 list[k++] = lis1[i++];
             } else {
-                list[k++] = lis1[j++];
+                list[k++] = lis2[j++];
             }
         }
         while (i < lis1.length) {
             list[k++] = lis1[i++];
-            System.out.println(list);
         }
         while (j < lis2.length) {
             list[k++] = lis2[j++];
-            System.out.println(list);
         }
         String result = "";
         int z = 0;
