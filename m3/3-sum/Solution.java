@@ -24,9 +24,9 @@ public final class Solution {
         }
         Arrays.sort(array);
         int count = 0;
-        for (int i = 0; i < num - 1; i++) {
+        for (int i = 0; i < num - 2; i++) {
             int j = i + 1;
-            int k = num - 1;
+            int k = num - 2;
             while (j < k) {
                 if (array[i] + array[j] + array[k] == 0) {
                     count++;
