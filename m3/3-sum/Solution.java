@@ -31,11 +31,11 @@ public final class Solution {
                 if (array[i] + array[j] + array[k] == 0) {
                     count++;
                     j++;
-                    k++;
+                    k--;
                 } else if (array[i] + array[j] + array[k] < 0) {
                     j++;
                 } else {
-                    k++;
+                    k--;
                 }
             }
         }
