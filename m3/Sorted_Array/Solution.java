@@ -49,8 +49,7 @@ class Sortlist {
         int z = 0;
         for (z = 0; z < list.length - 1; z++) {
             result += list[z] + ",";
-        }
-        result += list[z];
+        } result += list[z];
         return result;
     }
 }
