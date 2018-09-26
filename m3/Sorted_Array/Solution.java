@@ -43,7 +43,7 @@ class Sortlist {
             list[k++] = lis1[i++];
         }
         while (j < lis2.length) {
-            list[k++] = lis2[j++];
+            list[k++] = lis1[i++];
         }
         String result = "";
         for (int z = 0; z < list.length - 1; z++) {
