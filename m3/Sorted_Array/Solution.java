@@ -46,10 +46,11 @@ class Sortlist {
             list[k++] = lis2[j++];
         }
         String result = "";
-        for (int z = 0; z < list.length - 1; z++) {
+        int z = 0;
+        for (z = 0; z < list.length - 1; z++) {
             result += list[z] + ",";
-            result += list[z];
         }
+        result += list[z];
         return result;
     }
 }
