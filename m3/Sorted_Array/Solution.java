@@ -82,7 +82,7 @@ public final class Solution {
             list2[j] = Integer.parseInt(str2[j]);
         }
         Sortlist s = new Sortlist(list1, list2);
-        System.out.println(s.sort(list1, list2) + "9");
+        System.out.println(s.sort(list1, list2));
     }
 }
 
