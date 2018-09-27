@@ -69,19 +69,19 @@ class Stack {
         return size == braces.length;
     }
 }
-// class Stack {   
+// class Stack {
 //     private String[] s;
-//     private int N = 0;      
-//     public void Stack(int capacity) {  
+//     private int N = 0;
+//     public void Stack(int capacity) {
 //         s = new String[capacity];
 //     }
-//     public boolean isEmpty() {  
-//         return N == 0;  
-//     }      
-//     public void push(String item) {  
-//         s[N++] = item;  
-//     }      
-//     public String pop()   {  
+//     public boolean isEmpty() {
+//         return N == 0;
+//     }
+//     public void push(String item) {
+//         s[N++] = item;
+//     }
+//     public String pop()   {
 //         return s[--N];
 //     }
 // }
