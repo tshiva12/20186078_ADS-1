@@ -3,7 +3,7 @@ import java.util.Scanner;
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
@@ -15,7 +15,7 @@ public class Solution {
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
         scan.nextLine();
@@ -31,7 +31,7 @@ public class Solution {
      *
      * @return     return boolean value.
      */
-    public static String balance(char[] str1) {
+    public static String balance(final char[] str1) {
         Stack s = new Stack();
         for (char str2 : str1) {
             if (str2 == '{' || str2 == '[' || str2 == '(') {
@@ -60,12 +60,12 @@ public class Solution {
  * List of .
  */
 class Stack {
-    char [] braces;
-    int size;
+    public char[] braces;
+    private int size;
     /**
      * Constructs the object.
      */
-    public Stack() {
+    Stack() {
         braces = new char[10];
         size = 0;
 
@@ -75,9 +75,9 @@ class Stack {
      *
      * @param      brace1  The brace 1
      */
-    public void push(char brace1) {
-        if(isfull()){
-            braces = Arrays.copyOf(braces,braces.length*(2));
+    public void push(final char brace1) {
+        if (isfull()) {
+            braces = Arrays.copyOf(braces, braces.length * (2));
         }
         braces[size++] = brace1;
 
