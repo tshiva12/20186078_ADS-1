@@ -44,7 +44,7 @@ public final class Solution {
                      || (char1 == '(' && str2 == ')')) {
                         s.pop();
                     } else {
-                        return "YES";
+                        return "NO";
                     }
                 } else {
                     return "NO";
