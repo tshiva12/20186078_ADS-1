@@ -1,11 +1,20 @@
 import java.util.Arrays;
 import java.util.Scanner;
-
+/**
+ * Class for solution.
+ */
 public class Solution {
+    /**
+     * Constructs the object.
+     */
     private Solution() {
-
+        //default constructot
     }
-
+    /**
+     * main function.
+     *
+     * @param      args  The arguments
+     */
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
@@ -15,6 +24,13 @@ public class Solution {
             System.out.println(balance(str1));
         }
     }
+    /**
+     * check balanced parenthis.
+     *
+     * @param      str1  The string 1
+     *
+     * @return     return boolean value.
+     */
     public static String balance(char[] str1) {
         Stack s = new Stack();
         for (char str2 : str1) {
@@ -40,14 +56,25 @@ public class Solution {
         }
     }
 }
+/**
+ * List of .
+ */
 class Stack {
     char [] braces;
     int size;
+    /**
+     * Constructs the object.
+     */
     public Stack() {
         braces = new char[10];
         size = 0;
 
     }
+    /**
+     * push.
+     *
+     * @param      brace1  The brace 1
+     */
     public void push(char brace1) {
         if(isfull()){
             braces = Arrays.copyOf(braces,braces.length*(2));
@@ -55,17 +82,37 @@ class Stack {
         braces[size++] = brace1;
 
     }
+    /**
+     * pop.
+     *
+     * @return     return pop value.
+     */
     public char pop() {
         return braces[--size];
 
     }
+    /**
+     * isempty.
+     *
+     * @return    return boolean value.
+     */
     public boolean isempty() {
         return size == 0;
     }
+    /**
+     * peek.
+     *
+     * @return     return last inserted item.
+     */
     public char peek() {
         return braces[size - 1];
     }
-    public boolean isfull(){
+    /**
+     * isfull.
+     *
+     * @return     return boolean value.
+     */
+    public boolean isfull() {
         return size == braces.length;
     }
 }
