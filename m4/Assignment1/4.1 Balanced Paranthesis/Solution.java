@@ -39,7 +39,8 @@ public final class Solution {
             } else {
                 if (!s.isempty()) {
                     char char1 = s.peek();
-                    if ((char1 == '{' && str2 == '}') || (char1 == '[' && str2 == ']')
+                    if ((char1 == '{' && str2 == '}')
+                     || (char1 == '[' && str2 == ']')
                      || (char1 == '(' && str2 == ')')) {
                         s.pop();
                     } else {
@@ -73,7 +74,8 @@ class Stack {
      * Constructs the object.
      */
     Stack() {
-        braces = new char[10];
+        final int ten = 10;
+        braces = new char[ten];
         size = 0;
 
     }
