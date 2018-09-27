@@ -39,7 +39,8 @@ public final class Solution {
             } else {
                 if (!s.isempty()) {
                     char char1 = s.peek();
-                    if ((char1 == '{' && str2 == '}') || (char1 == '[' && str2 == ']') || (char1 == '(' && str2 == ')')) {
+                    if ((char1 == '{' && str2 == '}') || (char1 == '[' && str2 == ']')
+                     || (char1 == '(' && str2 == ')')) {
                         s.pop();
                     } else {
                         return "YES";
@@ -60,7 +61,13 @@ public final class Solution {
  * List of .
  */
 class Stack {
-    public char[] braces;
+    /**
+     * char array variable.
+     */
+    private char[] braces;
+    /**
+     * Integer variable.
+     */
     private int size;
     /**
      * Constructs the object.
