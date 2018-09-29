@@ -18,9 +18,12 @@ final class AddLargeNumbers {
      * @return     return string value.
      */
     public static LinkedList numberToDigits(final String number) {
-        // LinkedList str = new LinkedList();
-        // return str;
-        return null;
+        LinkedList str = new LinkedList();
+        for (int i = 0; i < number.length() - 1; i++) {
+            str.addFirst(number);
+        }
+        return str;
+        // return null;
     }
     /**
      * digitsToNumber.
