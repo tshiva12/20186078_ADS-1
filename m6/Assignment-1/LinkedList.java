@@ -4,16 +4,16 @@ public class LinkedList<E> {
 		Node next;
 	}
 	Node head, tail;
-	public void addAtHead(E data) {
+	public void addFirst(E data) {
 		Node node = new Node();
 		node.data = data;
 		node.next = head;
 		if (head == null) tail = node;
 		head = node;
 	}
-	public void addAtTail(E data) {
+	public void addLast(E data) {
 		if (tail == null) {
-			addAtHead(data);
+			addFirst(data);
 			return;
 		}
 		Node node = new Node();
@@ -21,22 +21,22 @@ public class LinkedList<E> {
 		tail.next = node;
 		tail = tail.next;
 	}
-	public void deleteAtHead() {
+	public void deleteFirst() {
 		head = head.next;
 	}
-	public E popAtHead() {
+	public E popFirst() {
 		E data = head.data;
 		head = head.next;
 		return data;
 	}
-	public void deleteAtTail() {
+	public void deletelast() {
 		Node thead = head;
 		while (thead.next != tail)
 			thead = thead.next;
 		thead.next = null;
 		tail = thead;
 	}
-	public E popAtTail() {
+	public E poplast() {
 		E data = tail.data;
 		Node thead = head;
 		while (thead.next != tail)
@@ -45,7 +45,7 @@ public class LinkedList<E> {
 		tail = thead;
 		return data;
 	}
-	public void insertAfter(int index, E data) {
+	public void addindex(int index, E data) {
 		Node thead = head;
 		for (int i = 0; i < index; i++)
 			thead = thead.next;
@@ -54,13 +54,13 @@ public class LinkedList<E> {
 		node.next = thead.next;
 		thead.next = node;
 	}
-	public void removeAfter(int index) {
+	public void removeindex(int index) {
 		Node thead = head;
 		for (int i = 0; i < index; i++)
 			thead = thead.next;
 		thead.next = thead.next.next;
 	}
-	public void print() {
+	public void show() {
 		Node thead = head;
 		while(thead != null) {
 			System.out.println(thead.data);

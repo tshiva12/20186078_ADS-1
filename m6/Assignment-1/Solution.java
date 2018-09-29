@@ -14,6 +14,8 @@ class AddLargeNumbers {
      * @return     return string value.
      */
     public static LinkedList numberToDigits(final String number) {
+        // LinkedList str = new LinkedList();
+        // return str;
         return null;
     }
     /**
@@ -52,6 +54,8 @@ public final class Solution {
         String input = sc.nextLine();
         String p = sc.nextLine();
         String q = sc.nextLine();
+        System.out.println(p);
+        System.out.println(q);
         switch(input){
             case "numberToDigits":
                 LinkedList pDigits = AddLargeNumbers.numberToDigits(p);
@@ -61,9 +65,9 @@ public final class Solution {
                 break;
 
             case "addLargeNumbers":
-                LinkedList p1Digits = AddLargeNumbers.numberToDigits(p);
-                LinkedList q1Digits = AddLargeNumbers.numberToDigits(q);
-                LinkedList result = AddLargeNumbers.addLargeNumbers(p1Digits, q1Digits);
+                pDigits = AddLargeNumbers.numberToDigits(p);
+                qDigits = AddLargeNumbers.numberToDigits(q);
+                LinkedList result = AddLargeNumbers.addLargeNumbers(pDigits, qDigits);
                 System.out.println(AddLargeNumbers.digitsToNumber(result));
                 break;
         }
