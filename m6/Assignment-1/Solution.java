@@ -19,11 +19,11 @@ final class AddLargeNumbers {
      */
     public static LinkedList numberToDigits(final String number) {
         LinkedList str = new LinkedList();
-        for (int i = 0; i < number.length() - 1; i++) {
-            str.addFirst(number);
+        String[] str1 = number.split("");
+        for (int i = 0; i < str1.length; i++) {
+            str.push(str1[i]);
         }
         return str;
-        // return null;
     }
     /**
      * digitsToNumber.

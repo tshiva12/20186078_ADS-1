@@ -1,35 +1,24 @@
-class LinkedList {
-	Node first = null;
-    Node last = null;
+class Stack {
+	private Node first = null;
 	int size = 0;
    	private class Node {
-   		String item;
+   		int item;
         Node next;
-        Node(String item) {
+        Node(int item) {
         	this.item = item;
         }
     }      
     public boolean isEmpty() {
         return size == 0;
     }
-	public void push(String item) {
+	public void push(int item) {
         Node oldfirst = new Node(item);
-        if (isEmpty()) {
-            first = oldfirst;
-            last = first;
-            last.next = null;
-            size++;
-            return;
-        }
         oldfirst.next = first; 
         first = oldfirst;
         size++;
     }
-   	public String pop() {
-        if (isEmpty()) {
-            return null;
-        }
-        String item = first.item;
+   	public int pop() {
+        int item = first.item;
         first = first.next;
         size--;
         return item;
