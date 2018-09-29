@@ -21,8 +21,10 @@ class LinkedList {
             size++;
             return;
         }
-        oldfirst.next = first; 
-        first = oldfirst;
+        Node ofirst = last;
+        last = oldfirst;
+        ofirst.next = last; 
+        last.next = null;
         size++;
     }
    	public String pop() {
