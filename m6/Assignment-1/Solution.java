@@ -6,6 +6,7 @@ import java.util.Scanner;
  * Class for add large numbers.
  */
 class AddLargeNumbers {
+    private AddLargeNumbers() { }
     /**
      * numberTodigits.
      *
@@ -44,6 +45,9 @@ class AddLargeNumbers {
  * main class solution.
  */
 public final class Solution {
+    /**
+     * Constructs the object.
+     */
     private Solution() {
         //default constructor.
     }
@@ -59,7 +63,7 @@ public final class Solution {
         String q = sc.nextLine();
         // System.out.println(p);
         // System.out.println(q);
-        switch(input){
+        switch (input) {
             case "numberToDigits":
                 LinkedList pDigits = AddLargeNumbers.numberToDigits(p);
                 LinkedList qDigits = AddLargeNumbers.numberToDigits(q);
@@ -70,9 +74,12 @@ public final class Solution {
             case "addLargeNumbers":
                 pDigits = AddLargeNumbers.numberToDigits(p);
                 qDigits = AddLargeNumbers.numberToDigits(q);
-                LinkedList result = AddLargeNumbers.addLargeNumbers(pDigits, qDigits);
+                LinkedList result = AddLargeNumbers.addLargeNumbers(
+                    pDigits, qDigits);
                 System.out.println(AddLargeNumbers.digitsToNumber(result));
                 break;
+            default:
+            break;
         }
     }
 }
