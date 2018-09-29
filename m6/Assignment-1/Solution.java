@@ -33,7 +33,11 @@ final class AddLargeNumbers {
      * @return     return string.
      */
     public static String digitsToNumber(final LinkedList list) {
-        return null;
+        String str2 = "";
+        while (!list.isEmpty()) {
+            str2 += list.pop();
+        }
+        return str2;
     }
     /**
      * Adds large numbers.
