@@ -13,11 +13,11 @@ class AddLargeNumbers {
      *
      * @return     return string value.
      */
-    public static LinkedList numberToDigits(final String number) {
+    // public static LinkedList numberToDigits(final String number) {
         // LinkedList str = new LinkedList();
         // return str;
-        return null;
-    }
+        // return null;
+    // }
     /**
      * digitsToNumber.
      *
@@ -58,17 +58,17 @@ public final class Solution {
         System.out.println(q);
         switch(input){
             case "numberToDigits":
-                LinkedList pDigits = AddLargeNumbers.numberToDigits(p);
-                LinkedList qDigits = AddLargeNumbers.numberToDigits(q);
-                System.out.println(AddLargeNumbers.digitsToNumber(pDigits));
-                System.out.println(AddLargeNumbers.digitsToNumber(qDigits));
+                // LinkedList pDigits = AddLargeNumbers.numberToDigits(p);
+                // LinkedList qDigits = AddLargeNumbers.numberToDigits(q);
+                // System.out.println(AddLargeNumbers.digitsToNumber(pDigits));
+                // System.out.println(AddLargeNumbers.digitsToNumber(qDigits));
                 break;
 
             case "addLargeNumbers":
-                pDigits = AddLargeNumbers.numberToDigits(p);
-                qDigits = AddLargeNumbers.numberToDigits(q);
-                LinkedList result = AddLargeNumbers.addLargeNumbers(pDigits, qDigits);
-                System.out.println(AddLargeNumbers.digitsToNumber(result));
+                // pDigits = AddLargeNumbers.numberToDigits(p);
+                // qDigits = AddLargeNumbers.numberToDigits(q);
+                // LinkedList result = AddLargeNumbers.addLargeNumbers(pDigits, qDigits);
+                // System.out.println(AddLargeNumbers.digitsToNumber(result));
                 break;
         }
     }
