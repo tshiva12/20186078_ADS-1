@@ -5,7 +5,10 @@ import java.util.Scanner;
 /**
  * Class for add large numbers.
  */
-class AddLargeNumbers {
+final class AddLargeNumbers {
+    /**
+     * Constructs the object.
+     */
     private AddLargeNumbers() { }
     /**
      * numberTodigits.
@@ -37,7 +40,8 @@ class AddLargeNumbers {
      *
      * @return     return string.
      */
-    public static LinkedList addLargeNumbers(final LinkedList list1, final LinkedList list2) {
+    public static LinkedList addLargeNumbers(final LinkedList list1,
+     final LinkedList list2) {
         return null;
     }
 }
@@ -83,3 +87,7 @@ public final class Solution {
         }
     }
 }
+
+
+
+
