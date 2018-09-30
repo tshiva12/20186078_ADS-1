@@ -50,7 +50,11 @@ class LinkedList{
 			return;
 		}
 		Node temp = first;
-		first = first.next;
+		while(temp.next.next!=null) {
+			temp = temp.next;
+		}
+		last = temp;
+		temp.next = null;
 		size--;
 		show();
 	}
