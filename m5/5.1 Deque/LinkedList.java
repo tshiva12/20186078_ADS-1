@@ -27,7 +27,7 @@ class LinkedList{
 	public void pushLeft(int item) {
 		Node newNode1 = new Node(item);
 		newNode1.next = null;
-		if(first == null) {
+		if (first == null) {
 			first = newNode1;
 			last = newNode1;
 		} else{
@@ -50,11 +50,7 @@ class LinkedList{
 			return;
 		}
 		Node temp = first;
-		while(temp.next.next!=null) {
-			temp = temp.next;
-		}
-		last = temp;
-		temp.next = null;
+		first = first.next;
 		size--;
 		show();
 	}
@@ -63,8 +59,12 @@ class LinkedList{
 			System.out.println("Deck is empty");
 			return;
 		}
-		Node temp = last;
-		last = last.next;
+		Node temp = first;
+		while(temp.next.next!=null) {
+			temp = temp.next;
+		}
+		last = temp;
+		temp.next = null;
 		size--;
 		show();
 	}
