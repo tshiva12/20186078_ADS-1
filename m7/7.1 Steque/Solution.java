@@ -26,10 +26,10 @@ class Steque {
 	// 		this.data = data;
 	// 	}
 	// }
-	Steque() {
-		first = null;
-		last = null;
-	}
+	// Steque() {
+	// 	first = null;
+	// 	last = null;
+	// }
 	public void enque(int data) {
 		Node oldLast = last;
 		last = new Node(data);
