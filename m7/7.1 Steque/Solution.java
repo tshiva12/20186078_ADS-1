@@ -19,20 +19,30 @@ class Steque {
 		last = null;
 	}
 	public void enque(int data) {
-		Node temp = new Node();
-        if (last == null || first == null) {
-            temp.data = data;
-            temp.next = null;
-            first = temp;
-            last = temp;
-        } else {
-            Node oldlast = last;
-            temp.data = data;
-            temp.next = null;
-            oldlast.next = temp;
-            last = temp;
-        }
-        size++;
+		// Node temp = new Node();
+  //       if (last == null || first == null) {
+  //           temp.data = data;
+  //           temp.next = null;
+  //           first = temp;
+  //           last = temp;
+  //       } else {
+  //           Node oldlast = last;
+  //           temp.data = data;
+  //           temp.next = null;
+  //           oldlast.next = temp;
+  //           last = temp;
+  //       }
+  //       size++;
+        Node node = new Node();
+		node.data = data;
+		size++;
+		if (last == null) {
+			last = node;
+			first = node;
+			return;
+		}
+		last.next = node;
+		first = last.next;
 	}
 	public void push(int data) {
 		// Node oldFirst = first;
@@ -40,19 +50,24 @@ class Steque {
 		// first.next = oldFirst;
 		// if (last == null) 
 		// 	last = first;
-		Node newnode = new Node();
-        if (first == null) {
-            newnode.data = data;
-            newnode.next = null;
-            first = newnode;
-            last = newnode;
-        } else {
-            Node oldfirst = first;
-            newnode.data = data;
-            newnode.next = oldfirst;
-            first = newnode;
-        }
-        size++;
+		// Node newnode = new Node();
+		Node node = new Node();
+		node.data = data;
+		node.next = first;
+		first = node;
+		size++;
+  //       if (first == null) {
+  //           newnode.data = data;
+  //           newnode.next = null;
+  //           first = newnode;
+  //           last = newnode;
+  //       } else {
+  //           Node oldfirst = first;
+  //           newnode.data = data;
+  //           newnode.next = oldfirst;
+  //           first = newnode;
+  //       }
+  //       size++;
 	}
 	public void pop() {
 		if (first == null) {
