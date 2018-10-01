@@ -40,6 +40,7 @@ class Steque {
 			return;
 		}
 		first = first.next;
+		size++;
 	}
 	public boolean isEmpty() {
 		return first == null || last == null;
