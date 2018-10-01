@@ -59,7 +59,6 @@ class Steque {
 	}
 	public void push(int data) {
 		Node oldFirst = first;
-		first = new Node();
 		first.data = data;
 		first.next = oldFirst;
 		if (last == null) 
@@ -73,6 +72,7 @@ class Steque {
 		}
 		// data = first.data;
 		first = first.next;
+		size--;
 		// return data;
 	}
 	public boolean isEmpty() {
