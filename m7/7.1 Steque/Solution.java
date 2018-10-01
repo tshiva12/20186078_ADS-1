@@ -10,7 +10,7 @@ class Steque {
 	private int data;
 	Node first;
 	Node last;
-	int size = 0;
+	int size;
 
 	class Node {
 	int data;
@@ -110,59 +110,3 @@ public class Solution {
 		}
 	}
 }
-// class Steque {
-// 	Node first = null;
-//     Node last = null;
-// 	int size = 0;
-//    	private class Node {
-//    		int item;
-//         Node next;
-//         Node(int item) {
-//         	this.item = item;
-//         }
-//     }      
-//     public boolean isEmpty() {
-//         return size == 0;
-//     }
-// 	public void push(int item) {
-//         Node oldfirst = new Node(item);
-//         if (isEmpty()) {
-//             first = oldfirst;
-//             last = first;
-//             last.next = null;
-//             size++;
-//             return;
-//         }
-//         Node ofirst = last;
-//         last = oldfirst;
-//         ofirst.next = last; 
-//         last.next = null;
-//         size++;
-//     }
-//    	public int pop() {
-//         if (isEmpty()) {
-//             return 0;
-//         }
-//         int item = first.item;
-//         first = first.next;
-//         size--;
-//         return item;
-//     }
-//     public void show() {
-//         Node temp = first;
-//         while (temp != null) {
-//             System.out.print(temp.item + " ");
-//             temp = temp.next;
-//         }
-//     }
-//     public void enque(int data) {
-// 		Node oldLast = last;
-// 		last = new Node(data);
-// 		last.item = data;
-// 		last.next = null;
-// 		if (first == null)
-// 			first = last;
-// 		else
-// 			oldLast.next = last;
-// 	}
-// }
