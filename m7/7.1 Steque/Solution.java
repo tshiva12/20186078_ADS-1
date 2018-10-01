@@ -22,7 +22,7 @@ public final class Solution {
 			while (scan.hasNext()) {
 				String str = scan.nextLine();
 				if (str.equals("")) {
-					break;					
+					break;
 				}
 				String[] tokens = str.split(" ");
 				switch (tokens[0]) {
