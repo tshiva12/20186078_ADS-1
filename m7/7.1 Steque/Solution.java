@@ -14,34 +14,11 @@ class Steque {
 	Node first;
 	Node last;
 	int size;
-	// class Node {
-	// 	int data;
-	// 	Node next;
-	// 	Node(int data) {
-	// 		this.data = data;
-	// 	}
-	// }
-	// Steque() {
-	// 	first = null;
-	// 	last = null;
-	// }
+	Steque() {
+		first = null;
+		last = null;
+	}
 	public void enque(int data) {
-		// Node newnode = new Node(data);
-  //       if (first == null) {
-  //           first = newnode;
-  //           last = newnode;
-  //       } else {
-  //           first.next = newnode;
-  //           last = newnode;
-  //       }
-		// Node oldLast = last;
-		// last = new Node(data);
-		// last.data = data;
-		// last.next = null;
-		// if (first == null)
-		// 	first = last;
-		// else
-		// 	oldLast.next = last;
 		Node temp = new Node();
         if (last == null || first == null) {
             temp.data = data;
