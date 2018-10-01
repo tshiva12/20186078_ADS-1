@@ -12,45 +12,31 @@ class Steque {
 	Node last;
 	int size;
 
-	class Node {
+	private class Node {
 	int data;
 	Node next;
-	Node(int data) {
-		this.data = data;
-	}
+	// Node(int data) {
+	// 	this.data = data;
+	// }
 }
-	// class Node {
-	// 	int data;
-	// 	Node next;
-	// 	Node(int data) {
-	// 		this.data = data;
-	// 	}
-	// }
-	// Steque() {
-	// 	first = null;
-	// 	last = null;
-	// }
 	public void enque(int data) {
-		Node newnode = new Node(data);
-        if (first == null) {
-            first = newnode;
-            last = newnode;
-        } else {
-            first.next = newnode;
-            last = newnode;
+		if (last == null) {
+            last = new Node();
+            last.data = data;
+            last.next = null;
+            first = last;
+        }   else {
+            Node temp = last;
+            last = new Node();
+            last.data = data;
+            last.next = null;
+            temp.next = last;
         }
-		// Node oldLast = last;
-		// last = new Node(data);
-		// last.data = data;
-		// last.next = null;
-		// if (first == null)
-		// 	first = last;
-		// else
-		// 	oldLast.next = last;
+        size++;
 	}
 	public void push(int data) {
 		Node oldFirst = first;
-		first = new Node(data);
+		first = new Node();
 		first.data = data;
 		first.next = oldFirst;
 		if (last == null) 
