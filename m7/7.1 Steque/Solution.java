@@ -68,9 +68,10 @@ class Steque {
 public void show() {
         Node temp = first;
         while (temp != null) {
-            System.out.print(temp.data + " ");
+            System.out.print(temp.data + ", ");
             temp = temp.next;
         }
+        System.out.println(temp.data);
     }
 } 
 public class Solution {
