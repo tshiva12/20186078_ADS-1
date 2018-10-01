@@ -1,21 +1,44 @@
+/**
+ * Class for node.
+ */
 class Node {
 	int data;
 	Node next;
+	/**
+	 * Constructs the object.
+	 */
 	Node () {
-
+		// default Constructor is not used.
 	}
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      data  The data
+	 */
 	Node(int data) {
 		this.data = data;
 	}
 }
+/**
+ * Class for steque.
+ */
 class Steque {
 	Node first;
 	Node last;
 	int size;
+	/**
+	 * Constructs the object.
+	 */
 	Steque() {
 		first = null;
 		last = null;
 	}
+	/**
+	 * add elements from the end.
+	 * time complexity of enqueue is 1.
+	 *
+	 * @param      data  The data
+	 */
 	public void enque(int data) {
 		Node temp = new Node();
         if (last == null || first == null) {
@@ -32,6 +55,12 @@ class Steque {
         }
         size++;
 	}
+	/**
+	 * add the element from the begining.
+	 * Time complexity of the push is 1.
+	 *
+	 * @param      data  The data
+	 */
 	public void push(int data) {
 		Node newnode = new Node();
         if (first == null) {
@@ -47,6 +76,12 @@ class Steque {
         }
         size++;
 	}
+	/**
+	 * removes the element from the begining in the list.
+	 * The time complexity of the pop is 1.
+	 *
+	 * @return     return remove item value.
+	 */
 	public int pop() {
 		if (first != null) {
 			int item = first.data;
@@ -56,12 +91,26 @@ class Steque {
 		}
 		return 0;
 	}
+	/**
+	 * Determines if empty.
+	 *
+	 * @return     True if empty, False otherwise.
+	 */
 	public boolean isEmpty() {
 		return first == null || last == null;
 	}
+	/**
+	 * display the size of the list.
+	 *
+	 * @return     return size value.
+	 */
 	public int size() {
 		return size;
 	}
+	/**
+	 * display the output of the list.
+	 * Time complexity of the show is n.
+	 */
 	public void show() {
         Node temp = first;
 		if (first == null) {
