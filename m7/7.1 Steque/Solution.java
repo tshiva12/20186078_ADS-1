@@ -7,10 +7,10 @@ import java.util.Scanner;
 // 	}
 // }
 class Steque {
-	private int data;
-	Node first;
-	Node last;
-	int size;
+	// private int data;
+	Node first = null;
+	Node last = null;
+	int size = 0;
 
 	private class Node {
 	int data;
@@ -43,35 +43,23 @@ class Steque {
 			last = first;
 	}
 	public void pop() {
-		// if (isEmpty())
-		// 	System.out.println("No element exists in Steque");
-		if (first == null) {
-			return;
+		if (first != null) {
+			first = first.next;
+			size--;
 		}
-		// data = first.data;
-		first = first.next;
-		// return data;
 	}
 	public boolean isEmpty() {
-		return first == null || last == null;
+		return first == null;
 	}
-	// public int size() {
-	// 	int count = 0;
-	// 	for(int data : data) {
-	// 		count++;
-	// 	}
-	// 	return count;s
-	// }
+	public int size() {
+		return size;
+	}
 public void show() {
         Node temp = first;
 		if (first == null) {
 			System.out.println("Steque is empty.");
 			return;
 		}
-		// if (first.next == null) {
-		// 	System.out.println(first.data);
-		// 	return;
-		// }
         while (temp.next != null) {
             System.out.print(temp.data + ", ");
             temp = temp.next;
@@ -83,7 +71,7 @@ public class Solution {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int n = scan.nextInt();
-		for (int i = 0; i < n; i++) {
+		for (int i = 1; i < n; i++) {
 			Steque steque = new Steque();
 			while(scan.hasNext()) {
 				String tokens[] = scan.nextLine().split(" ");
@@ -101,6 +89,7 @@ public class Solution {
 					steque.show();
 					break;
 					default :
+					steque = new Steque();
 					break;
 				}
 			}
