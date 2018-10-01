@@ -74,11 +74,11 @@ public void show() {
 			System.out.println("Steque is empty.");
 			return;
 		}
-		if (first.next == null) {
-			System.out.println(first.data);
-			return;
-		}
-        while (temp != null) {
+		// if (first.next == null) {
+		// 	System.out.println(first.data);
+		// 	return;
+		// }
+        while (temp.next != null) {
             System.out.print(temp.data + ", ");
             temp = temp.next;
         }
