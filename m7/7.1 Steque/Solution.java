@@ -1,38 +1,31 @@
 import java.util.Scanner;
-// class Node {
-// 	int data;
-// 	Node next;
-// 	Node(int data) {
-// 		this.data = data;
-// 	}
-// }
-class Steque {
-	// private int data;
-	Node first = null;
-	Node last = null;
-	int size = 0;
-
-	private class Node {
+class Node {
 	int data;
 	Node next;
-	// Node(int data) {
-	// 	this.data = data;
-	// }
+	Node () {
+
+	}
+	Node(int data) {
+		this.data = data;
+	}
 }
+class Steque {
+	// private int data;
+	Node first;
+	Node last;
+	int size;
+
 	public void enque(int data) {
-		if (last == null) {
-            last = new Node();
-            last.data = data;
-            last.next = null;
-            first = last;
-        }   else {
-            Node temp = last;
-            last = new Node();
-            last.data = data;
-            last.next = null;
-            temp.next = last;
-        }
-        size++;
+		Node obj = new Node(data);
+		if(size == 0) {
+			first = obj;
+			last = obj;
+			size++;
+			return;
+		}
+		last.next = obj;
+		last = obj;
+		size++;
 	}
 	public void push(int data) {
 		Node oldFirst = first;
@@ -43,18 +36,18 @@ class Steque {
 			last = first;
 	}
 	public void pop() {
-		if (first != null) {
-			first = first.next;
-			size--;
+		if (first == null) {
+			return;
 		}
+		first = first.next;
 	}
 	public boolean isEmpty() {
-		return first == null;
+		return first == null || last == null;
 	}
 	public int size() {
 		return size;
 	}
-public void show() {
+	public void show() {
         Node temp = first;
 		if (first == null) {
 			System.out.println("Steque is empty.");
@@ -89,7 +82,6 @@ public class Solution {
 					steque.show();
 					break;
 					default :
-					steque = new Steque();
 					break;
 				}
 			}
