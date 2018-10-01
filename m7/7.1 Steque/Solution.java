@@ -66,6 +66,14 @@ class Steque {
 	// 	return count;s
 	// }
 public void show() {
+		if (size == 0) {
+			System.out.println("Steque is empty.");
+			return;
+		}
+		if (first.next == null) {
+			System.out.println(first.data);
+			return;
+		}
         Node temp = first;
         while (temp != null) {
             System.out.print(temp.data + ", ");
