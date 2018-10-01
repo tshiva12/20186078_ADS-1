@@ -7,7 +7,7 @@ public final class Solution {
      * Constructs the object.
      */
     private Solution() {
-        //default constructor is used.
+        //default constructor is not used.
     }
     /**
      * main function.
