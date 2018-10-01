@@ -19,30 +19,30 @@ class Steque {
 		last = null;
 	}
 	public void enque(int data) {
-		// Node temp = new Node();
-  //       if (last == null || first == null) {
-  //           temp.data = data;
-  //           temp.next = null;
-  //           first = temp;
-  //           last = temp;
-  //       } else {
-  //           Node oldlast = last;
-  //           temp.data = data;
-  //           temp.next = null;
-  //           oldlast.next = temp;
-  //           last = temp;
-  //       }
-  //       size++;
-        Node node = new Node();
-		node.data = data;
-		size++;
-		if (last == null) {
-			last = node;
-			first = node;
-			return;
-		}
-		last.next = node;
-		first = last.next;
+		Node temp = new Node();
+        if (last == null || first == null) {
+            temp.data = data;
+            temp.next = null;
+            first = temp;
+            last = temp;
+        } else {
+            Node oldlast = last;
+            temp.data = data;
+            temp.next = null;
+            oldlast.next = temp;
+            last = temp;
+        }
+        size++;
+  //       Node node = new Node();
+		// node.data = data;
+		// size++;
+		// if (last == null) {
+		// 	last = node;
+		// 	first = node;
+		// 	return;
+		// }
+		// last.next = node;
+		// first = last.next;
 	}
 	public void push(int data) {
 		// Node oldFirst = first;
@@ -50,31 +50,33 @@ class Steque {
 		// first.next = oldFirst;
 		// if (last == null) 
 		// 	last = first;
-		// Node newnode = new Node();
-		Node node = new Node();
-		node.data = data;
-		node.next = first;
-		first = node;
-		size++;
-  //       if (first == null) {
-  //           newnode.data = data;
-  //           newnode.next = null;
-  //           first = newnode;
-  //           last = newnode;
-  //       } else {
-  //           Node oldfirst = first;
-  //           newnode.data = data;
-  //           newnode.next = oldfirst;
-  //           first = newnode;
-  //       }
-  //       size++;
+		Node newnode = new Node();
+		// Node node = new Node();
+		// node.data = data;
+		// node.next = first;
+		// first = node;
+		// size++;
+        if (first == null) {
+            newnode.data = data;
+            newnode.next = null;
+            first = newnode;
+            last = newnode;
+        } else {
+            Node oldfirst = first;
+            newnode.data = data;
+            newnode.next = oldfirst;
+            first = newnode;
+        }
+        size++;
 	}
-	public void pop() {
-		if (first == null) {
-			return;
+	public int pop() {
+		if (first != null) {
+			int item = first.data;
+			first = first.next;
+			size--;
+			return item;
 		}
-		first = first.next;
-		size--;
+		return 0;
 	}
 	public boolean isEmpty() {
 		return first == null || last == null;
@@ -102,7 +104,7 @@ class Steque {
 public class Solution {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		int n = scan.nextInt();
+		int n = Integer.parseInt(scan.nextLine());
 		for (int i = 0; i < n; i++) {
 			Steque steque = new Steque();
 			while(scan.hasNext()) {
@@ -110,7 +112,7 @@ public class Solution {
 				if (str.equals("")) {
 					break;					
 				}
-				String tokens[] = scan.nextLine().split(" ");
+				String[] tokens = str.split(" ");
 				switch(tokens[0]) {
 					case "push" :
 					steque.push(Integer.parseInt(tokens[1]));
@@ -120,7 +122,7 @@ public class Solution {
 					steque.pop();
 					steque.show();
 					break;
-					case "enque" :
+					case "enqueue" :
 					steque.enque(Integer.parseInt(tokens[1]));
 					steque.show();
 					break;
@@ -128,6 +130,7 @@ public class Solution {
 					break;
 				}
 			}
+			System.out.println();
 		}
 	}
 }
