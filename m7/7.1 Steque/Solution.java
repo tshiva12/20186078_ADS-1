@@ -1,24 +1,19 @@
 import java.util.Scanner;
-// class Node {
-// 	int data;
-// 	Node next;
-// 	Node(int data) {
-// 		this.data = data;
-// 	}
-// }
-class Steque {
-	private int data;
-	Node first;
-	Node last;
-	int size;
-
-	class Node {
+class Node {
 	int data;
 	Node next;
+	Node () {
+
+	}
 	Node(int data) {
 		this.data = data;
 	}
 }
+class Steque {
+	// private int data;
+	Node first;
+	Node last;
+	int size;
 	// class Node {
 	// 	int data;
 	// 	Node next;
@@ -31,14 +26,14 @@ class Steque {
 	// 	last = null;
 	// }
 	public void enque(int data) {
-		Node newnode = new Node(data);
-        if (first == null) {
-            first = newnode;
-            last = newnode;
-        } else {
-            first.next = newnode;
-            last = newnode;
-        }
+		// Node newnode = new Node(data);
+  //       if (first == null) {
+  //           first = newnode;
+  //           last = newnode;
+  //       } else {
+  //           first.next = newnode;
+  //           last = newnode;
+  //       }
 		// Node oldLast = last;
 		// last = new Node(data);
 		// last.data = data;
@@ -47,10 +42,24 @@ class Steque {
 		// 	first = last;
 		// else
 		// 	oldLast.next = last;
+		Node temp = new Node();
+        if (last == null || first == null) {
+            temp.data = data;
+            temp.next = null;
+            first = temp;
+            last = temp;
+        } else {
+            Node oldlast = last;
+            temp.data = data;
+            temp.next = null;
+            oldlast.next = temp;
+            last = temp;
+        }
+        size++;
 	}
 	public void push(int data) {
 		Node oldFirst = first;
-		first = new Node(data);
+		first = new Node();
 		first.data = data;
 		first.next = oldFirst;
 		if (last == null) 
