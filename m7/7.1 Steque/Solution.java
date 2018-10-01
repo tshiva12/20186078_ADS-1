@@ -10,7 +10,6 @@ class Node {
 	}
 }
 class Steque {
-	// private int data;
 	Node first;
 	Node last;
 	int size;
@@ -35,17 +34,7 @@ class Steque {
         size++;
 	}
 	public void push(int data) {
-		// // Node oldFirst = first;
-		// // first.data = data;
-		// // first.next = oldFirst;
-		// // if (last == null) 
-		// // 	last = first;
 		Node newnode = new Node();
-		// Node node = new Node();
-		// node.data = data;
-		// node.next = first;
-		// first = node;
-		// size++;
         if (first == null) {
             newnode.data = data;
             newnode.next = null;
@@ -80,10 +69,6 @@ class Steque {
 			System.out.println("Steque is empty.");
 			return;
 		}
-		// if (first.next == null) {
-		// 	System.out.println(first.data);
-		// 	return;
-		// }
         while (temp.next != null) {
             System.out.print(temp.data + ", ");
             temp = temp.next;
