@@ -27,8 +27,8 @@ public final class Solution {
 				String[] tokens = str.split(" ");
 				switch (tokens[0]) {
 					case "push" :
-					steque.push
-					(Integer.parseInt(tokens[1]));
+					steque.push(
+						Integer.parseInt(tokens[1]));
 					steque.show();
 					break;
 					case "pop" :
@@ -36,8 +36,8 @@ public final class Solution {
 					steque.show();
 					break;
 					case "enqueue" :
-					steque.enque
-					(Integer.parseInt(tokens[1]));
+					steque.enque(
+						Integer.parseInt(tokens[1]));
 					steque.show();
 					break;
 					default :
