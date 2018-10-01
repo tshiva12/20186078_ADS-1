@@ -48,12 +48,15 @@ class Steque {
 		if (last == null) 
 			last = first;
 	}
-	public int pop() {
+	public void pop() {
 		// if (isEmpty())
 		// 	System.out.println("No element exists in Steque");
-		data = first.data;
+		if (first == null) {
+			return;
+		}
+		// data = first.data;
 		first = first.next;
-		return data;
+		// return data;
 	}
 	public boolean isEmpty() {
 		return first == null || last == null;
