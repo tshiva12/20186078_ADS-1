@@ -31,14 +31,22 @@ class Steque {
 	// 	last = null;
 	// }
 	public void enque(int data) {
-		Node oldLast = last;
-		last = new Node(data);
-		last.data = data;
-		last.next = null;
-		if (first == null)
-			first = last;
-		else
-			oldLast.next = last;
+		Node newnode = new Node(data);
+        if (first == null) {
+            first = newnode;
+            last = newnode;
+        } else {
+            first.next = newnode;
+            last = newnode;
+        }
+		// Node oldLast = last;
+		// last = new Node(data);
+		// last.data = data;
+		// last.next = null;
+		// if (first == null)
+		// 	first = last;
+		// else
+		// 	oldLast.next = last;
 	}
 	public void push(int data) {
 		Node oldFirst = first;
