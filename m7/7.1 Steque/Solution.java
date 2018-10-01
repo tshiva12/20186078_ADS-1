@@ -88,10 +88,10 @@ class Steque {
 			System.out.println("Steque is empty.");
 			return;
 		}
-		// if (first.next == null) {
-		// 	System.out.println(first.data);
-		// 	return;
-		// }
+		if (first.next == null) {
+			System.out.println(first.data);
+			return;
+		}
         while (temp.next != null) {
             System.out.print(temp.data + ", ");
             temp = temp.next;
@@ -106,11 +106,7 @@ public class Solution {
 		for (int i = 0; i < n; i++) {
 			Steque steque = new Steque();
 			while(scan.hasNext()) {
-				String str = scan.nextLine();
-				if (str.equals("")) {
-					break;					
-				}
-				String[] tokens = scan.nextLine().split(" ");
+				String tokens[] = scan.nextLine().split(" ");
 				switch(tokens[0]) {
 					case "push" :
 					steque.push(Integer.parseInt(tokens[1]));
