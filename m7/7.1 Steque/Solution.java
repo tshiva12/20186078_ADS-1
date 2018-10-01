@@ -78,14 +78,10 @@ class Steque {
 	public boolean isEmpty() {
 		return first == null || last == null;
 	}
-	// public int size() {
-	// 	int count = 0;
-	// 	for(int data : data) {
-	// 		count++;
-	// 	}
-	// 	return count;s
-	// }
-public void show() {
+	public int size() {
+		return size;
+	}
+	public void show() {
         Node temp = first;
 		if (first == null) {
 			System.out.println("Steque is empty.");
