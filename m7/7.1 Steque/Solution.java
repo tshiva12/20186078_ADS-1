@@ -58,22 +58,31 @@ class Steque {
         size++;
 	}
 	public void push(int data) {
-		Node oldFirst = first;
-		first.data = data;
-		first.next = oldFirst;
-		if (last == null) 
-			last = first;
+		// Node oldFirst = first;
+		// first.data = data;
+		// first.next = oldFirst;
+		// if (last == null) 
+		// 	last = first;
+		Node newnode = new Node();
+        if (first == null) {
+            newnode.data = data;
+            newnode.next = null;
+            first = newnode;
+            last = newnode;
+        } else {
+            Node oldfirst = first;
+            newnode.data = data;
+            newnode.next = oldfirst;
+            first = newnode;
+        }
+        size++;
 	}
 	public void pop() {
-		// if (isEmpty())
-		// 	System.out.println("No element exists in Steque");
 		if (first == null) {
 			return;
 		}
-		// data = first.data;
 		first = first.next;
 		size--;
-		// return data;
 	}
 	public boolean isEmpty() {
 		return first == null || last == null;
