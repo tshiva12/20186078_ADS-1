@@ -38,7 +38,6 @@ class Steque {
 			first = obj;
 			last = obj;
 			size++;
-			return;
 		}
 		last.next = obj;
 		last = obj;
