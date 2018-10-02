@@ -110,7 +110,7 @@ class CricketTour implements Comparable<CricketTour> {
 /**
  * Class for selection sort.
  */
-class SelectionSort {
+class InsertionSort {
     /**
      * Array of team names.
      */
@@ -127,7 +127,7 @@ class SelectionSort {
      * Constructs the object.
      * Time complexity of Selection sort constructor is 1.
      */
-    SelectionSort() {
+    InsertionSort() {
         this.teamnames = new CricketTour[ten];
         this.size = 0;
     }
@@ -136,19 +136,21 @@ class SelectionSort {
      * Time complexity for sort method is N^2.
      */
     public void sort() {
-        for (int i = 1; i < size; i++) {
-            CricketTour cricket = teamnames[i];
-            int j = i - 1;
-            int count = cricket.compareTo(teamnames[j]);
-            while (j >= 0 && count == -1) {
-                teamnames[j + 1] = teamnames[j];
-                j--;
-                if (j >= 0) {
-                    count = cricket.compareTo(teamnames[j]);
+        // int N = a.length;
+        for (int i = 0; i < size; i++) {
+            int min = i;
+            for (int j = i+1; j < size; j++) {
+                if (teamnames[j].compareTo(teamnames[min]) == -1) {
+                     min = j;
                 }
             }
-            teamnames[j + 1] = cricket;
-        }
+            exch(teamnames, i, min);
+        } 
+    }
+    public void exch(final CricketTour[] cr, final int i, final int j) {
+        CricketTour swap = cr[i];
+        cr[i] = cr[j];
+        cr[j] = swap;
     }
     /**
      * add method is used to add the teams.
@@ -207,15 +209,15 @@ public final class Solution {
      */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
-        SelectionSort select = new SelectionSort();
+        InsertionSort insert = new InsertionSort();
         final int three = 3;
         while (scan.hasNext()) {
             String[] tokens = scan.nextLine().split(",");
-            select.add(new CricketTour(tokens[0], Integer.parseInt(tokens[1]),
+            insert.add(new CricketTour(tokens[0], Integer.parseInt(tokens[1]),
                 Integer.parseInt(tokens[2]), Integer.parseInt(tokens[three])));
         }
-        select.sort();
-        select.show();
+        insert.sort();
+        insert.show();
     }
 }
 
