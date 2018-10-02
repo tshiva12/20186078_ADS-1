@@ -28,20 +28,23 @@ class CricketTour implements Comparable<CricketTour> {
     }
     /**
      * Constructs the object.
+     * Time complexity of CricketTour constructor is 1.
      *
      * @param      teamname  The teamname
      * @param      wins      The wins
      * @param      losses    The losses
      * @param      draws     The draws
      */
-    CricketTour(final String teamname, final int wins, final int losses, final int draws) {
-        this.teamName = teamname;
-        this.wins = wins;
-        this.losses = losses;
-        this.draws = draws;
+    CricketTour(final String teamname1, final int wins1,
+     final int losses1, final int draws1) {
+        this.teamName = teamname1;
+        this.wins = wins1;
+        this.losses = losses1;
+        this.draws = draws1;
     }
     /**
      * Gets the team name.
+     * Time complexity of getTeamName method is 1.
      *
      * @return     The team name.
      */
@@ -50,6 +53,7 @@ class CricketTour implements Comparable<CricketTour> {
     }
     /**
      * Gets the wins.
+     * Time complexity of getWins method is 1.
      *
      * @return     The wins.
      */
@@ -58,6 +62,7 @@ class CricketTour implements Comparable<CricketTour> {
     }
     /**
      * Gets the losses.
+     * Time complexity of getLosses method is 1.
      *
      * @return     The losses.
      */
@@ -66,6 +71,7 @@ class CricketTour implements Comparable<CricketTour> {
     }
     /**
      * Gets the draws.
+     * Time complexity of getDraws method is 1.
      *
      * @return     The draws.
      */
@@ -118,8 +124,9 @@ class SelectionSort {
      * Constructs the object.
      * Time complexity of Selection sort constructor is 1.
      */
+    final int ten = 10;
     SelectionSort() {
-        this.teamnames = new CricketTour[10];
+        this.teamnames = new CricketTour[ten];
         this.size = 0;
     }
     /**
@@ -143,6 +150,7 @@ class SelectionSort {
     }
     /**
      * add method is used to add the teams.
+     * Time complexity of add method is 1.
      *
      * @param      teams  The teams
      */
@@ -183,7 +191,7 @@ class SelectionSort {
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
@@ -198,10 +206,11 @@ public class Solution {
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         SelectionSort select = new SelectionSort();
+        final int three = 3;
         while (scan.hasNext()) {
             String[] tokens = scan.nextLine().split(",");
             select.add(new CricketTour(tokens[0], Integer.parseInt(tokens[1]),
-                Integer.parseInt(tokens[2]), Integer.parseInt(tokens[3])));
+                Integer.parseInt(tokens[2]), Integer.parseInt(tokens[three])));
         }
         select.sort();
         select.show();
