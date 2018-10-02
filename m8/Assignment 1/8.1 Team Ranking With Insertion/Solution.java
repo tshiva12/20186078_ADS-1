@@ -139,13 +139,15 @@ class InsertionSort {
         for (int i = 0; i < size; i++) {
             for (int j = i; j > 0; j--) {
                 if (teamnames[j].compareTo(teamnames[j - 1]) == -1) {
-                    exch(teamnames, j, j-1); 
-                } else break;
+                    exch(teamnames, j, j - 1);
+                } else {
+                    break;
+                }
             }
         }
     }
     /**
-     * exchange method is used to 
+     * exchange method is used to swap the elements in an array.
      *
      * @param      cr    The carriage return
      * @param      i     { parameter_description }
