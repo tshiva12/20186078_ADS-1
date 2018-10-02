@@ -148,6 +148,7 @@ class InsertionSort {
     }
     /**
      * exchange method is used to swap the elements in an array.
+     * Time complexity for exchange method is 1.
      *
      * @param      cr    The carriage return
      * @param      i     { parameter_description }
