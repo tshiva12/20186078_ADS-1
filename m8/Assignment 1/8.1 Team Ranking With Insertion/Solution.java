@@ -171,7 +171,7 @@ class SelectionSort {
         for (i = 0; i < size - 1; i++) {
             System.out.print(teamnames[i].getTeamName() + ",");
         }
-        // System.out.println(teamnames[i].getTeamName());
+        System.out.println(teamnames[i].getTeamName());
     }
     /**
      * Gets the size.
