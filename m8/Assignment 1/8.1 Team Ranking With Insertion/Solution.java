@@ -139,14 +139,21 @@ class InsertionSort {
         // int N = a.length;
         for (int i = 0; i < size; i++) {
             int min = i;
-            for (int j = i+1; j < size; j++) {
-                if (teamnames[j].compareTo(teamnames[min]) == -1) {
-                     min = j;
-                }
+            for (int j = i + 1; j < size; j++) {
+                if (teamnames[j].compareTo(teamnames[j - 1]) == -1) {
+                    exch(teamnames, j, j-1); 
+                } else break;
             }
-            exch(teamnames, i, min);
-        } 
+            // exch(teamnames, i, min);
+        }
     }
+    /**
+     * exchange method is used to 
+     *
+     * @param      cr    The carriage return
+     * @param      i     { parameter_description }
+     * @param      j     { parameter_description }
+     */
     public void exch(final CricketTour[] cr, final int i, final int j) {
         CricketTour swap = cr[i];
         cr[i] = cr[j];
