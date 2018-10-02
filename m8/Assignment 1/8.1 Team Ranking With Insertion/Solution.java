@@ -136,15 +136,12 @@ class InsertionSort {
      * Time complexity for sort method is N^2.
      */
     public void sort() {
-        // int N = a.length;
         for (int i = 0; i < size; i++) {
-            int min = i;
-            for (int j = i + 1; j < size; j++) {
+            for (int j = i; j > 0; j--) {
                 if (teamnames[j].compareTo(teamnames[j - 1]) == -1) {
                     exch(teamnames, j, j-1); 
                 } else break;
             }
-            // exch(teamnames, i, min);
         }
     }
     /**
