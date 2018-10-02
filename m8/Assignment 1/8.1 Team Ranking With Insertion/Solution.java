@@ -119,11 +119,11 @@ class SelectionSort {
      * integer variable.
      */
     private int size;
+    private final int ten = 10;
     /**
      * Constructs the object.
      * Time complexity of Selection sort constructor is 1.
      */
-    final int ten = 10;
     SelectionSort() {
         this.teamnames = new CricketTour[ten];
         this.size = 0;
@@ -215,3 +215,5 @@ public final class Solution {
         select.show();
     }
 }
+
+
