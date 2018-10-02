@@ -27,13 +27,12 @@ class CricketTour implements Comparable<CricketTour> {
         //default constructor is not used.
     }
     /**
-     * Constructs the object.
-     * Time complexity of CricketTour constructor is 1.
+     * Constructs the object. Time complexity of CricketTour constructor is 1.
      *
-     * @param      teamname  The teamname
-     * @param      wins      The wins
-     * @param      losses    The losses
-     * @param      draws     The draws
+     * @param      teamname1  The teamname
+     * @param      wins1      The wins
+     * @param      losses1    The losses
+     * @param      draws1     The draws
      */
     CricketTour(final String teamname1, final int wins1,
      final int losses1, final int draws1) {
