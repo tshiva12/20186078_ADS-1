@@ -119,6 +119,9 @@ class SelectionSort {
      * integer variable.
      */
     private int size;
+    /**
+     * integer variable.
+     */
     private final int ten = 10;
     /**
      * Constructs the object.
