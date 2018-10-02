@@ -1,46 +1,85 @@
 import java.util.Scanner;
 import java.util.Arrays;
+/**
+ * Class for cricket tour.
+ */
 class CricketTour implements Comparable<CricketTour> {
+    /**
+     * String Variable.
+     */
     private String teamName;
+    /**
+     * Integer Variable.
+     */
     private int wins;
+    /**
+     * Integer Variable.
+     */
     private int losses;
+    /**
+     * Integer Variable.
+     */
     private int draws;
+    /**
+     * Constructs the object.
+     */
     CricketTour() {
-        this.teamName = null;
-        this.wins = 0;
-        this.losses = 0;
-        this.draws = 0;
+        //default constructor is not used.
     }
+    /**
+     * Constructs the object.
+     *
+     * @param      teamname  The teamname
+     * @param      wins      The wins
+     * @param      losses    The losses
+     * @param      draws     The draws
+     */
     CricketTour(final String teamname, final int wins, final int losses, final int draws) {
         this.teamName = teamname;
         this.wins = wins;
         this.losses = losses;
         this.draws = draws;
     }
+    /**
+     * Gets the team name.
+     *
+     * @return     The team name.
+     */
     public String getTeamName() {
         return this.teamName;
     }
+    /**
+     * Gets the wins.
+     *
+     * @return     The wins.
+     */
     public int getWins() {
         return this.wins;
     }
+    /**
+     * Gets the losses.
+     *
+     * @return     The losses.
+     */
     public int getLosses() {
         return this.losses;
     }
+    /**
+     * Gets the draws.
+     *
+     * @return     The draws.
+     */
     public int getDraws() {
         return this.draws;
     }
-    public void setTeamName(final String str1) {
-        this.teamName = str1;
-    }
-    public void setWins(final int win) {
-        this.wins = win;
-    }
-    public void setLosses(final int loss) {
-        this.losses = loss;
-    }
-    public void setDraws(final int draw) {
-        this.draws = draw;
-    }
+    /**
+     * CompareTo method is comparing the two items based on their order.
+     * Time complexity of compareTo method is 1.
+     *
+     * @param      that  The that
+     *
+     * @return     return 1 if the condition is true otherwise -1.
+     */
     public int compareTo(final CricketTour that) {
         if (this.getWins() < that.getWins()) {
             return 1;
@@ -63,25 +102,30 @@ class CricketTour implements Comparable<CricketTour> {
     }
 
 }
+/**
+ * Class for selection sort.
+ */
 class SelectionSort {
+    /**
+     * Array of team names.
+     */
     private CricketTour[] teamnames;
+    /**
+     * integer variable.
+     */
     private int size;
+    /**
+     * Constructs the object.
+     * Time complexity of Selection sort constructor is 1.
+     */
     SelectionSort() {
         this.teamnames = new CricketTour[10];
         this.size = 0;
     }
-    public void resize() {
-        teamnames = Arrays.copyOf(teamnames, 2 * teamnames.length);
-    }
-    public int getSize() {
-        return this.size;
-    }
-    public void add(final CricketTour teams) {
-        if (size == teamnames.length) {
-            resize();
-        }
-        teamnames[size++] = teams;
-    }
+    /**
+     * sort method is used to sort the data based on teamnames and its values.
+     * Time complexity for sort method is N^2.
+     */
     public void sort() {
         for (int i = 1; i < size; i++) {
             CricketTour cricket = teamnames[i];
@@ -97,6 +141,21 @@ class SelectionSort {
             teamnames[j + 1] = cricket;
         }
     }
+    /**
+     * add method is used to add the teams.
+     *
+     * @param      teams  The teams
+     */
+    public void add(final CricketTour teams) {
+        if (size == teamnames.length) {
+            resize();
+        }
+        teamnames[size++] = teams;
+    }
+    /**
+     * show is to display the output by using Selection sort algorithm.
+     * Time complexity of the show method is N.
+     */
     public void show() {
         int i = 0;
         for (i = 0; i < size - 1; i++) {
@@ -104,11 +163,38 @@ class SelectionSort {
         }
         // System.out.println(teamnames[i].getTeamName());
     }
+    /**
+     * Gets the size.
+     * Time complexity of getSize methd is 1.
+     *
+     * @return     The size.
+     */
+    public int getSize() {
+        return this.size;
+    }
+    /**
+     * resize method is used to double the size for extending size value.
+     * Time complexity of resize method is 1.
+     */
+    public void resize() {
+        teamnames = Arrays.copyOf(teamnames, 2 * teamnames.length);
+    }
 }
+/**
+ * Class for solution.
+ */
 public class Solution {
+    /**
+     * Constructs the object.
+     */
     private Solution() {
         //default constructor is not used.
     }
+    /**
+     * main function of Selection Sort.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         SelectionSort select = new SelectionSort();
