@@ -149,6 +149,7 @@ class SelectionSort {
     }
     /**
      * exchange method is used to swap the two items.
+     * Time complexity for exchange method is 1.
      *
      * @param      cr    The carriage return
      * @param      i     { parameter_description }
