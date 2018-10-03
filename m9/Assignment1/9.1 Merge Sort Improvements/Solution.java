@@ -98,19 +98,6 @@ class Merge {
         }
     }
     /**
-     * exchange methods is used to swap the elements in the array.
-     *
-     * @param      arr4  The arr 4
-     * @param      i     {Integer i}
-     * @param      j     {Integer j}
-     */
-    public void exch(final Object[] arr4,
-                     final int i, final int j) {
-        Object swap = arr4[i];
-        arr4[i] = arr4[j];
-        arr4[j] = swap;
-    }
-    /**
      * less method is a compare method.
      *
      * @param      x     comparable.
@@ -120,16 +107,6 @@ class Merge {
      */
     public boolean less(final Comparable x, final Comparable y) {
         return x.compareTo(y) < 0;
-    }
-    /**
-     * isSorted is a method check whether the array is sorted or not.
-     *
-     * @param      arr5  The arr 5
-     *
-     * @return     return true if sorted, false otherwise.
-     */
-    public boolean isSorted(final Comparable[] arr5) {
-        return isSorted(arr5, 0, arr5.length);
     }
     /**
      * isSorted is a method check whether the array is sorted or not.
@@ -148,6 +125,29 @@ class Merge {
             }
         }
         return true;
+    }
+    /**
+     * isSorted is a method check whether the array is sorted or not.
+     *
+     * @param      arr5  The arr 5
+     *
+     * @return     return true if sorted, false otherwise.
+     */
+    public boolean isSorted(final Comparable[] arr5) {
+        return isSorted(arr5, 0, arr5.length - 1);
+    }
+    /**
+     * exchange methods is used to swap the elements in the array.
+     *
+     * @param      arr4  The arr 4
+     * @param      i     {Integer i}
+     * @param      j     {Integer j}
+     */
+    public void exch(final Object[] arr4,
+                     final int i, final int j) {
+        Object swap = arr4[i];
+        arr4[i] = arr4[j];
+        arr4[j] = swap;
     }
     /**
      * show method is used to display the ouyput.
