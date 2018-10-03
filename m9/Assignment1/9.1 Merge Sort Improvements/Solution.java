@@ -4,7 +4,7 @@ import java.util.Scanner;
  */
 class Merge {
     /**
-     * integer variable seven
+     * integer variable seven.
      */
     private final int seven = 7;
     /**
@@ -14,14 +14,14 @@ class Merge {
         //default constructor is not used.
     }
     /**
-     * Merge method is used to merge the array in ascending order. Time
-     * Time complexity of merge method is N.
+     * Merge method is used to merge the array in ascending order. Time Time
+     * complexity of merge method is N.
      *
-     * @param      array  The array
-     * @param      aux    The auxiliary
-     * @param      lo     The lower value
-     * @param      mid    The middle value
-     * @param      hi     The higher value
+     * @param      a     The array
+     * @param      aux   The auxiliary
+     * @param      lo    The lower value
+     * @param      mid   The middle value
+     * @param      hi    The higher value
      */
     public void merge(final Comparable[] a, final Comparable[] aux,
                       final int lo, final int mid, final int hi) {
