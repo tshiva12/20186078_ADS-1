@@ -69,7 +69,7 @@ class Merge {
                 "Array is already sorted. So, skipped the call to merge...");
             return;
         }
-        merge(aux, arr, lo, mid, hi);
+        merge(arr, aux, lo, mid, hi);
     }
     /**
      * sort method is used to sort the array with copy of that array.
@@ -78,7 +78,7 @@ class Merge {
      */
     public void sort(final Comparable[] arr1) {
         Comparable[] arr2 = arr1.clone();
-        sort(arr1, arr2, 0, arr1.length - 1);
+        sort(arr2, arr1, 0, arr1.length - 1);
         assert isSorted(arr1);
     }
     /**
