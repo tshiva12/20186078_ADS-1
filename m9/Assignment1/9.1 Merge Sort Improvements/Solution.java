@@ -43,6 +43,45 @@ class Merge {
         assert isSorted(aux, lo, hi);
     }
     /**
+     * isSorted is a method check whether the array is sorted or not.
+     *
+     * @param      arr5  The arr 5
+     *
+     * @return     return true if sorted, false otherwise.
+     */
+    public boolean isSorted(final Comparable[] arr5) {
+        return isSorted(arr5, 0, arr5.length - 1);
+    }
+    /**
+     * isSorted is a method check whether the array is sorted or not.
+     *
+     * @param      arr6  The arr 6
+     * @param      lo    The lowwer
+     * @param      hi    The higher
+     *
+     * @return     return true if sorted, false otherwise.
+     */
+    public boolean isSorted(final Comparable[] arr6,
+                            final int lo, final int hi) {
+        for (int i = lo + 1; i <= hi; i++) {
+            if (less(arr6[i], arr6[i - 1])) {
+                return false;
+            }
+        }
+        return true;
+    }
+    /**
+     * less method is a compare method.
+     *
+     * @param      x     comparable.
+     * @param      y     comparable.
+     *
+     * @return     return boolean value.
+     */
+    public boolean less(final Comparable x, final Comparable y) {
+        return x.compareTo(y) < 0;
+    }
+    /**
      * Sort method is used for sorting.
      * Time complexity of sort method is logN.
      *
@@ -111,45 +150,6 @@ class Merge {
         arr4[j] = swap;
     }
     /**
-     * less method is a compare method.
-     *
-     * @param      x     comparable.
-     * @param      y     comparable.
-     *
-     * @return     return boolean value.
-     */
-    public boolean less(final Comparable x, final Comparable y) {
-        return x.compareTo(y) < 0;
-    }
-    /**
-     * isSorted is a method check whether the array is sorted or not.
-     *
-     * @param      arr5  The arr 5
-     *
-     * @return     return true if sorted, false otherwise.
-     */
-    public boolean isSorted(final Comparable[] arr5) {
-        return isSorted(arr5, 0, arr5.length - 1);
-    }
-    /**
-     * isSorted is a method check whether the array is sorted or not.
-     *
-     * @param      arr6  The arr 6
-     * @param      lo    The lowwer
-     * @param      hi    The higher
-     *
-     * @return     return true if sorted, false otherwise.
-     */
-    public boolean isSorted(final Comparable[] arr6,
-                            final int lo, final int hi) {
-        for (int i = lo + 1; i <= hi; i++) {
-            if (less(arr6[i], arr6[i - 1])) {
-                return false;
-            }
-        }
-        return true;
-    }
-    /**
      * show method is used to display the ouyput.
      *
      * @param      array  The array
@@ -192,3 +192,6 @@ public final class Solution {
         }
     }
 }
+
+
+
