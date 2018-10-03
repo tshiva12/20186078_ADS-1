@@ -120,7 +120,7 @@ class Merge {
     public boolean isSorted(final Comparable[] arr6,
                             final int lo, final int hi) {
         for (int i = lo + 1; i <= hi; i++) {
-            if (less(arr6[i], arr6[i - 2])) {
+            if (less(arr6[i], arr6[i - 1])) {
                 return false;
             }
         }
