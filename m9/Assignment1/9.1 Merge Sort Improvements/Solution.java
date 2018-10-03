@@ -59,8 +59,8 @@ class Merge {
             return;
         }
         int mid = lo + (hi - lo) / 2;
-        sort(arr, aux, lo, mid);
-        sort(arr, aux, mid + 1, hi);
+        sort(aux, arr, lo, mid);
+        sort(aux, arr, mid + 1, hi);
         if (!less(arr[mid + 1], arr[mid])) {
             for (int i = lo; i <= hi; i++) {
                 aux[i] = arr[i];
@@ -69,7 +69,7 @@ class Merge {
                 "Array is already sorted. So, skipped the call to merge...");
             return;
         }
-        merge(arr, aux, lo, mid, hi);
+        merge(aux, arr, lo, mid, hi);
     }
     /**
      * sort method is used to sort the array with copy of that array.
