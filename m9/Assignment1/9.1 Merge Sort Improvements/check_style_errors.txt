@@ -1,2 +1,4 @@
 Starting audit...
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m9\Assignment1\9.1 Merge Sort Improvements\Solution.java:128: Line is longer than 80 characters (found 90). [LineLength]
 Audit done.
+Checkstyle ends with 1 errors.

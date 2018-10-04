@@ -44,6 +44,7 @@ class Merge {
     }
     /**
      * isSorted is a method check whether the array is sorted or not.
+     * Time complexity of isSorted method is 1.
      *
      * @param      arr5  The arr 5
      *
@@ -54,6 +55,7 @@ class Merge {
     }
     /**
      * isSorted is a method check whether the array is sorted or not.
+     * Time complexity of isSorted method is 1.
      *
      * @param      arr6  The arr 6
      * @param      lo    The lowwer
@@ -72,6 +74,7 @@ class Merge {
     }
     /**
      * less method is a compare method.
+     * Time complexity of less method is 1.
      *
      * @param      x     comparable.
      * @param      y     comparable.
@@ -112,6 +115,7 @@ class Merge {
     }
     /**
      * sort method is used to sort the array with copy of that array.
+     * Time complexity of Sort method is 1.
      *
      * @param      arr1  The arr 1
      */
@@ -121,8 +125,8 @@ class Merge {
         assert isSorted(arr1);
     }
     /**
-     * insertion sort is a sorting technique. It is used when size of array is
-     * lessthan 7. Time complexity of insertion sort is N^2.
+     * insertion sort is a sorting technique. It is used when size of array is lessthan 7.
+     * Time complexity of insertion sort is N^2.
      *
      * @param      arr3  The arr 3
      * @param      lo    The lowwer value
@@ -138,6 +142,7 @@ class Merge {
     }
     /**
      * exchange methods is used to swap the elements in the array.
+     * Time complexity of exch method is 1.
      *
      * @param      arr4  The arr 4
      * @param      i     {Integer i}
@@ -151,6 +156,7 @@ class Merge {
     }
     /**
      * show method is used to display the ouyput.
+     * Time complexity for show method is N.
      *
      * @param      array  The array
      *
