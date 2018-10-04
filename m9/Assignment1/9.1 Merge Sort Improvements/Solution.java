@@ -125,7 +125,8 @@ class Merge {
         assert isSorted(arr1);
     }
     /**
-     * insertion sort is a sorting technique. It is used when size of array is lessthan 7.
+     * insertion sort is a sorting technique.
+     * It is used when size of array is lessthan 7.
      * Time complexity of insertion sort is N^2.
      *
      * @param      arr3  The arr 3
