@@ -103,10 +103,10 @@ class LinkedList {
      * @param      index  The index
      * @param      value  The value
      */
-    public void insertAt(final int index, final int value) {
+    public void insertAt(final int index, final int value) throws Exception {
         Node newnode = new Node(value);
         if (size < index || index < 0) {
-            System.out.println("Can't insert at this position.");
+            throw new Exception ("Can't insert at this position.");
         }
         if (first == null) {
             first = newnode;
@@ -135,9 +135,9 @@ class LinkedList {
      * reverse method is used to reverse the given array.
      * Time complexity of reverse method is 1.
      */
-    public void reverse() {
+    public void reverse() throws Exception {
         if (size == 0) {
-            System.out.println("No elements to reverse.");
+            throw new Exception("No elements to reverse.");
         }
         reverse = temp.getNext();
         temp.setNext(result);
@@ -186,13 +186,21 @@ public final class Solution {
             String[] tokens = scan.nextLine().split(" ");
             switch (tokens[0]) {
                 case "insertAt":
-                linked.insertAt(Integer.parseInt(tokens[1]),
-                 Integer.parseInt(tokens[2]));
-                linked.show();
+                try {
+                    linked.insertAt(Integer.parseInt(tokens[1]),
+                     Integer.parseInt(tokens[2]));
+                    linked.show();
+                } catch (Exception e) {
+                    System.out.println(e.getMessage());
+                }
                 break;
                 case "reverse":
-                linked.reverse();
-                linked.show();
+                try {
+                    linked.reverse();
+                    linked.show();
+                } catch (Exception e) {
+                    System.out.println(e.getMessage());
+                }
                 break;
                 default:
                 break;
