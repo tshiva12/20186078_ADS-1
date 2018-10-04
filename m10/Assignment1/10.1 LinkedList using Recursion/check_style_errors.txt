@@ -1,18 +1,13 @@
 Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m10\Assignment1\10.1 LinkedList using Recursion\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m10\Assignment1\10.1 LinkedList using Recursion\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m10\Assignment1\10.1 LinkedList using Recursion\Solution.java:25:14: Parameter data should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m10\Assignment1\10.1 LinkedList using Recursion\Solution.java:25:18: 'data' hides a field. [HiddenField]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m10\Assignment1\10.1 LinkedList using Recursion\Solution.java:50:35: 'data' hides a field. [HiddenField]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m10\Assignment1\10.1 LinkedList using Recursion\Solution.java:58:36: 'next' hides a field. [HiddenField]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m10\Assignment1\10.1 LinkedList using Recursion\Solution.java:62: First sentence should end with a period. [JavadocStyle]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m10\Assignment1\10.1 LinkedList using Recursion\Solution.java:66:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m10\Assignment1\10.1 LinkedList using Recursion\Solution.java:66:14: Variable 'first' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m10\Assignment1\10.1 LinkedList using Recursion\Solution.java:67:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m10\Assignment1\10.1 LinkedList using Recursion\Solution.java:67:14: Variable 'temp' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m10\Assignment1\10.1 LinkedList using Recursion\Solution.java:76:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m10\Assignment1\10.1 LinkedList using Recursion\Solution.java:76:14: Variable 'result' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m10\Assignment1\10.1 LinkedList using Recursion\Solution.java:77:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m10\Assignment1\10.1 LinkedList using Recursion\Solution.java:77:14: Variable 'reverse' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m10\Assignment1\10.1 LinkedList using Recursion\Solution.java:23:12: Unused @param tag for 'data'. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m10\Assignment1\10.1 LinkedList using Recursion\Solution.java:25:24: Expected @param tag for 'data1'. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m10\Assignment1\10.1 LinkedList using Recursion\Solution.java:48:8: Unused @param tag for 'data'. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m10\Assignment1\10.1 LinkedList using Recursion\Solution.java:50:35: Expected @param tag for 'data2'. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m10\Assignment1\10.1 LinkedList using Recursion\Solution.java:56:8: Unused @param tag for 'next'. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m10\Assignment1\10.1 LinkedList using Recursion\Solution.java:58:36: Expected @param tag for 'next1'. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m10\Assignment1\10.1 LinkedList using Recursion\Solution.java:70: First sentence should end with a period. [JavadocStyle]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m10\Assignment1\10.1 LinkedList using Recursion\Solution.java:86: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 15 errors.
+Checkstyle ends with 10 errors.

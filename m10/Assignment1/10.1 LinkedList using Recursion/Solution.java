@@ -22,8 +22,8 @@ class Node {
 	 *
 	 * @param      data  The data
 	 */
-	Node(int data) {
-		this.data = data;
+	Node(final int data1) {
+		this.data = data1;
 		this.next = null;
 	}
 	/**
@@ -47,24 +47,30 @@ class Node {
      *
      * @param      data  The data
      */
-    public void setData(final int data) {
-        this.data = data;
+    public void setData(final int data2) {
+        this.data = data2;
     }
     /**
      * Sets the next.
      *
      * @param      next  The next
      */
-    public void setNext(final Node next) {
-        this.next = next;
+    public void setNext(final Node next1) {
+        this.next = next1;
     }
 }
 /**
- * List of linkedlist
+ * List of linkedlist.
  */
 class LinkedList {
-	Node first;
-	Node temp;
+	/**
+	 * Node first.
+	 */
+	private Node first;
+	/**
+	 * Node temp;
+	 */
+	private Node temp;
 	/**
 	 * integer variable.
 	 */
@@ -73,8 +79,14 @@ class LinkedList {
 	 * Integer variable.
 	 */
 	private int count;
-	Node result;
-	Node reverse;
+	/**
+	 * Node result.
+	 */
+	private Node result;
+	/**
+	 * Node reverse;
+	 */
+	private Node reverse;
 	/**
 	 * Constructs the object.
 	 */
