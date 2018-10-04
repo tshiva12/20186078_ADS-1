@@ -35,11 +35,11 @@ Can't insert at this position.
 Can't insert at this position.
 Can't insert at this position.
 Exception in thread "main" java.lang.NullPointerException
-	at LinkedList.insertAt(Solution.java:59)
-	at LinkedList.insertAt(Solution.java:61)
-	at LinkedList.insertAt(Solution.java:61)
-	at LinkedList.insertAt(Solution.java:61)
-	at Solution.main(Solution.java:96)
+	at LinkedList.insertAt(Solution.java:118)
+	at LinkedList.insertAt(Solution.java:120)
+	at LinkedList.insertAt(Solution.java:120)
+	at LinkedList.insertAt(Solution.java:120)
+	at Solution.main(Solution.java:177)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -47,6 +47,6 @@ No elements to reverse.
 Your Output: 
 No elements to reverse.
 Exception in thread "main" java.lang.NullPointerException
-	at LinkedList.reverse(Solution.java:67)
-	at Solution.main(Solution.java:100)
+	at LinkedList.reverse(Solution.java:130)
+	at Solution.main(Solution.java:182)
 ----------------------------------------

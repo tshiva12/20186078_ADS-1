@@ -1,38 +1,97 @@
 import java.util.Scanner;
+/**
+ * Class for node.
+ */
 class Node {
-	int data;
-	Node next;
+	/**
+	 * Integer variable.
+	 */
+	private int data;
+	/**
+	 * Integer variable.
+	 */
+	private Node next;
+	/**
+	 * Constructs the object.
+	 */
+	Node() {
+		// default constructor is not used.
+	}
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      data  The data
+	 */
 	Node(int data) {
 		this.data = data;
 		this.next = null;
 	}
+	/**
+	 * Gets the data.
+	 *
+	 * @return     The data.
+	 */
 	public int getData() {
         return data;
     }
+    /**
+     * Gets the next.
+     *
+     * @return     The next.
+     */
     public Node getNext() {
         return next;
     }
-    public void setData(int data) {
+    /**
+     * Sets the data.
+     *
+     * @param      data  The data
+     */
+    public void setData(final int data) {
         this.data = data;
     }
-    public void setNext(Node next) {
+    /**
+     * Sets the next.
+     *
+     * @param      next  The next
+     */
+    public void setNext(final Node next) {
         this.next = next;
     }
 }
+/**
+ * List of linkedlist
+ */
 class LinkedList {
 	Node first;
 	Node temp;
-	int size;
-	int count;
+	/**
+	 * integer variable.
+	 */
+	private int size;
+	/**
+	 * Integer variable.
+	 */
+	private int count;
 	Node result;
 	Node reverse;
+	/**
+	 * Constructs the object.
+	 */
 	LinkedList() {
 		this.first = null;
 		this.count = 1;
 		this.size = 0;
 		this.result = null;
 	}
-	public void insertAt(int index, int value) {
+	/**
+	 * insertAt method is used to add the elements in a particular index.
+	 * Time complexity of insertAt method is 1.
+	 *
+	 * @param      index  The index
+	 * @param      value  The value
+	 */
+	public void insertAt(final int index, final int value) {
 		Node newnode = new Node(value);
 		if (size < index || index < 0) {
 			System.out.println("Can't insert at this position.");
@@ -60,6 +119,10 @@ class LinkedList {
 		count++;
 		insertAt(index, value);
 	}
+	/**
+	 * reverse method is used to reverse the given array.
+	 * Time complexity of reverse method is 1.
+	 */
 	public void reverse() {
 		if (size == 0) {
 			System.out.println("No elements to reverse.");
@@ -76,6 +139,10 @@ class LinkedList {
 		reverse();
 
 	}
+	/**
+	 * show method is used to display the output.
+	 * Time complexity of show method is N.
+	 */
 	public void show() {
 		while (temp.getNext() != null) {
             System.out.print(temp.getData() + ", ");
@@ -85,15 +152,30 @@ class LinkedList {
         temp = first;
 	}
 }
-public class Solution {
-	public static void main(String[] args) {
+/**
+ * class Solution.
+ */
+public final class Solution {
+	/**
+	 * Constructs the object Solution.
+	 */
+	private Solution() {
+		//default constructor is not used.
+	}
+	/**
+	 * main function.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		LinkedList linked = new LinkedList();
 		while (scan.hasNext()) {
 			String[] tokens = scan.nextLine().split(" ");
 			switch (tokens[0]) {
 				case "insertAt":
-				linked.insertAt(Integer.parseInt(tokens[1]), Integer.parseInt(tokens[2]));
+				linked.insertAt(Integer.parseInt(tokens[1]),
+				 Integer.parseInt(tokens[2]));
 				linked.show();
 				break;
 				case "reverse":
