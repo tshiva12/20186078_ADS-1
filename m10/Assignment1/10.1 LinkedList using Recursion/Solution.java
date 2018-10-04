@@ -97,14 +97,16 @@ class LinkedList {
         this.result = null;
     }
     /**
-     * insertAt method is used to add the elements in a particular index.
-     * Time complexity of insertAt method is 1.
+     * insertAt method is used to add the elements in a particular index. Time
+     * complexity of insertAt method is 1.
      *
-     * @param      index  The index
-     * @param      value  The value
+     * @param      index      The index
+     * @param      value      The value
+     *
+     * @throws     Exception  throws Exception.
      */
     public void insertAt(final int index, final int value) throws Exception {
-        Node newnode = new Node(value);
+        Node newnode = new Node (value);
         if (size < index || index < 0) {
             throw new Exception ("Can't insert at this position.");
         }
@@ -132,8 +134,10 @@ class LinkedList {
         insertAt(index, value);
     }
     /**
-     * reverse method is used to reverse the given array.
-     * Time complexity of reverse method is 1.
+     * reverse method is used to reverse the given array. Time complexity of
+     * reverse method is 1.
+     *
+     * @throws     Exception  throws Exception.
      */
     public void reverse() throws Exception {
         if (size == 0) {

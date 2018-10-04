@@ -1,6 +1,5 @@
 Starting audit...
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m10\Assignment1\10.1 LinkedList using Recursion\Solution.java:106:67: Expected @throws tag for 'Exception'. [JavadocMethod]
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m10\Assignment1\10.1 LinkedList using Recursion\Solution.java:109:33: '(' is preceded with whitespace. [MethodParamPad]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m10\Assignment1\10.1 LinkedList using Recursion\Solution.java:138:34: Expected @throws tag for 'Exception'. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m10\Assignment1\10.1 LinkedList using Recursion\Solution.java:111:33: '(' is preceded with whitespace. [MethodParamPad]
 Audit done.
-Checkstyle ends with 3 errors.
+Checkstyle ends with 2 errors.
