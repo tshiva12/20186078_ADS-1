@@ -106,9 +106,9 @@ class LinkedList {
      * @throws     Exception  throws Exception.
      */
     public void insertAt(final int index, final int value) throws Exception {
-        Node newnode = new Node (value);
+        Node newnode = new Node(value);
         if (size < index || index < 0) {
-            throw new Exception ("Can't insert at this position.");
+            throw new Exception("Can't insert at this position.");
         }
         if (first == null) {
             first = newnode;
