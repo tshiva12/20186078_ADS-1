@@ -1,13 +1,5 @@
 Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m10\Assignment1\10.1 LinkedList using Recursion\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m10\Assignment1\10.1 LinkedList using Recursion\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m10\Assignment1\10.1 LinkedList using Recursion\Solution.java:23:12: Unused @param tag for 'data'. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m10\Assignment1\10.1 LinkedList using Recursion\Solution.java:25:24: Expected @param tag for 'data1'. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m10\Assignment1\10.1 LinkedList using Recursion\Solution.java:48:8: Unused @param tag for 'data'. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m10\Assignment1\10.1 LinkedList using Recursion\Solution.java:50:35: Expected @param tag for 'data2'. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m10\Assignment1\10.1 LinkedList using Recursion\Solution.java:56:8: Unused @param tag for 'next'. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m10\Assignment1\10.1 LinkedList using Recursion\Solution.java:58:36: Expected @param tag for 'next1'. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m10\Assignment1\10.1 LinkedList using Recursion\Solution.java:70: First sentence should end with a period. [JavadocStyle]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m10\Assignment1\10.1 LinkedList using Recursion\Solution.java:86: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 10 errors.
+Checkstyle ends with 2 errors.
