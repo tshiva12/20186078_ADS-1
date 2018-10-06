@@ -13,6 +13,16 @@ class QuickSort {
     QuickSort() {
         //default constructor is not used.
     }
+    /**
+     * Partition method is used to partition the array based on pivot element.
+     * Tine complexity is N.
+     * 
+     * @param      a     Comparable.
+     * @param      lo    The lower
+     * @param      hi    The higher
+     *
+     * @return     return j.
+     */
     private int partition(Comparable[] a, int lo, int hi) {
         int i = lo;
         int j = hi + 1;
@@ -43,13 +53,12 @@ class QuickSort {
         return x.compareTo(y) < 0;
     }
     /**
-     * Sort method is used for sorting.
-     * Time complexity of sort method is logN.
+     * Sort method is used for sorting. Time complexity of sort method is logN.
      *
-     * @param      arr   The array
-     * @param      aux   The auxiliary array
-     * @param      lo    The lowwer value
-     * @param      hi    The higher value
+     * @param      arr     The array
+     * @param      lo      The lowwer value
+     * @param      hi      The higher value
+     * @param      cutOff  The cut off
      */
     public void sort(final Comparable[] arr,
                      final int lo, final int hi, int cutOff) {
@@ -64,10 +73,11 @@ class QuickSort {
         sort(arr, j+1, hi, cutOff);
     }
     /**
-     * sort method is used to sort the array with copy of that array.
-     * Time complexity of Sort method is 1.
+     * sort method is used to sort the array with copy of that array. Time
+     * complexity of Sort method is 1.
      *
-     * @param      arr1  The arr 1
+     * @param      a       { parameter_description }
+     * @param      cutOff  The cut off
      */
     public void sort(Comparable[] a, int cutOff) {
         sort(a, 0, a.length - 1, cutOff);
@@ -121,20 +131,31 @@ class QuickSort {
         return str;
     }
 }
-public class Solution {
-	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
-		QuickSort qsort = new QuickSort();
-		int num = Integer.parseInt(scan.nextLine());
-		for (int i = 0; i < num; i++) {
-			int j = Integer.parseInt(scan.nextLine());
-			String[] tokens = scan.nextLine().split(" ");
-			if (tokens[0].equals("")) {
-				System.out.println("[]");
-			} else {
-				qsort.sort(tokens, j);
-				System.out.println(qsort.show(tokens));
-			}
-		}
-	}
+/**
+ * class Solution.
+ */
+public final class Solution {
+    private Solution() {
+        // default constructor is not used.
+    }
+    /**
+     * main function.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
+        Scanner scan = new Scanner(System.in);
+        QuickSort qsort = new QuickSort();
+        int num = Integer.parseInt(scan.nextLine());
+        for (int i = 0; i < num; i++) {
+            int j = Integer.parseInt(scan.nextLine());
+            String[] tokens = scan.nextLine().split(" ");
+            if (tokens[0].equals("")) {
+                System.out.println("[]");
+            } else {
+                qsort.sort(tokens, j);
+                System.out.println(qsort.show(tokens));
+            }
+        }
+    }
 }
