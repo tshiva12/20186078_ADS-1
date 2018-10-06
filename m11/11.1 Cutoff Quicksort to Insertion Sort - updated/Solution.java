@@ -134,7 +134,7 @@ public class Solution {
 			} else {
 				qsort.sort(tokens, j);
 				System.out.println(qsort.show(tokens));
-			}			
+			}
 		}
 	}
 }
