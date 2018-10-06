@@ -15,6 +15,5 @@ Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:73:21: '+' is not followed by whitespace. [WhitespaceAround]
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:82:22: Parameter a should be final. [FinalParameters]
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:82:38: Parameter cutOff should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:138:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 17 errors.
+Checkstyle ends with 16 errors.

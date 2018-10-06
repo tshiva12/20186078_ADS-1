@@ -135,8 +135,13 @@ class QuickSort {
  * class Solution.
  */
 public final class Solution {
+    /**
+     * Constructs the object.
+     */
     private Solution() {
-        // default constructor is not used.
+        /**
+         * { item_description }
+         */
     }
     /**
      * main function.
