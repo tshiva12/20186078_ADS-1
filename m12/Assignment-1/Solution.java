@@ -163,6 +163,9 @@ class InsertionSort {
 	 * Integer Variable.
 	 */
 	private int size;
+	/**
+	 * Integer variable ten.
+	 */
 	private final int ten = 10;
 	/**
 	 * Constructs the object.
@@ -228,14 +231,14 @@ class InsertionSort {
     public void show() {
         int i = 0;
         for (i = 0; i < size - 1; i++) {
-            System.out.print(qualified[i].getName() + ","
-             + qualified[i].getTotal() + ","
-              + qualified[i].getCat());
+            System.out.print(qualified[i].getName()
+             + "," + qualified[i].getTotal()
+              + "," + qualified[i].getCat());
             System.out.println();
         }
-        System.out.println(qualified[i].getName() + "," +
-         qualified[i].getTotal() + "," +
-          qualified[i].getCat());
+        System.out.println(qualified[i].getName()
+         + "," + qualified[i].getTotal()
+          + "," + qualified[i].getCat());
     }
 
 }
