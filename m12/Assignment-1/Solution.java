@@ -49,16 +49,16 @@ class Qualification implements Comparable<Qualification> {
 	 * @param      total     The total
 	 * @param      category  The category
 	 */
-	Qualification(String name, String dob,
-	 int m1, int m2, int m3,
-	  int total, String category) {
-		this.name = name;
-		this.dob = dob;
-		this.m1 = m1;
-		this.m2 = m2;
-		this.m3 = m3;
-		this.total = total;
-		this.category = category;
+	Qualification(final String name1, final String dob1,
+	 final int m11, final int m21, final int m31,
+	  final int total1, final String category1) {
+		this.name = name1;
+		this.dob = dob1;
+		this.m1 = m11;
+		this.m2 = m21;
+		this.m3 = m31;
+		this.total = total1;
+		this.category = category1;
 	}
 	/**
 	 * Gets the name.
@@ -71,7 +71,7 @@ class Qualification implements Comparable<Qualification> {
 	/**
 	 * Gets the Date of birth.
 	 *
-	 * @return   The Date of birth.  
+	 * @return   The Date of birth.
 	 */
 	public String dob() {
 		return this.dob;
@@ -123,7 +123,7 @@ class Qualification implements Comparable<Qualification> {
 	 *
 	 * @return     boolean values if true 1 else -1.
 	 */
-	public int compareTo(Qualification that) {
+	public int compareTo(final Qualification that) {
 		if (this.getTotal() < that.getTotal()) {
 			return 1;
 		} else if (this.getTotal() > that.getTotal()) {
@@ -141,7 +141,8 @@ class Qualification implements Comparable<Qualification> {
 				} else {
 					if (this.getM1() < that.getM1()) {
 						return 1;
-					} else if (this.getM1() > that.getM1()) {
+					} else if (this.getM1() >
+					 that.getM1()) {
 						return -1;
 					}
 				}
@@ -154,7 +155,13 @@ class Qualification implements Comparable<Qualification> {
  * Class for insertion sort.
  */
 class InsertionSort {
+	/**
+	 * Comparable array.
+	 */
 	private Qualification[] qualified;
+	/**
+	 * Integer Variable.
+	 */
 	private int size;
 	/**
 	 * Constructs the object.
@@ -176,7 +183,7 @@ class InsertionSort {
      *
      * @param      qual  The qual
      */
-    public void add(Qualification qual) {
+    public void add(final Qualification qual) {
         if (size == qualified.length) {
             resize();
         }
@@ -209,7 +216,7 @@ class InsertionSort {
      * @param      i     Integer
      * @param      j     Integer
      */
-    public void exch(Qualification[] qf, int i, int j) {
+    public void exch(final Qualification[] qf, final int i, final int j) {
         Qualification swap = qf[i];
         qf[i] = qf[j];
         qf[j] = swap;
@@ -234,13 +241,16 @@ class InsertionSort {
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
+	private Solution() {
+		//default constructor is not used.
+	}
 	/**
 	 * main function that client needs.
 	 *
 	 * @param      args  The arguments
 	 */
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		InsertionSort insert = new InsertionSort();
 		int N = Integer.parseInt(scan.nextLine());
