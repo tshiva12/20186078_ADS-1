@@ -240,6 +240,7 @@ class InsertionSort {
          + "," + qualified[i].getTotal()
           + "," + qualified[i].getCat());
         System.out.println();
+        System.out.println("s");
     }
 
 }
