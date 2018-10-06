@@ -246,6 +246,9 @@ class InsertionSort {
  * Class for solution.
  */
 public final class Solution {
+	/**
+	 * Constructs the object.
+	 */
 	private Solution() {
 		//default constructor is not used.
 	}
@@ -257,20 +260,24 @@ public final class Solution {
 	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		InsertionSort insert = new InsertionSort();
-		int N = Integer.parseInt(scan.nextLine());
-		int Vac = Integer.parseInt(scan.nextLine());
-		int Un = Integer.parseInt(scan.nextLine());
-		int Bc = Integer.parseInt(scan.nextLine());
-		int Sc = Integer.parseInt(scan.nextLine());
-		int St = Integer.parseInt(scan.nextLine());
-		while(scan.hasNext()) {
+		int n = Integer.parseInt(scan.nextLine());
+		int vac = Integer.parseInt(scan.nextLine());
+		int un = Integer.parseInt(scan.nextLine());
+		int bc = Integer.parseInt(scan.nextLine());
+		int sc = Integer.parseInt(scan.nextLine());
+		int st = Integer.parseInt(scan.nextLine());
+		final int three = 3;
+		final int four = 4;
+		final int five = 5;
+		final int six = 6;
+		while (scan.hasNext()) {
 			String[] tokens = scan.nextLine().split(",");
 			insert.add(new Qualification(tokens[0], (tokens[1]),
 			 Integer.parseInt(tokens[2]),
-			  Integer.parseInt(tokens[3]),
-			   Integer.parseInt(tokens[4]),
-			    Integer.parseInt(tokens[5]),
-			     tokens[6]));
+			  Integer.parseInt(tokens[three]),
+			   Integer.parseInt(tokens[four]),
+			    Integer.parseInt(tokens[five]),
+			     tokens[six]));
 		}
 		insert.sort();
 		insert.show();
