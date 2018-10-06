@@ -141,8 +141,8 @@ class Qualification implements Comparable<Qualification> {
 				} else {
 					if (this.getM1() < that.getM1()) {
 						return 1;
-					} else if (this.getM1() >
-					 that.getM1()) {
+					} else if (
+						this.getM1() > that.getM1()) {
 						return -1;
 					}
 				}
