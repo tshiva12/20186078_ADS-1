@@ -82,15 +82,15 @@ class QuickSort {
      * @param      hi    The higher value
      */
     public void sort(final Comparable[] arr,
-                     final int lo, final int hi) {
-        if (hi <= lo + seven) {
+                     final int lo, final int hi, int cutOff) {
+        if (hi <= lo + cutOff - 1) {
             insertionSort(arr, lo, hi);
             System.out.println("insertionSort called");
             return;
         }
         int j = partition(arr, lo, hi);
-        sort(arr, lo, j-1);
-        sort(arr, j+1, hi);
+        sort(arr, lo, j-1, cutOff);
+        sort(arr, j+1, hi, cutOff);
         assert isSorted(arr, lo, hi);
     }
     /**
@@ -99,8 +99,8 @@ class QuickSort {
      *
      * @param      arr1  The arr 1
      */
-    public void sort(Comparable[] a) {
-        sort(a, 0, a.length - 1);
+    public void sort(Comparable[] a, int cutOff) {
+        sort(a, 0, a.length - 1, cutOff);
         assert isSorted(a);
     }
     /**
@@ -148,7 +148,7 @@ class QuickSort {
         for (i = 0; i < array.length - 1; i++) {
             str += array[i] + ", ";
         }
-        str += array[i] + "]";
+        str += array[array.length - 1] + "]";
         return str;
     }
 }
@@ -163,7 +163,7 @@ public class Solution {
 			if (tokens[0].equals("")) {
 				System.out.println("[]");
 			} else {
-				qsort.sort(tokens);
+				qsort.sort(tokens, j);
 				System.out.println(qsort.show(tokens));
 			}			
 		}
