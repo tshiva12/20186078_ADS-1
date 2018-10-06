@@ -27,6 +27,8 @@ Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m12\Assignment-1\Solution.java:212:49: Parameter j should be final. [FinalParameters]
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m12\Assignment-1\Solution.java:223:59: '+' should be on a new line. [OperatorWrap]
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m12\Assignment-1\Solution.java:224:44: '+' should be on a new line. [OperatorWrap]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m12\Assignment-1\Solution.java:227:57: '+' should be on a new line. [OperatorWrap]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m12\Assignment-1\Solution.java:228:40: '+' should be on a new line. [OperatorWrap]
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m12\Assignment-1\Solution.java:236:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m12\Assignment-1\Solution.java:242:33: Parameter args should be final. [FinalParameters]
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m12\Assignment-1\Solution.java:245:21: Name 'N' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
@@ -41,4 +43,4 @@ Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m12\Assignment-1\Solution.java:257:53: '5' is a magic number. [MagicNumber]
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m12\Assignment-1\Solution.java:258:37: '6' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 41 errors.
+Checkstyle ends with 43 errors.
