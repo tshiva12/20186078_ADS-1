@@ -1,10 +1,7 @@
 Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m12\Assignment-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m12\Assignment-1\Solution.java:7:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m12\Assignment-1\Solution.java:169:19: Variable 'ten' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m12\Assignment-1\Solution.java:170:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m12\Assignment-1\Solution.java:231:59: '+' should be on a new line. [OperatorWrap]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m12\Assignment-1\Solution.java:232:44: '+' should be on a new line. [OperatorWrap]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m12\Assignment-1\Solution.java:166:9: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m12\Assignment-1\Solution.java:236:57: '+' should be on a new line. [OperatorWrap]
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m12\Assignment-1\Solution.java:237:40: '+' should be on a new line. [OperatorWrap]
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m12\Assignment-1\Solution.java:246:9: Missing a Javadoc comment. [JavadocMethod]
@@ -20,4 +17,4 @@ Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m12\Assignment-1\Solution.java:269:53: '5' is a magic number. [MagicNumber]
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m12\Assignment-1\Solution.java:270:37: '6' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 20 errors.
+Checkstyle ends with 17 errors.
