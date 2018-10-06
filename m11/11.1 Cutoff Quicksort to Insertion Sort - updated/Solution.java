@@ -4,10 +4,6 @@ import java.util.Scanner;
  */
 class QuickSort {
     /**
-     * integer variable seven.
-     */
-    private final int seven = 7;
-    /**
      * Constructs the object.
      */
     QuickSort() {
@@ -16,23 +12,27 @@ class QuickSort {
     /**
      * Partition method is used to partition the array based on pivot element.
      * Tine complexity is N.
-     * 
+     *
      * @param      a     Comparable.
      * @param      lo    The lower
      * @param      hi    The higher
      *
      * @return     return j.
      */
-    private int partition(Comparable[] a, int lo, int hi) {
+    private int partition(final Comparable[] a, final int lo, final int hi) {
         int i = lo;
         int j = hi + 1;
         Comparable v = a[lo];
-        while (true) { 
+        while (true) {
             while (less(a[++i], v)) {
-                if (i == hi) break;
+                if (i == hi) {
+                    break;
+                }
             }
             while (less(v, a[--j])) {
-                if (j == lo) break;
+                if (j == lo) {
+                    break;
+                }
             }
             if (i >= j) break;
             exchange(a, i, j);
@@ -61,7 +61,7 @@ class QuickSort {
      * @param      cutOff  The cut off
      */
     public void sort(final Comparable[] arr,
-                     final int lo, final int hi, int cutOff) {
+                     final int lo, final int hi, final int cutOff) {
         if (hi <= lo + cutOff - 1) {
             insertionSort(arr, lo, hi);
             System.out.println("insertionSort called");
@@ -69,8 +69,8 @@ class QuickSort {
         }
         int j = partition(arr, lo, hi);
         System.out.println(show(arr));
-        sort(arr, lo, j-1, cutOff);
-        sort(arr, j+1, hi, cutOff);
+        sort(arr, lo, j - 1, cutOff);
+        sort(arr, j + 1, hi, cutOff);
     }
     /**
      * sort method is used to sort the array with copy of that array. Time
@@ -79,7 +79,7 @@ class QuickSort {
      * @param      a       { parameter_description }
      * @param      cutOff  The cut off
      */
-    public void sort(Comparable[] a, int cutOff) {
+    public void sort(final Comparable[] a, final int cutOff) {
         sort(a, 0, a.length - 1, cutOff);
     }
     /**
@@ -140,7 +140,7 @@ public final class Solution {
      */
     private Solution() {
         /**
-         * { item_description }
+         * // default constructor is not used.
          */
     }
     /**
@@ -164,3 +164,7 @@ public final class Solution {
         }
     }
 }
+
+
+
+

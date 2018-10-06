@@ -1,19 +1,4 @@
 Starting audit...
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:19: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:26:27: Parameter a should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:26:43: Parameter lo should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:26:51: Parameter hi should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:30: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:32: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:35: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:37: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:64:50: Parameter cutOff should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:72:24: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:72:25: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:73:20: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:73:21: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:82:22: Parameter a should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:82:38: Parameter cutOff should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 16 errors.
+Checkstyle ends with 1 errors.
