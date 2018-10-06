@@ -31,36 +31,6 @@ class QuickSort {
         return j;
     }
     /**
-     * isSorted is a method check whether the array is sorted or not.
-     * Time complexity of isSorted method is 1.
-     *
-     * @param      arr5  The arr 5
-     *
-     * @return     return true if sorted, false otherwise.
-     */
-    public boolean isSorted(final Comparable[] arr5) {
-        return isSorted(arr5, 0, arr5.length - 1);
-    }
-    /**
-     * isSorted is a method check whether the array is sorted or not.
-     * Time complexity of isSorted method is 1.
-     *
-     * @param      arr6  The arr 6
-     * @param      lo    The lowwer
-     * @param      hi    The higher
-     *
-     * @return     return true if sorted, false otherwise.
-     */
-    public boolean isSorted(final Comparable[] arr6,
-                            final int lo, final int hi) {
-        for (int i = lo + 1; i <= hi; i++) {
-            if (less(arr6[i], arr6[i - 1])) {
-                return false;
-            }
-        }
-        return true;
-    }
-    /**
      * less method is a compare method.
      * Time complexity of less method is 1.
      *
@@ -89,9 +59,9 @@ class QuickSort {
             return;
         }
         int j = partition(arr, lo, hi);
+        System.out.println(show(arr));
         sort(arr, lo, j-1, cutOff);
         sort(arr, j+1, hi, cutOff);
-        assert isSorted(arr, lo, hi);
     }
     /**
      * sort method is used to sort the array with copy of that array.
@@ -101,7 +71,6 @@ class QuickSort {
      */
     public void sort(Comparable[] a, int cutOff) {
         sort(a, 0, a.length - 1, cutOff);
-        assert isSorted(a);
     }
     /**
      * insertion sort is a sorting technique.
