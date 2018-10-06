@@ -248,7 +248,7 @@ public class Solution {
 		int Bc = Integer.parseInt(scan.nextLine());
 		int Sc = Integer.parseInt(scan.nextLine());
 		int St = Integer.parseInt(scan.nextLine());
-		for (int i = 0; i <= N; i++) {
+		while(scan.hasNext()) {
 			String[] tokens = scan.nextLine().split(",");
 			insert.add(new Qualification(tokens[0], (tokens[1]),
 			 Integer.parseInt(tokens[2]),

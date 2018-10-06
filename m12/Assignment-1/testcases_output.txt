@@ -31,9 +31,7 @@ tanvi,90,BC
 Aditya,80,ST
 priya,72,SC
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
-	at Solution.main(Solution.java:252)
+divya,99,STDeepak,98,OpenIra,93,STtanvi,90,BCRaj,87,BCriya,83,OpenAditya,80,STAjay,76,OpenArjun,75,Openrahul,73,Openpriya,72,SCshyam,71,STPriyanka,70,Openvarsha,66,BCyash,61,BCAbhishek,60,BCAnkit,58,BCvani,50,OpenAishwarya,48,OpenManoj,39,SCAnjali,38,SCAryan,32,ST
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -77,9 +75,7 @@ Raj,87,BC
 Aditya,80,ST
 priya,72,SC
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
-	at Solution.main(Solution.java:252)
+divya,99,STIshita,99,OpenDeepak,98,OpenIra,93,STtanvi,90,BCRaj,87,BCmahesh,87,Openriya,83,OpenAditya,80,STAjay,76,OpenArjun,75,Openrahul,73,Openpriya,72,SCshyam,71,STROHIT,70,SCAmit,70,OpenPriyanka,70,OpenTanya,66,BCvarsha,66,BCyash,61,BCAbhishek,60,BCAnkit,58,BCGayatri,58,SCvani,50,OpenSneha,50,SCAishwarya,48,OpenManoj,39,SCAnjali,38,SCAryan,32,ST
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -98,9 +94,7 @@ divya,99,Open
 Aditya,80,ST
 priya,76,SC
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
-	at Solution.main(Solution.java:252)
+divya,99,Opentanvi,90,OpenAditya,80,STAjay,76,Openpriya,76,SCrahul,73,OpenAmit,70,OpenPriyanka,70,OpenTanya,66,BC
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -122,9 +116,7 @@ priya,76,SC
 Ajay,76,Open
 Tanya,66,BC
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
-	at Solution.main(Solution.java:252)
+divya,99,Opentanvi,90,STAditya,80,OpenAjay,76,Openpriya,76,SCrahul,73,OpenAmit,70,OpenPriyanka,70,OpenTanya,66,BC
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -173,9 +165,7 @@ Ajay,76,Open
 Amit,76,Open
 Arjun,75,Open
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
-	at Solution.main(Solution.java:252)
+divya,99,Opentanvi,99,OpenIshita,99,OpenDeepak,98,OpenIra,93,OpenRaj,87,Openmahesh,87,Openriya,83,OpenAditya,80,Openpriya,76,OpenAjay,76,OpenAmit,76,OpenArjun,75,Openrahul,73,OpenTanya,72,OpenROHIT,70,OpenPriyanka,70,Openvarsha,66,Openyash,61,OpenAbhishek,60,OpenAnkit,58,OpenGayatri,58,Openvani,50,OpenSneha,50,OpenAishwarya,48,OpenManoj,39,OpenAnjali,38,OpenAryan,32,OpenShreya,23,Open
 ----------------------------------------
 ########## Testcase 5: Failed ##########
 Expected Output: 
@@ -226,7 +216,5 @@ rahul,73,Open
 priya,72,SC
 varsha,66,BC
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
-	at Solution.main(Solution.java:252)
+divya,99,STIshita,99,OpenDeepak,99,OpenIra,93,STtanvi,90,BCRaj,87,BCmahesh,87,BCriya,83,OpenAditya,80,STAjay,76,OpenAmit,76,OpenArjun,75,Openrahul,73,Openpriya,72,SCshyam,71,STROHIT,70,SCPriyanka,70,OpenTanya,66,SCvarsha,66,BCyash,61,OpenAbhishek,60,SCAnkit,58,SCGayatri,58,SCvani,50,OpenSneha,50,SCAishwarya,48,OpenAnjali,38,SCManoj,32,SCAryan,32,ST
 ----------------------------------------

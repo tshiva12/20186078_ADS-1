@@ -35,9 +35,10 @@ Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m12\Assignment-1\Solution.java:248:21: Name 'Bc' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m12\Assignment-1\Solution.java:249:21: Name 'Sc' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m12\Assignment-1\Solution.java:250:21: Name 'St' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m12\Assignment-1\Solution.java:251:22: 'while' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m12\Assignment-1\Solution.java:255:51: '3' is a magic number. [MagicNumber]
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m12\Assignment-1\Solution.java:256:52: '4' is a magic number. [MagicNumber]
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m12\Assignment-1\Solution.java:257:53: '5' is a magic number. [MagicNumber]
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m12\Assignment-1\Solution.java:258:37: '6' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 40 errors.
+Checkstyle ends with 41 errors.
