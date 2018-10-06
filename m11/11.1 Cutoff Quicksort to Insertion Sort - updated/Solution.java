@@ -34,7 +34,9 @@ class QuickSort {
                     break;
                 }
             }
-            if (i >= j) break;
+            if (i >= j) {
+                break;
+            }
             exchange(a, i, j);
         }
         exchange(a, lo, j);
