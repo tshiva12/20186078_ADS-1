@@ -41,13 +41,13 @@ class Qualification implements Comparable<Qualification> {
 	/**
 	 * Constructs the object.
 	 *
-	 * @param      name      The name
-	 * @param      dob       The dob
-	 * @param      m1        The m 1
-	 * @param      m2        The m 2
-	 * @param      m3        The m 3
-	 * @param      total     The total
-	 * @param      category  The category
+	 * @param      name1      The name
+	 * @param      dob1       The dob
+	 * @param      m11        The m 1
+	 * @param      m21        The m 2
+	 * @param      m31        The m 3
+	 * @param      total1     The total
+	 * @param      category1  The category
 	 */
 	Qualification(final String name1, final String dob1,
 	 final int m11, final int m21, final int m31,
@@ -166,8 +166,9 @@ class InsertionSort {
 	/**
 	 * Constructs the object.
 	 */
+	final int ten = 10;
 	InsertionSort() {
-		this.qualified = new Qualification[10];
+		this.qualified = new Qualification[ten];
 		this.size = 0;
 	}
 	/**
