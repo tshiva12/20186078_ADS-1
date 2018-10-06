@@ -223,6 +223,7 @@ class InsertionSort {
             System.out.print(qualified[i].getName() + "," +
              qualified[i].getTotal() + "," +
               qualified[i].getCat());
+            System.out.println();
         }
         System.out.println(qualified[i].getName() + "," +
          qualified[i].getTotal() + "," +
