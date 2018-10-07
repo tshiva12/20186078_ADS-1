@@ -57,7 +57,6 @@ class QuickSort {
     /**
      * Sort method is used for sorting. Time complexity of sort method is logN.
      * Time complexity of sort method is 1.
-     * 
      * @param      arr     The array
      * @param      lo      The lowwer value
      * @param      hi      The higher value
