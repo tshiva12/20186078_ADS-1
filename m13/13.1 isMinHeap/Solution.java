@@ -36,7 +36,7 @@ class Solution {
 		switch (str1) {
 			case "String":
 				for (int i = 0; i < num; i++) {
-					String[] tokens = scan.nextLine().split(",");
+					String[] tokens = scan.next().split(",");
 					try {
 						if (tokens[0].length() == 0) {
 							throw new Exception("false");
@@ -51,8 +51,8 @@ class Solution {
 			case "Integer":
 				for (int i = 0; i < num; i++) {
 					String[] tokens = scan.nextLine().split(",");
-					Integer[] tokens1 = new Integer[tokens.length];
 					try {
+						Integer[] tokens1 = new Integer[tokens.length];
 						for (int j = 0; j < tokens.length; j++) {
 							tokens1[j] = Integer.parseInt(tokens[j]);
 						}
