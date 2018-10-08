@@ -1,35 +1,74 @@
 import java.util.Scanner;
+/**
+ * Class for is minimum heap.
+ *
+ * @param      <E>   Generics code for IsMinHeap.
+ */
 class IsMinHeap<E> {
+	/**
+	 * Integer variable.
+	 */
 	private int length;
+	/**
+	 * Generics array.
+	 */
 	private E[] array;
+	/**
+	 * Constructs the object.
+	 */
 	IsMinHeap() {
 		// default constructor is not used.
 	}
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      array1  The array 1
+	 */
 	IsMinHeap(E[] array1) {
 		length = array1.length;
 		array = (E[]) new Object[length + 1];
 		for (int i = 0; i < length; i++) {
-            array[i+1] = array1[i];
+            array[i + 1] = array1[i];
 		}
 		System.out.println(isMinHeap(1));
 	}
-	private boolean isMinHeap(int k) {
+	/**
+	 * Determines if minimum heap.
+	 *
+	 * @param      k     integer variable k.
+	 *
+	 * @return     True if minimum heap, False otherwise.
+	 */
+	private boolean isMinHeap(final int k) {
         if (k > length) return true;
-        int left = 2*k;
-        int right = 2*k + 1;
+        int left = 2 * k;
+        int right = 2 * k + 1;
         if (left  <= length && greater(k, left))  return false;
         if (right <= length && greater(k, right)) return false;
         return isMinHeap(left) && isMinHeap(right);
     }
-    public boolean greater(int i, int j) {
+    /**
+     * greater method is used to compare the two integer items,
+     *
+     * @param      i     Integer variable.
+     * @param      j     Integer variable.
+     *
+     * @return     return boolean value.
+     */
+    public boolean greater(final int i, final int j) {
     	return ((Comparable<E>) array[i]).compareTo(array[j]) > 0;
     }
 }
- 
-
-
-class Solution {
-	public static void main(String[] args) {
+/**
+ * Class for solution.
+ */
+public final class Solution {
+	/**
+	 * main function.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		String str1 = scan.nextLine();
 		switch (str1) {
