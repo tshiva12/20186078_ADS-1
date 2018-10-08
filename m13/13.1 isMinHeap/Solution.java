@@ -37,37 +37,53 @@ class Solution {
 			case "String":
 				for (int i = 0; i < num; i++) {
 					String[] tokens = scan.nextLine().split(",");
-					IsMinHeap<String> str2 = new IsMinHeap<String>(tokens);	
+					try {
+						IsMinHeap<String> str2 = new IsMinHeap<String>(tokens);
+					} catch (Exception e) {
+						System.out.println("false");
+					}
 				}
 			break;
 			case "Integer":
 				for (int i = 0; i < num; i++) {
 					String[] tokens = scan.nextLine().split(",");
 					Integer[] tokens1 = new Integer[tokens.length];
-					for (int j = 0; j < tokens.length; j++) {
-						tokens1[j] = Integer.parseInt(tokens[j]);
-					}
-					IsMinHeap<Integer> str2 = new IsMinHeap<Integer>(tokens1);	
+					try {
+						for (int j = 0; j < tokens.length; j++) {
+							tokens1[j] = Integer.parseInt(tokens[j]);
+						}
+					IsMinHeap<Integer> str2 = new IsMinHeap<Integer>(tokens1);
+					} catch (Exception e) {
+						System.out.println("false");
+					}	
 				}
 			break;
 			case "Double":
 				for (int i = 0; i < num; i++) {
 					String[] tokens = scan.nextLine().split(",");
 					Double[] tokens1 = new Double[tokens.length];
-					for (int j = 0; j < tokens.length; j++) {
-						tokens1[j] = Double.parseDouble(tokens[j]);
-					}
-					IsMinHeap<Double> str2 = new IsMinHeap<Double>(tokens1);	
+					try {
+						for (int j = 0; j < tokens.length; j++) {
+							tokens1[j] = Double.parseDouble(tokens[j]);
+						}
+					IsMinHeap<Double> str2 = new IsMinHeap<Double>(tokens1);
+					} catch (Exception e) {
+						System.out.println("false");
+					}	
 				}
 			break;
 			case "Float":
 				for (int i = 0; i < num; i++) {
 					String[] tokens = scan.nextLine().split(",");
 					Float[] tokens1 = new Float[tokens.length];
-					for (int j = 0; j < tokens.length; j++) {
-						tokens1[j] = Float.parseFloat(tokens[j]);
-					}
+					try {
+						for (int j = 0; j < tokens.length; j++) {
+							tokens1[j] = Float.parseFloat(tokens[j]);
+						}
 					IsMinHeap<Float> str2 = new IsMinHeap<Float>(tokens1);
+					} catch (Exception e) {
+						System.out.println("false");
+					}
 				}
 			break;
 		}
