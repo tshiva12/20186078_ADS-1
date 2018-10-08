@@ -32,7 +32,7 @@ class Solution {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		String str1 = scan.nextLine();
-		int num = Integer.parseInt(scan.nextLine());
+		int num = scan.nextInt();
 		switch (str1) {
 			case "String":
 				for (int i = 0; i < num; i++) {
