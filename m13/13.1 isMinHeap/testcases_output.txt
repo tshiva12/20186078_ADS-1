@@ -1,0 +1,59 @@
+########## Testcase 0: Failed ##########
+Expected Output: 
+true
+false
+true
+false
+Your Output: 
+Exception in thread "main" java.lang.NullPointerException
+	at IsMinHeap.<init>(Solution.java:9)
+	at Solution.main(Solution.java:40)
+----------------------------------------
+########## Testcase 1: Failed ##########
+Expected Output: 
+false
+false
+false
+false
+false
+false
+Your Output: 
+Exception in thread "main" java.lang.NullPointerException
+	at IsMinHeap.<init>(Solution.java:9)
+	at Solution.main(Solution.java:40)
+----------------------------------------
+########## Testcase 2: Failed ##########
+Expected Output: 
+true
+true
+true
+false
+false
+false
+true
+false
+Your Output: 
+Exception in thread "main" java.lang.NullPointerException
+	at IsMinHeap.<init>(Solution.java:9)
+	at Solution.main(Solution.java:50)
+----------------------------------------
+########## Testcase 3: Failed ##########
+Expected Output: 
+true
+false
+false
+Your Output: 
+Exception in thread "main" java.lang.NullPointerException
+	at IsMinHeap.<init>(Solution.java:9)
+	at Solution.main(Solution.java:60)
+----------------------------------------
+########## Testcase 4: Failed ##########
+Expected Output: 
+true
+true
+false
+Your Output: 
+Exception in thread "main" java.lang.NullPointerException
+	at IsMinHeap.<init>(Solution.java:9)
+	at Solution.main(Solution.java:70)
+----------------------------------------
