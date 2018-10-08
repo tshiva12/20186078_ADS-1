@@ -6,7 +6,7 @@ class IsMinHeap<E> {
 		// default constructor is not used.
 	}
 	IsMinHeap(E[] array1) {
-		length = array.length;
+		length = array1.length;
 		array = (E[]) new Object[length + 1];
 		for (int i = 0; i < length; i++) {
             array[i+1] = array1[i];
