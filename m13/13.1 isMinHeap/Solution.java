@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class IsMinHeap<E extends Comparable<E>> {
+class IsMinHeap<E> {
 	private int length;
 	private E[] array;
 	IsMinHeap() {
@@ -91,12 +91,14 @@ class Solution {
 				for (int i = 0; i < num; i++) {
 					String[] tokens = scan.next().split(",");
 					try {
-						if (tokens[0].length() == 0) {
+						String str3 = scan.next();
+						if (str3.length() == 0) {
 							throw new Exception("false");
 						} else {
-							Float[] tokens1 = new Float[tokens.length];
-							for (int j = 0; j < tokens.length; j++) {
-								tokens1[j] = Float.parseFloat(tokens[j]);
+							String[] tokens2 = str3.split(",");
+							Float[] tokens1 = new Float[tokens2.length];
+							for (int j = 0; j < tokens2.length; j++) {
+								tokens1[j] = Float.parseFloat(tokens2[j]);
 							}
 							IsMinHeap<Float> str2 = new IsMinHeap<Float>(tokens1);
 						}
