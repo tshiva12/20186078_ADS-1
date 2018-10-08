@@ -17,8 +17,8 @@ class IsMinHeap<E> {
         if (k > length) return true;
         int left = 2*k;
         int right = 2*k + 1;
-        if (left  <= length && greater(length, left))  return false;
-        if (right <= length && greater(length, right)) return false;
+        if (left  <= length && greater(k, left))  return false;
+        if (right <= length && greater(k, right)) return false;
         return isMinHeap(left) && isMinHeap(right);
     }
     public boolean greater(int i, int j) {
