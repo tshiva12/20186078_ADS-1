@@ -50,13 +50,17 @@ class Solution {
 			break;
 			case "Integer":
 				for (int i = 0; i < num; i++) {
-					String[] tokens = scan.nextLine().split(",");
+					String[] tokens = scan.next().split(",");
 					try {
-						Integer[] tokens1 = new Integer[tokens.length];
-						for (int j = 0; j < tokens.length; j++) {
-							tokens1[j] = Integer.parseInt(tokens[j]);
+						if (tokens[0].length() == 0) {
+							throw new Exception("false");
+						} else {
+							Integer[] tokens1 = new Integer[tokens.length];
+							for (int j = 0; j < tokens.length; j++) {
+								tokens1[j] = Integer.parseInt(tokens[j]);
+							}
+							IsMinHeap<Integer> str2 = new IsMinHeap<Integer>(tokens1);
 						}
-					IsMinHeap<Integer> str2 = new IsMinHeap<Integer>(tokens1);
 					} catch (Exception e) {
 						System.out.println("false");
 					}	
@@ -64,13 +68,17 @@ class Solution {
 			break;
 			case "Double":
 				for (int i = 0; i < num; i++) {
-					String[] tokens = scan.nextLine().split(",");
-					Double[] tokens1 = new Double[tokens.length];
+					String[] tokens = scan.next().split(",");
 					try {
-						for (int j = 0; j < tokens.length; j++) {
-							tokens1[j] = Double.parseDouble(tokens[j]);
+						if (tokens[0].length() == 0) {
+							throw new Exception("false");
+						} else {
+							Double[] tokens1 = new Double[tokens.length];
+							for (int j = 0; j < tokens.length; j++) {
+								tokens1[j] = Double.parseDouble(tokens[j]);
+							}
+							IsMinHeap<Double> str2 = new IsMinHeap<Double>(tokens1);
 						}
-					IsMinHeap<Double> str2 = new IsMinHeap<Double>(tokens1);
 					} catch (Exception e) {
 						System.out.println("false");
 					}	
@@ -78,16 +86,20 @@ class Solution {
 			break;
 			case "Float":
 				for (int i = 0; i < num; i++) {
-					String[] tokens = scan.nextLine().split(",");
-					Float[] tokens1 = new Float[tokens.length];
+					String[] tokens = scan.next().split(",");
 					try {
-						for (int j = 0; j < tokens.length; j++) {
-							tokens1[j] = Float.parseFloat(tokens[j]);
+						if (tokens[0].length() == 0) {
+							throw new Exception("false");
+						} else {
+							Float[] tokens1 = new Float[tokens.length];
+							for (int j = 0; j < tokens.length; j++) {
+								tokens1[j] = Float.parseFloat(tokens[j]);
+							}
+							IsMinHeap<Float> str2 = new IsMinHeap<Float>(tokens1);
 						}
-					IsMinHeap<Float> str2 = new IsMinHeap<Float>(tokens1);
 					} catch (Exception e) {
 						System.out.println("false");
-					}
+					}	
 				}
 			break;
 		}
