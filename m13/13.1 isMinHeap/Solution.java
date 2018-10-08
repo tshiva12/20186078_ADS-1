@@ -24,7 +24,7 @@ class IsMinHeap<E> {
 	 *
 	 * @param      array1  The array 1
 	 */
-	IsMinHeap(E[] array1) {
+	IsMinHeap(final E[] array1) {
 		length = array1.length;
 		array = (E[]) new Object[length + 1];
 		for (int i = 0; i < length; i++) {

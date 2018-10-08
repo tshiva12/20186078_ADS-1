@@ -1,7 +1,6 @@
 Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m13\13.1 isMinHeap\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m13\13.1 isMinHeap\Solution.java:8:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m13\13.1 isMinHeap\Solution.java:27:19: Parameter array1 should be final. [FinalParameters]
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m13\13.1 isMinHeap\Solution.java:43: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m13\13.1 isMinHeap\Solution.java:46: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m13\13.1 isMinHeap\Solution.java:47: 'if' construct must use '{}'s. [NeedBraces]
@@ -33,4 +32,4 @@ Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m13\13.1 isMinHeap\Solution.java:141: Line is longer than 80 characters (found 110). [LineLength]
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m13\13.1 isMinHeap\Solution.java:145: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 33 errors.
+Checkstyle ends with 32 errors.
