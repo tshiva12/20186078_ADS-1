@@ -89,16 +89,15 @@ class Solution {
 			case "Float":
 				num = scan.nextInt();
 				for (int i = 0; i < num; i++) {
-					String[] tokens = scan.next().split(",");
 					try {
 						String str3 = scan.next();
 						if (str3.length() == 0) {
 							throw new Exception("false");
 						} else {
-							String[] tokens2 = str3.split(",");
-							Float[] tokens1 = new Float[tokens2.length];
-							for (int j = 0; j < tokens2.length; j++) {
-								tokens1[j] = Float.parseFloat(tokens2[j]);
+							String[] tokens = str3.split(",");
+							Float[] tokens1 = new Float[tokens.length];
+							for (int j = 0; j < tokens.length; j++) {
+								tokens1[j] = Float.parseFloat(tokens[j]);
 							}
 							IsMinHeap<Float> str2 = new IsMinHeap<Float>(tokens1);
 						}

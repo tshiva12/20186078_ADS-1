@@ -44,13 +44,12 @@ Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m13\13.1 isMinHeap\Solution.java:80: Line is longer than 80 characters (found 107). [LineLength]
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m13\13.1 isMinHeap\Solution.java:82: Line is longer than 80 characters (found 112). [LineLength]
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m13\13.1 isMinHeap\Solution.java:86: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m13\13.1 isMinHeap\Solution.java:92: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m13\13.1 isMinHeap\Solution.java:96: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m13\13.1 isMinHeap\Solution.java:98: Line is longer than 80 characters (found 91). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m13\13.1 isMinHeap\Solution.java:99: Line is longer than 80 characters (found 100). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m13\13.1 isMinHeap\Solution.java:100: Line is longer than 80 characters (found 98). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m13\13.1 isMinHeap\Solution.java:101: Line is longer than 80 characters (found 106). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m13\13.1 isMinHeap\Solution.java:103: Line is longer than 80 characters (found 110). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m13\13.1 isMinHeap\Solution.java:107: Line has trailing spaces. [RegexpSingleline]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m13\13.1 isMinHeap\Solution.java:95: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m13\13.1 isMinHeap\Solution.java:97: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m13\13.1 isMinHeap\Solution.java:98: Line is longer than 80 characters (found 99). [LineLength]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m13\13.1 isMinHeap\Solution.java:99: Line is longer than 80 characters (found 97). [LineLength]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m13\13.1 isMinHeap\Solution.java:100: Line is longer than 80 characters (found 105). [LineLength]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m13\13.1 isMinHeap\Solution.java:102: Line is longer than 80 characters (found 110). [LineLength]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m13\13.1 isMinHeap\Solution.java:106: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 53 errors.
+Checkstyle ends with 52 errors.
