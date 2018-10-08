@@ -32,9 +32,9 @@ class Solution {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		String str1 = scan.nextLine();
-		int num = scan.nextInt();
 		switch (str1) {
 			case "String":
+				int num = scan.nextInt();
 				for (int i = 0; i < num; i++) {
 					String[] tokens = scan.next().split(",");
 					try {
@@ -49,6 +49,7 @@ class Solution {
 				}
 			break;
 			case "Integer":
+				num = scan.nextInt();
 				for (int i = 0; i < num; i++) {
 					String[] tokens = scan.next().split(",");
 					try {
@@ -67,6 +68,7 @@ class Solution {
 				}
 			break;
 			case "Double":
+				num = scan.nextInt();
 				for (int i = 0; i < num; i++) {
 					String[] tokens = scan.next().split(",");
 					try {
@@ -85,6 +87,7 @@ class Solution {
 				}
 			break;
 			case "Float":
+				num = scan.nextInt();
 				for (int i = 0; i < num; i++) {
 					String[] tokens = scan.next().split(",");
 					try {
