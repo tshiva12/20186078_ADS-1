@@ -38,7 +38,11 @@ class Solution {
 				for (int i = 0; i < num; i++) {
 					String[] tokens = scan.nextLine().split(",");
 					try {
-						IsMinHeap<String> str2 = new IsMinHeap<String>(tokens);
+						if (tokens[0].length() == 0) {
+							throw new Exception("false");
+						} else {
+							IsMinHeap<String> str2 = new IsMinHeap<String>(tokens);
+						}
 					} catch (Exception e) {
 						System.out.println("false");
 					}
