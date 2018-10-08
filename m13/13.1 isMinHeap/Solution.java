@@ -21,6 +21,7 @@ class IsMinHeap<E> {
     }
     /**
      * Constructs the object.
+     * Time complexity for IsMinHeap method is N.
      *
      * @param      array1  The array 1
      */
@@ -34,6 +35,7 @@ class IsMinHeap<E> {
     }
     /**
      * Determines if minimum heap.
+     * Time complexity for IsMinHeap method is 1.
      *
      * @param      k     integer variable k.
      *
@@ -54,7 +56,8 @@ class IsMinHeap<E> {
         return isMinHeap(left) && isMinHeap(right);
     }
     /**
-     * greater method is used to compare the two integer items,
+     * greater method is used to compare the two integer items.
+     * Time complexity for greater method is 1.
      *
      * @param      i     Integer variable.
      * @param      j     Integer variable.
@@ -69,6 +72,12 @@ class IsMinHeap<E> {
  * Class for solution.
  */
 public final class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+        // default constructor is not used.
+    }
     /**
      * main function.
      *
@@ -112,7 +121,7 @@ public final class Solution {
                         }
                     } catch (Exception e) {
                         System.out.println("false");
-                    }   
+                    }
                 }
             break;
             case "Double":
@@ -158,7 +167,11 @@ public final class Solution {
                     }
                 }
             break;
+            default :
+            break;
         }
 
     }
 }
+
+
