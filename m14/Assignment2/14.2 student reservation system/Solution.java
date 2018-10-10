@@ -412,7 +412,7 @@ public final class Solution {
                 vac1--;
             }
             if (bc1 > 0) {
-                if (qualcands[i].getCat().equals("BC") && qualcands[i].getAllocation() == false) {
+                if (qualcands[i].getCat().equals("BC") && qualcands[i].getAllocation()) {
                     bc1--;
                     qualcands[i].setAllocation(true);
                     vacancy[j++] = qualcands[i];
@@ -420,7 +420,7 @@ public final class Solution {
                 }
             }
             if (sc1 > 0) {
-                if (qualcands[i].getCat().equals("SC") && qualcands[i].getAllocation() == false) {
+                if (qualcands[i].getCat().equals("SC") && qualcands[i].getAllocation()) {
                     sc1--;
                     qualcands[i].setAllocation(true);
                     vacancy[j++] = qualcands[i];
@@ -428,7 +428,7 @@ public final class Solution {
                 }
             }
             if (st1 > 0) {
-                if (qualcands[i].getCat().equals("ST") && qualcands[i].getAllocation() == false) {
+                if (qualcands[i].getCat().equals("ST") && qualcands[i].getAllocation()) {
                     st1--;
                     qualcands[i].setAllocation(true);
                     vacancy[j++] = qualcands[i];
