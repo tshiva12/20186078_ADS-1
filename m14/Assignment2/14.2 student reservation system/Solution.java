@@ -207,23 +207,23 @@ class Qualification implements Comparable<Qualification> {
      * @return     boolean values if true 1 else -1.
      */
     public int compareTo(final Qualification that) {
-        if (this.getTotal() < that.getTotal()) {
-            return 1;
-        }
         if (this.getTotal() > that.getTotal()) {
             return -1;
         }
-        if (this.getM3() < that.getM3()) {
+        if (this.getTotal() < that.getTotal()) {
             return 1;
         }
         if (this.getM3() > that.getM3()) {
             return -1;
         }
-        if (this.getM2() < that.getM2()) {
+        if (this.getM3() < that.getM3()) {
             return 1;
         }
         if (this.getM2() > that.getM2()) {
             return -1;
+        }
+        if (this.getM2() < that.getM2()) {
+            return 1;
         }
         if (this.getDob().compareTo(that.getDob()) < 0) {
             return 1;
