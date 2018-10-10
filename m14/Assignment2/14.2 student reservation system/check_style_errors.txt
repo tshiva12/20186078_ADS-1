@@ -1,16 +1,13 @@
 Starting audit...
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:230:9: '}' at column 9 should be alone on a line. [RightCurly]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:230:10: 'if' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:230:10: '}' is not followed by whitespace. [WhitespaceAround]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:268:48: Expected @param tag for 'pq'. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:281:8: Unused @param tag for 'qf'. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:285:44: Expected @param tag for 'pq'. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:329:41: Expected @param tag for 'a'. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:385:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:391:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:414: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:422: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:430: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:438: Line is longer than 80 characters (found 104). [LineLength]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:263:48: Expected @param tag for 'pq'. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:276:8: Unused @param tag for 'qf'. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:280:44: Expected @param tag for 'pq'. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:324:41: Expected @param tag for 'a'. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:380:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:386:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:409: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:417: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:425: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:433: Line is longer than 80 characters (found 104). [LineLength]
 Audit done.
-Checkstyle ends with 13 errors.
+Checkstyle ends with 10 errors.

@@ -225,11 +225,6 @@ class Qualification implements Comparable<Qualification> {
         if (this.getM2() > that.getM2()) {
             return -1;
         }
-        if (this.getM1() < that.getM1()) {
-            return 1;
-        }if (this.getM1() > that.getM1()) {
-            return -1;
-        }
         if (this.getDob().compareTo(that.getDob()) < 0) {
             return 1;
         }

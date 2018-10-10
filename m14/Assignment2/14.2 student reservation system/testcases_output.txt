@@ -387,9 +387,9 @@ Aryan,32,ST
 Shreya,23,SC
 
 Exception in thread "main" java.lang.NullPointerException
-	at HeapSort.less(Solution.java:324)
-	at HeapSort.sink(Solution.java:302)
-	at HeapSort.sort(Solution.java:271)
-	at Solution.vacancies(Solution.java:444)
-	at Solution.main(Solution.java:383)
+	at HeapSort.less(Solution.java:319)
+	at HeapSort.sink(Solution.java:297)
+	at HeapSort.sort(Solution.java:266)
+	at Solution.vacancies(Solution.java:439)
+	at Solution.main(Solution.java:378)
 ----------------------------------------
