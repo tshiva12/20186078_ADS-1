@@ -3,21 +3,21 @@ import java.util.Scanner;
  * class Solution.
  */
 public final class Solution {
-	/**
-	 * Constructs the object.
-	 */
-	private Solution() {
-		// default constructor is not used.
-	}
-	/**
-	 * main function.
-	 *
-	 * @param      args  The arguments
-	 */
-	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
-		int num = scan.nextInt();
-		MinPQ<Float> minpq = new MinPQ<Float>(num);
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+        // default constructor is not used.
+    }
+    /**
+     * main function.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int num = scan.nextInt();
+        MinPQ<Float> minpq = new MinPQ<Float>(num);
         MaxPQ<Float> maxpq = new MaxPQ<Float>(num);
         Float median = 0.0f;
         for (int i = 0; i < num; i++) {
@@ -31,7 +31,7 @@ public final class Solution {
                 maxpq.insert(minpq.delMin());
             }
             if (maxpq.size() - minpq.size() > 1) {
-                minpq.insert(maxpq.delMax());  
+                minpq.insert(maxpq.delMax());
             }
             if (minpq.size() == maxpq.size()) {
                 median = (minpq.min() + maxpq.max()) / 2;
@@ -45,7 +45,6 @@ public final class Solution {
                 median = minpq.min();
                 System.out.println(median);
             }
-            
         }
-	}
+    }
 }
