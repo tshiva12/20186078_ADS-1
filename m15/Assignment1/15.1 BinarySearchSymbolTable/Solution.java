@@ -213,7 +213,7 @@ class BinarySearchTable<Key extends Comparable<Key>, Value> {
     }
     /**
      * delete max is used to delete maximum element
-     *  in that array. 
+     *  in that array.
      * Time complexity is 1.
      */
     public void deleteMax() {
@@ -322,7 +322,7 @@ class BinarySearchTable<Key extends Comparable<Key>, Value> {
      *
      * @return     the number of keys in this symbol table between {@code lo}
      *             (inclusive) and {@code hi} (inclusive)
-     * @throws     IllegalArgumentException  if either 
+     * @throws     IllegalArgumentException  if either
      * {@code lo} or {@code hi} is {@code null}
      */
     public int size(final Key lo, final Key hi) {
