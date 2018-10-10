@@ -255,7 +255,7 @@ class Qualification implements Comparable<Qualification> {
 /**
  * Class for insertion sort.
  */
-class HeapSort {
+final class HeapSort {
     /**
      * Constructs the object.
      */
@@ -263,8 +263,9 @@ class HeapSort {
         // default constructor.
     }
     /**
-     * sort method is used to sort the array.
-     * Time complexity is NlogN.
+     * sort method is used to sort the array. Time complexity is NlogN.
+     *
+     * @param      pq    comparable.
      */
     public static void sort(final Comparable[] pq) {
         int n = pq.length;
@@ -430,7 +431,7 @@ public final class Solution {
             }
             if (bc1 > 0) {
                 if (qualcands[i].getCat().equals("BC")
-                        &&  qualcands[i].getAllocation() == false) {
+                        &&  !qualcands[i].getAllocation()) {
                     bc1--;
                     qualcands[i].setAllocation(true);
                     vacancy[k++] = qualcands[i];
@@ -439,7 +440,7 @@ public final class Solution {
             }
             if (sc1 > 0) {
                 if (qualcands[i].getCat().equals("SC")
-                        &&  qualcands[i].getAllocation() == false) {
+                        &&  !qualcands[i].getAllocation()) {
                     sc1--;
                     qualcands[i].setAllocation(true);
                     vacancy[k++] = qualcands[i];
@@ -448,7 +449,7 @@ public final class Solution {
             }
             if (st1 > 0) {
                 if (qualcands[i].getCat().equals("ST")
-                        &&  qualcands[i].getAllocation() == false) {
+                        &&  !qualcands[i].getAllocation()) {
                     st1--;
                     qualcands[i].setAllocation(true);
                     vacancy[k++] = qualcands[i];
@@ -458,7 +459,7 @@ public final class Solution {
         }
         for (i = 0; i < quallen; i++) {
             if (vac1 > 0 && qualcands[i].getCat().equals("Open")
-                    && qualcands[i].getAllocation() == false) {
+                    && !qualcands[i].getAllocation()) {
                 qualcands[i].setAllocation(true);
                 vacancy[k++] = qualcands[i];
                 vac1--;
