@@ -398,7 +398,7 @@ public final class Solution {
         int sc1 = nosc;
         int st1 = nost;
         int i = 0;
-        int j = 0;
+        int k = 0;
         int quallen = qualcands.length;
         Qualification[] vacancy = new Qualification[vac1];
         for (i = 0; i < quallen; i++) {
@@ -408,44 +408,46 @@ public final class Solution {
             if (un1 > 0) {
                 un1--;
                 qualcands[i].setAllocation(true);
-                vacancy[j++] = qualcands[i];
+                vacancy[k++] = qualcands[i];
                 vac1--;
             }
             if (bc1 > 0) {
-                if (qualcands[i].getCat().equals("BC") && !qualcands[i].getAllocation()) {
+                if (qualcands[i].getCat().equals("BC")
+                        &&  qualcands[i].getAllocation() == false) {
                     bc1--;
                     qualcands[i].setAllocation(true);
-                    vacancy[j++] = qualcands[i];
+                    vacancy[k++] = qualcands[i];
                     vac1--;
                 }
             }
             if (sc1 > 0) {
-                if (qualcands[i].getCat().equals("SC") && !qualcands[i].getAllocation()) {
+                if (qualcands[i].getCat().equals("SC")
+                        &&  qualcands[i].getAllocation() == false) {
                     sc1--;
                     qualcands[i].setAllocation(true);
-                    vacancy[j++] = qualcands[i];
+                    vacancy[k++] = qualcands[i];
                     vac1--;
                 }
             }
             if (st1 > 0) {
-                if (qualcands[i].getCat().equals("ST") && !qualcands[i].getAllocation()) {
+                if (qualcands[i].getCat().equals("ST")
+                        &&  qualcands[i].getAllocation() == false) {
                     st1--;
                     qualcands[i].setAllocation(true);
-                    vacancy[j++] = qualcands[i];
+                    vacancy[k++] = qualcands[i];
                     vac1--;
                 }
             }
-            for (i = 0; i < quallen; i++) {
-                if (vac1 > 0 && qualcands[i].getCat().equals("Open") && !qualcands[i].getAllocation()) {
-                    qualcands[i].setAllocation(true);
-                    vacancy[j++] = qualcands[i];
-                    vac1--;
-                }
-            }
-            HeapSort.sort(vacancy);
-            print(vacancy);
         }
+        for (i = 0; i < quallen; i++) {
+            if (vac1 > 0 && qualcands[i].getCat().equals("Open")
+                    && qualcands[i].getAllocation() == false) {
+                qualcands[i].setAllocation(true);
+                vacancy[k++] = qualcands[i];
+                vac1--;
+            }
+        }
+        HeapSort.sort(vacancy);
+        print(vacancy);
     }
 }
-
-
