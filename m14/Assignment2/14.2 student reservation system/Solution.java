@@ -201,6 +201,7 @@ class Qualification implements Comparable<Qualification> {
     }
     /**
      * compareTo method is used to compare the two elements.
+     * Time complexity is 1.
      *
      * @param      that  The that
      *
@@ -241,6 +242,7 @@ class Qualification implements Comparable<Qualification> {
     }
     /**
      * Returns a string representation of the object.
+     * Time complexity is 1.
      *
      * @return     String representation of the object.
      */
@@ -263,7 +265,8 @@ final class HeapSort {
         // default constructor.
     }
     /**
-     * sort method is used to sort the array. Time complexity is NlogN.
+     * sort method is used to sort the array.
+     * Time complexity is NlogN.
      *
      * @param      pq    comparable.
      */
@@ -327,6 +330,7 @@ final class HeapSort {
     }
     /**
      * show method is used to display the output.
+     * Time complexity is N.
      *
      * @param      a     comparable.
      */
@@ -388,6 +392,7 @@ public final class Solution {
     }
     /**
      * print method is used to print the qualified canditates data.
+     * Time complexity is N.
      *
      * @param      qualcands  The qualcands
      */
@@ -399,6 +404,7 @@ public final class Solution {
     }
     /**
      * Vacanies method is used to store the vacancies based on data.
+     * Time complexity is N.
      *
      * @param      qualcands  The qualcands
      * @param      novac      The novac
