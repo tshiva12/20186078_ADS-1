@@ -323,7 +323,7 @@ class HeapSort {
      */
     public void show(final Comparable[] a) {
         int i = 0;
-        for (i = 0; i < a.length - 1; i++) {
+        for (i = 0; i < a.length; i++) {
             // System.out.print(qualified[i].getName()
             //  + "," + qualified[i].getTotal()
             //   + "," + qualified[i].getCat());
