@@ -27,6 +27,12 @@ public final class Solution {
             } else {
                 maxpq.insert(res);
             }
+            if (minpq.size() - maxpq.size() > 1) {
+                maxpq.insert(minpq.delMin());
+            }
+            if (maxpq.size() - minpq.size() > 1) {
+                minpq.insert(maxpq.delMax());  
+            }
             if (minpq.size() == maxpq.size()) {
                 median = (minpq.min() + maxpq.max()) / 2;
                 System.out.println(median);
@@ -39,12 +45,7 @@ public final class Solution {
                 median = minpq.min();
                 System.out.println(median);
             }
-            if (minpq.size() - maxpq.size() > 1) {
-                maxpq.insert(minpq.delMin());
-            }
-            if (maxpq.size() - minpq.size() > 1) {
-                minpq.insert(maxpq.delMax());  
-            }
+            
         }
 	}
 }
