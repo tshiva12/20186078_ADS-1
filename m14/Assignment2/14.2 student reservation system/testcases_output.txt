@@ -56,11 +56,11 @@ Aryan,32,ST
 Shreya,23,SC
 
 divya,99,ST
-divya,99,ST
 Deepak,98,Open
 riya,83,Open
 Ajay,76,Open
 Arjun,75,Open
+rahul,73,Open
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -136,13 +136,13 @@ Aryan,32,ST
 Shreya,23,SC
 
 divya,99,ST
-divya,99,ST
 Ishita,99,Open
 Deepak,98,Open
 mahesh,87,Open
 riya,83,Open
 Ajay,76,Open
 Arjun,75,Open
+rahul,73,Open
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
