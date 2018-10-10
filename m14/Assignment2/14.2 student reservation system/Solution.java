@@ -209,33 +209,32 @@ class Qualification implements Comparable<Qualification> {
     public int compareTo(final Qualification that) {
         if (this.getTotal() < that.getTotal()) {
             return 1;
-        } else if (this.getTotal() > that.getTotal()) {
+        }
+        if (this.getTotal() > that.getTotal()) {
             return -1;
-        } else {
-            if (this.getM3() < that.getM3()) {
-                return 1;
-            } else if (this.getM3() > that.getM3()) {
-                return -1;
-            } else {
-                if (this.getM2() < that.getM2()) {
-                    return 1;
-                } else if (this.getM2() > that.getM2()) {
-                    return -1;
-                } else {
-                    if (this.getM1() < that.getM1()) {
-                        return 1;
-                    } else if (
-                        this.getM1() > that.getM1()) {
-                        return -1;
-                    } else {
-                        if (this.getDob().compareTo(that.getDob()) < 0) {
-                            return 1;
-                        } else if (this.getDob().compareTo(that.getDob()) > 0) {
-                            return -1;
-                        }
-                    }
-                }
-            }
+        }
+        if (this.getM3() < that.getM3()) {
+            return 1;
+        }
+        if (this.getM3() > that.getM3()) {
+            return -1;
+        }
+        if (this.getM2() < that.getM2()) {
+            return 1;
+        }
+        if (this.getM2() > that.getM2()) {
+            return -1;
+        }
+        if (this.getM1() < that.getM1()) {
+            return 1;
+        }if (this.getM1() > that.getM1()) {
+            return -1;
+        }
+        if (this.getDob().compareTo(that.getDob()) < 0) {
+            return 1;
+        }
+        if (this.getDob().compareTo(that.getDob()) > 0) {
+            return -1;
         }
         return 0;
     }
