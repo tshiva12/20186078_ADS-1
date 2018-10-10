@@ -1,14 +1,9 @@
 Starting audit...
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:258:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:258: Class HeapSort should be declared as final. [FinalClass]
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:269:48: Expected @param tag for 'pq'. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:282:8: Unused @param tag for 'qf'. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:286:44: Expected @param tag for 'pq'. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:330:48: Expected @param tag for 'a'. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:386:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:392:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:416:58: Expression can be simplified. [SimplifyBooleanExpression]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:425:58: Expression can be simplified. [SimplifyBooleanExpression]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:434:58: Expression can be simplified. [SimplifyBooleanExpression]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:444:53: Expression can be simplified. [SimplifyBooleanExpression]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:433:58: Expression can be simplified. [SimplifyBooleanExpression]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:442:58: Expression can be simplified. [SimplifyBooleanExpression]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:451:58: Expression can be simplified. [SimplifyBooleanExpression]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:461:53: Expression can be simplified. [SimplifyBooleanExpression]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 6 errors.

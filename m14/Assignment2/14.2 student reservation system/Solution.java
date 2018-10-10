@@ -259,7 +259,7 @@ class HeapSort {
     /**
      * Constructs the object.
      */
-    HeapSort() {
+    private HeapSort() {
         // default constructor.
     }
     /**
@@ -279,9 +279,9 @@ class HeapSort {
     /**
      * exch method is used to swap the two elements in an array.
      *
-     * @param      qf    Comparable
      * @param      i     Integer
      * @param      j     Integer
+     * @param      pq    Comparable
      */
     public static void exch(final Object[] pq, final int i, final int j) {
         Object swap = pq[i - 1];
@@ -292,9 +292,9 @@ class HeapSort {
      * to sink the values.
      * Time complexity is log N.
      *
-     * @param      pq    { parameter_description }
-     * @param      k     { parameter_description }
-     * @param      n     { parameter_description }
+     * @param      pq    comparable
+     * @param      k     integer variable
+     * @param      n     integer variable.
      */
     private static void sink(final Comparable[] pq, final int k, final int n) {
         int l = k;
@@ -314,11 +314,11 @@ class HeapSort {
      * to compare the values.
      * Time complexity is 1.
      *
-     * @param      pq    { parameter_description }
-     * @param      i     { parameter_description }
-     * @param      j     { parameter_description }
+     * @param      pq    comparable
+     * @param      i     integer variable
+     * @param      j     integer variable
      *
-     * @return     { description_of_the_return_value }
+     * @return     boolean value
      */
     private static boolean less(final Comparable[] pq, final int i,
         final int j) {
@@ -326,6 +326,8 @@ class HeapSort {
     }
     /**
      * show method is used to display the output.
+     *
+     * @param      a     comparable.
      */
     public static void show(final Comparable[] a) {
         int i = 0;
@@ -383,12 +385,27 @@ public final class Solution {
         print(qualcands);
         vacancies(qualcands, vac, un, bc, sc, st);
     }
+    /**
+     * print method is used to print the qualified canditates data.
+     *
+     * @param      qualcands  The qualcands
+     */
     public static void print(final Qualification[] qualcands) {
         for (Qualification qualcands1 : qualcands) {
             System.out.println(qualcands1);
         }
         System.out.println();
     }
+    /**
+     * Vacanies method is used to store the vacancies based on data.
+     *
+     * @param      qualcands  The qualcands
+     * @param      novac      The novac
+     * @param      noun       The noun
+     * @param      nobc       The nobc
+     * @param      nosc       The nosc
+     * @param      nost       The nost
+     */
     public static void vacancies(final Qualification[] qualcands,
      final int novac, final int noun, final int nobc,
       final int nosc, final int nost) {
