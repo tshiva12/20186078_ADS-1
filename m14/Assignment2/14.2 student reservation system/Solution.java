@@ -412,7 +412,7 @@ public final class Solution {
                 vac1--;
             }
             if (bc1 > 0) {
-                if (qualcands[i].getCat().equals("BC") && !qualcands[i].getAllocation()) {
+                if (qualcands[i].getCat().equals("BC") && qualcands[i].getAllocation() == false) {
                     bc1--;
                     qualcands[i].setAllocation(true);
                     vacancy[j++] = qualcands[i];
@@ -420,7 +420,7 @@ public final class Solution {
                 }
             }
             if (sc1 > 0) {
-                if (qualcands[i].getCat().equals("SC") && !qualcands[i].getAllocation()) {
+                if (qualcands[i].getCat().equals("SC") && qualcands[i].getAllocation() == false) {
                     sc1--;
                     qualcands[i].setAllocation(true);
                     vacancy[j++] = qualcands[i];
@@ -428,7 +428,7 @@ public final class Solution {
                 }
             }
             if (st1 > 0) {
-                if (qualcands[i].getCat().equals("ST") && !qualcands[i].getAllocation()) {
+                if (qualcands[i].getCat().equals("ST") && qualcands[i].getAllocation() == false) {
                     st1--;
                     qualcands[i].setAllocation(true);
                     vacancy[j++] = qualcands[i];
@@ -436,7 +436,7 @@ public final class Solution {
                 }
             }
             for (i = 0; i < quallen; i++) {
-                if (vac1 > 0 && qualcands[i].getCat().equals("Open") && !qualcands[i].getAllocation()) {
+                if (vac1 > 0 && qualcands[i].getCat().equals("Open") && qualcands[i].getAllocation() == false) {
                     qualcands[i].setAllocation(true);
                     vacancy[j++] = qualcands[i];
                     vac1--;
