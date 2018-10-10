@@ -327,7 +327,7 @@ class HeapSort {
     /**
      * show method is used to display the output.
      */
-    public void show(final Comparable[] a) {
+    public static void show(final Comparable[] a) {
         int i = 0;
         for (i = 0; i < a.length; i++) {
             // System.out.print(qualified[i].getName()
