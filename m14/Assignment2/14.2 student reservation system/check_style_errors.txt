@@ -3,11 +3,11 @@ Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:282:8: Unused @param tag for 'qf'. [JavadocMethod]
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:286:44: Expected @param tag for 'pq'. [JavadocMethod]
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:330:41: Expected @param tag for 'a'. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:387:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:393:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:416: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:424: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:432: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:440: Line is longer than 80 characters (found 104). [LineLength]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:386:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:392:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:415: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:423: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:431: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:439: Line is longer than 80 characters (found 104). [LineLength]
 Audit done.
 Checkstyle ends with 10 errors.

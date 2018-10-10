@@ -390,6 +390,6 @@ Exception in thread "main" java.lang.NullPointerException
 	at HeapSort.less(Solution.java:325)
 	at HeapSort.sink(Solution.java:303)
 	at HeapSort.sort(Solution.java:272)
-	at Solution.vacancies(Solution.java:446)
-	at Solution.main(Solution.java:385)
+	at Solution.vacancies(Solution.java:445)
+	at Solution.main(Solution.java:384)
 ----------------------------------------

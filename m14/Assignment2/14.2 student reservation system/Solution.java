@@ -359,7 +359,6 @@ public final class Solution {
      */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
-        HeapSort heap = new HeapSort();
         int n = Integer.parseInt(scan.nextLine());
         int vac = Integer.parseInt(scan.nextLine());
         int un = Integer.parseInt(scan.nextLine());
@@ -380,7 +379,7 @@ public final class Solution {
                 Integer.parseInt(tokens[five]),
                  tokens[six]);
         }
-        heap.sort(qualcands);
+        HeapSort.sort(qualcands);
         print(qualcands);
         vacancies(qualcands, vac, un, bc, sc, st);
     }
