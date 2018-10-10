@@ -427,7 +427,7 @@ public final class Solution {
                     vac1--;
                 }
             }
-            if (sc1 > 0) {
+            if (st1 > 0) {
                 if (qualcands[i].getCat().equals("ST") && !qualcands[i].getAllocation()) {
                     st1--;
                     qualcands[i].setAllocation(true);
