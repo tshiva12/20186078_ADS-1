@@ -390,13 +390,13 @@ public final class Solution {
         System.out.println();
     }
     public static void vacancies(final Qualification[] qualcands,
-     final int vac, final int un, final int bc,
-      final int sc, final int st) {
+     final int vac, final int un, final int nobc,
+      final int nosc, final int nost) {
         int vac1 = vac;
         int un1 = un;
-        int bc1 = bc;
-        int sc1 = sc;
-        int st1 = st;
+        int bc1 = nobc;
+        int sc1 = nosc;
+        int st1 = nost;
         int i = 0;
         int j = 0;
         int quallen = qualcands.length;
