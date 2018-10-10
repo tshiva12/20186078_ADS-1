@@ -212,7 +212,8 @@ class BinarySearchTable<Key extends Comparable<Key>, Value> {
         delete(min());
     }
     /**
-     * delete max is used to delete maximum element in that array. 
+     * delete max is used to delete maximum element
+     *  in that array. 
      * Time complexity is 1.
      */
     public void deleteMax() {
@@ -270,7 +271,8 @@ class BinarySearchTable<Key extends Comparable<Key>, Value> {
         return keys[k];
     }
     /**
-     * floor method is used to represent the value that is present in that array or not.
+     * floor method is used to represent the value that
+     *  is present in that array or not.
      * Time complexity is 1.
      *
      * @param      key   The key
@@ -320,8 +322,8 @@ class BinarySearchTable<Key extends Comparable<Key>, Value> {
      *
      * @return     the number of keys in this symbol table between {@code lo}
      *             (inclusive) and {@code hi} (inclusive)
-     * @throws     IllegalArgumentException  if either {@code lo} or {@code hi} is
-     *                                       {@code null}
+     * @throws     IllegalArgumentException  if either 
+     * {@code lo} or {@code hi} is {@code null}
      */
     public int size(final Key lo, final Key hi) {
         if (lo == null) {
@@ -343,7 +345,8 @@ class BinarySearchTable<Key extends Comparable<Key>, Value> {
         }
     }
     /**
-     * check method is used to check whether is sorted or not and check its rank also.
+     * check method is used to check whether is sorted
+     *  or not and check its rank also.
      * Time complexity is 1.
      *
      * @return     { description_of_the_return_value }
@@ -352,7 +355,8 @@ class BinarySearchTable<Key extends Comparable<Key>, Value> {
         return isSorted() && rankCheck();
     }
     /**
-     * Determines if sorted is return boolen value if the array is sorted or not.
+     * Determines if sorted is return boolen value
+     *  if the array is sorted or not.
      * Time complexity is N.
      *
      * @return     True if sorted, False otherwise.
@@ -452,3 +456,6 @@ public final class Solution {
         }
     }
 }
+
+
+

@@ -1,9 +1,5 @@
 Starting audit...
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m15\Assignment1\15.1 BinarySearchSymbolTable\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m15\Assignment1\15.1 BinarySearchSymbolTable\Solution.java:215: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m15\Assignment1\15.1 BinarySearchSymbolTable\Solution.java:273: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m15\Assignment1\15.1 BinarySearchSymbolTable\Solution.java:323: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m15\Assignment1\15.1 BinarySearchSymbolTable\Solution.java:346: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m15\Assignment1\15.1 BinarySearchSymbolTable\Solution.java:355: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m15\Assignment1\15.1 BinarySearchSymbolTable\Solution.java:216: Line has trailing spaces. [RegexpSingleline]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m15\Assignment1\15.1 BinarySearchSymbolTable\Solution.java:325: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 2 errors.
