@@ -436,7 +436,7 @@ public final class Solution {
                 }
             }
             for (i = 0; i < quallen; i++) {
-                if (vac1 > 0 && qualcands[i].getCat().equals("Open") && qualcands[i].getAllocation() == false) {
+                if (vac1 > 0 && qualcands[i].getCat().equals("Open") && !qualcands[i].getAllocation()) {
                     qualcands[i].setAllocation(true);
                     vacancy[j++] = qualcands[i];
                     vac1--;
