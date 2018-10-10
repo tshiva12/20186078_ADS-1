@@ -6,9 +6,13 @@ Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:330:48: Expected @param tag for 'a'. [JavadocMethod]
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:386:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:392:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:416:58: Expression can be simplified. [SimplifyBooleanExpression]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:425:58: Expression can be simplified. [SimplifyBooleanExpression]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:434:58: Expression can be simplified. [SimplifyBooleanExpression]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:444:53: Expression can be simplified. [SimplifyBooleanExpression]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:415: Line is longer than 80 characters (found 98). [LineLength]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:415:88: Expression can be simplified. [SimplifyBooleanExpression]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:423: Line is longer than 80 characters (found 98). [LineLength]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:423:88: Expression can be simplified. [SimplifyBooleanExpression]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:431: Line is longer than 80 characters (found 98). [LineLength]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:431:88: Expression can be simplified. [SimplifyBooleanExpression]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:439: Line is longer than 80 characters (found 112). [LineLength]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m14\Assignment2\14.2 student reservation system\Solution.java:439:102: Expression can be simplified. [SimplifyBooleanExpression]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 15 errors.
