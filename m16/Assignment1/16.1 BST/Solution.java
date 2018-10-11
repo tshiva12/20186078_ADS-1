@@ -22,7 +22,7 @@ class Book implements Comparable<Book> {
      * @param      author  The author
      * @param      price   The price
      */
-    Book(String name, String author, String price) {
+    Book(final String name, final String author, final String price) {
         this.name = name;
         this.author = author;
         this.price = price;
@@ -96,7 +96,7 @@ class BST<Key extends Comparable<Key>, Value> {
          * @param      key1  The key 1
          * @param      val1  The value 1
          */
-        public Node(Book key1, String val1) {
+        public Node(final Book key1, final String val1) {
             this.key = key1;
             this.val = val1;
         }
@@ -114,7 +114,7 @@ class BST<Key extends Comparable<Key>, Value> {
      * @param      key   The key
      * @param      val   The value
      */
-    public void put(Book key, String val) {
+    public void put(final Book key, final String val) {
         Node z = new Node(key, val);
         if (root == null) {
             root = z;
@@ -148,7 +148,7 @@ class BST<Key extends Comparable<Key>, Value> {
      *
      * @return     return key.
      */
-    public String get(Book key) {
+    public String get(final Book key) {
         Node x = root;
         while (x != null) {
             int cmp = key.getName().compareTo(x.key.getName());
@@ -166,7 +166,7 @@ class BST<Key extends Comparable<Key>, Value> {
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
 	/**
 	 * Constructs the object.
 	 */
@@ -178,18 +178,20 @@ public class Solution {
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         BST bst = new BST();
         while (scan.hasNext()) {
             String[] tokens = scan.nextLine().split(",");
+            final int three = 3;
+            final int four = 4;
             switch (tokens[0]) {
                 case "put":
-                Book books = new Book(tokens[1], tokens[2], tokens[3]);
-                bst.put(books, tokens[4]);
+                Book books = new Book(tokens[1], tokens[2], tokens[three]);
+                bst.put(books, tokens[four]);
                 break;
                 case "get":
-                books = new Book(tokens[1], tokens[2], tokens[3]);
+                books = new Book(tokens[1], tokens[2], tokens[three]);
                 System.out.println(bst.get(books));
                 break;
                 default:
