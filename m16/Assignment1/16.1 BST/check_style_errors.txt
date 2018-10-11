@@ -1,12 +1,9 @@
 Starting audit...
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m16\Assignment1\16.1 BST\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m16\Assignment1\16.1 BST\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m16\Assignment1\16.1 BST\Solution.java:25:23: 'name' hides a field. [HiddenField]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m16\Assignment1\16.1 BST\Solution.java:25:42: 'author' hides a field. [HiddenField]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m16\Assignment1\16.1 BST\Solution.java:25:63: 'price' hides a field. [HiddenField]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m16\Assignment1\16.1 BST\Solution.java:62:26: Parameter that should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m16\Assignment1\16.1 BST\Solution.java:79: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m16\Assignment1\16.1 BST\Solution.java:99:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m16\Assignment1\16.1 BST\Solution.java:133: Line has trailing spaces. [RegexpSingleline]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m16\Assignment1\16.1 BST\Solution.java:21:8: Unused @param tag for 'name'. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m16\Assignment1\16.1 BST\Solution.java:22:8: Unused @param tag for 'author'. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m16\Assignment1\16.1 BST\Solution.java:23:8: Unused @param tag for 'price'. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m16\Assignment1\16.1 BST\Solution.java:25:23: Expected @param tag for 'name1'. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m16\Assignment1\16.1 BST\Solution.java:25:43: Expected @param tag for 'author1'. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m16\Assignment1\16.1 BST\Solution.java:25:65: Expected @param tag for 'price1'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 6 errors.

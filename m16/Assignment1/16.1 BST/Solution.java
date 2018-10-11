@@ -3,17 +3,17 @@ import java.util.Scanner;
  * Class for book.
  */
 class Book implements Comparable<Book> {
-	/**
-	 * String variable.
-	 */
+    /**
+     * String variable.
+     */
     private String name;
     /**
-	 * String variable.
-	 */
+     * String variable.
+     */
     private String author;
     /**
-	 * String variable.
-	 */
+     * String variable.
+     */
     private String price;
     /**
      * Constructs the object.
@@ -22,10 +22,10 @@ class Book implements Comparable<Book> {
      * @param      author  The author
      * @param      price   The price
      */
-    Book(final String name, final String author, final String price) {
-        this.name = name;
-        this.author = author;
-        this.price = price;
+    Book(final String name1, final String author1, final String price1) {
+        this.name = name1;
+        this.author = author1;
+        this.price = price1;
     }
     /**
      * Gets the name.
@@ -59,7 +59,7 @@ class Book implements Comparable<Book> {
      *
      * @return     return true otherwise false.
      */
-    public int compareTo(Book that) {
+    public int compareTo(final Book that) {
         return this.getName().compareTo(that.getName());
     }
 }
@@ -71,24 +71,24 @@ class Book implements Comparable<Book> {
  */
 class BST<Key extends Comparable<Key>, Value> {
     /**
-	 * Node variable.
-	 */
+     * Node variable.
+     */
     private Node root;
     /**
-	 * Node class.
-	 */ 
+     * Node class.
+     */
     private class Node {
-    	/**
-	 	* Book variable.
-	 	*/
+        /**
+        * Book variable.
+        */
         private Book key;
         /**
-		 * String variable.
-	 	*/
+         * String variable.
+        */
         private String val;
         /**
-	 	* Node left and Node right.
-	 	*/
+        * Node left and Node right.
+        */
         private Node left, right;
         /**
          * Constructs the object.
@@ -96,7 +96,7 @@ class BST<Key extends Comparable<Key>, Value> {
          * @param      key1  The key 1
          * @param      val1  The value 1
          */
-        public Node(final Book key1, final String val1) {
+        Node(final Book key1, final String val1) {
             this.key = key1;
             this.val = val1;
         }
@@ -130,7 +130,7 @@ class BST<Key extends Comparable<Key>, Value> {
                 x = x.right;
             } else {
                 x.val = val;
-                return; 
+                return;
             }
         }
         int cmp = key.compareTo(parent.key);
@@ -167,12 +167,12 @@ class BST<Key extends Comparable<Key>, Value> {
  * Class for solution.
  */
 public final class Solution {
-	/**
-	 * Constructs the object.
-	 */
-	private Solution() {
-		// default constructor is not used.
-	}
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+        // default constructor is not used.
+    }
     /**
      * main function.
      *
@@ -200,3 +200,7 @@ public final class Solution {
         }
     }
 }
+
+
+
+
