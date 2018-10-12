@@ -1,5 +1,148 @@
 import java.util.Scanner;
 /**
+ * Class for node.
+ */
+class Node {
+    /**
+     * Integer variable.
+     */
+    private int data;
+    /**
+     * Node variable.
+     */
+    private Node next;
+    /**
+     * Constructs the object.
+     */
+    Node () {
+        // default Constructor is not used.
+    }
+    /**
+     * Constructs the object.
+     *
+     * @param      data  The getData
+     */
+    Node(final int data) {
+        this.data = data;
+        this.next = null;
+    }
+    public int getData() {
+        return data;
+    }
+    public Node getNext() {
+        return next;
+    }
+    public void setData(final int data) {
+        this.data = data;
+    }
+    public void setNext(final Node next) {
+        this.next = next;
+    }
+}
+/**
+ * Class for steque.
+ */
+class Steque {
+    /**
+     * Node variable.
+     */
+    private Node first;
+    /**
+     * Node variable.
+     */
+    private Node last;
+    /**
+     * Integer variable.
+     */
+    private int size = 0;
+    /**
+     * Constructs the object.
+     */
+    Steque() {
+        first = null;
+        last = null;
+    }
+    /**
+     * add elements from the end. time complexity of enqueue is 1.
+     *
+     * @param      data  The data
+     */
+    public void enque(final int data) {
+        Node temp = new Node(data);
+        size++;
+        if (first == null) {
+            first = temp;
+            last = temp;
+            return;
+        }
+        last.setNext(temp);
+        last = temp;
+    }
+    /**
+     * add the element from the begining. Time complexity of the push is 1.
+     *
+     * @param      data  The data
+     */
+    public void push(int data) {
+        Node newnode = new Node(data);
+        size++;
+        if (first == null) {
+            first = newnode;
+            last = newnode;
+            return;
+        }
+        newnode.setNext(first);
+        first = newnode;
+    }
+    /**
+     * removes the element from the begining in the list.
+     * The time complexity of the pop is 1.
+     *
+     * @return     return remove item value.
+     */
+    public int pop() {
+        if (first != null) {
+            int item = first.getData();
+            first = first.getNext();
+            size--;
+            return item;
+        }
+        return 0;
+    }
+    /**
+     * Determines if empty.
+     *
+     * @return     True if empty, False otherwise.
+     */
+    public boolean isEmpty() {
+        return first == null || last == null;
+    }
+    /**
+     * display the size of the list.
+     *
+     * @return     return size value.
+     */
+    public int size() {
+        return size;
+    }
+    /**
+     * display the output of the list.
+     * Time complexity of the show is n.
+     */
+    public void show() {
+        Node temp = first;
+        if (first == null) {
+            System.out.println("Steque is empty.");
+            return;
+        }
+        while (temp.getNext() != null) {
+            System.out.print(temp.getData() + ", ");
+            temp = temp.getNext();
+        }
+        System.out.println(temp.getData());
+    }
+} 
+/**
  * Class for solution.
  */
 public final class Solution {

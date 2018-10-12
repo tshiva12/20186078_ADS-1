@@ -1,16 +1,13 @@
 Starting audit...
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m7\7.1 Steque\Steque.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m7\7.1 Steque\Steque.java:5:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m7\7.1 Steque\Steque.java:8:13: Variable 'data' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m7\7.1 Steque\Steque.java:12:14: Variable 'next' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m7\7.1 Steque\Steque.java:16:14: '(' is preceded with whitespace. [MethodParamPad]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m7\7.1 Steque\Steque.java:24:14: Parameter data should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m7\7.1 Steque\Steque.java:24:18: 'data' hides a field. [HiddenField]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m7\7.1 Steque\Steque.java:35:14: Variable 'first' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m7\7.1 Steque\Steque.java:39:14: Variable 'last' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m7\7.1 Steque\Steque.java:43:13: Variable 'size' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m7\7.1 Steque\Steque.java:57:27: Parameter data should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m7\7.1 Steque\Steque.java:79:26: Parameter data should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m7\7.1 Steque\Steque.java:141: Line has trailing spaces. [RegexpSingleline]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m7\7.1 Steque\Solution.java:17:10: '(' is preceded with whitespace. [MethodParamPad]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m7\7.1 Steque\Solution.java:25:20: 'data' hides a field. [HiddenField]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m7\7.1 Steque\Solution.java:29:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m7\7.1 Steque\Solution.java:32:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m7\7.1 Steque\Solution.java:35:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m7\7.1 Steque\Solution.java:35:35: 'data' hides a field. [HiddenField]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m7\7.1 Steque\Solution.java:38:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m7\7.1 Steque\Solution.java:38:36: 'next' hides a field. [HiddenField]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m7\7.1 Steque\Solution.java:86:22: Parameter data should be final. [FinalParameters]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m7\7.1 Steque\Solution.java:144: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 13 errors.
+Checkstyle ends with 10 errors.
