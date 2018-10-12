@@ -5,6 +5,5 @@ Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m7\7.1 Steque\Solution.java:50:35: Expected @param tag for 'data2'. [JavadocMethod]
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m7\7.1 Steque\Solution.java:56:8: Unused @param tag for 'next'. [JavadocMethod]
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m7\7.1 Steque\Solution.java:58:36: Expected @param tag for 'next1'. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m7\7.1 Steque\Solution.java:164: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 6 errors.

@@ -161,7 +161,7 @@ class Steque {
         }
         System.out.println(temp.getData());
     }
-} 
+}
 /**
  * Class for solution.
  */
