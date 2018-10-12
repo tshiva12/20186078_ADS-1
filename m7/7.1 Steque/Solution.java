@@ -20,7 +20,7 @@ class Node {
     /**
      * Constructs the object.
      *
-     * @param      data  The getData
+     * @param      data1  The getData
      */
     Node(final int data1) {
         this.data = data1;
@@ -45,7 +45,7 @@ class Node {
     /**
      * Sets the data.
      *
-     * @param      data  The data
+     * @param      data2  The data
      */
     public void setData(final int data2) {
         this.data = data2;
@@ -53,7 +53,7 @@ class Node {
     /**
      * Sets the next.
      *
-     * @param      next  The next
+     * @param      next1  The next
      */
     public void setNext(final Node next1) {
         this.next = next1;
