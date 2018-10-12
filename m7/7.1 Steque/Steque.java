@@ -2,7 +2,13 @@
  * Class for node.
  */
 class Node {
+	/**
+	 * Integer variable.
+	 */
 	int data;
+	/**
+	 * Node variable.
+	 */
 	Node next;
 	/**
 	 * Constructs the object.
@@ -23,8 +29,17 @@ class Node {
  * Class for steque.
  */
 class Steque {
+	/**
+	 * Node variable.
+	 */
 	Node first;
+	/**
+	 * Node variable.
+	 */
 	Node last;
+	/**
+	 * Integer variable.
+	 */
 	int size;
 	/**
 	 * Constructs the object.
