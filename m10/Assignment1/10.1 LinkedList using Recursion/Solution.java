@@ -97,8 +97,8 @@ class LinkedList {
         this.result = null;
     }
     /**
-     * insertAt method is used to add the elements in a particular index. Time
-     * complexity of insertAt method is 1.
+     * insertAt method is used to add the elements in a particular index.
+     * Time complexity of insertAt method is 1.
      *
      * @param      index      The index
      * @param      value      The value
@@ -134,8 +134,8 @@ class LinkedList {
         insertAt(index, value);
     }
     /**
-     * reverse method is used to reverse the given array. Time complexity of
-     * reverse method is 1.
+     * reverse method is used to reverse the given array.
+     * Time complexity of reverse method is 1.
      *
      * @throws     Exception  throws Exception.
      */
