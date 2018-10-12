@@ -43,7 +43,7 @@ public class Solution {
         int N = scan.nextInt();
         int M = scan.nextInt();
         int count = 0;
-        int z = 0;
+        int z = -1;
         MinPQ<CubeSum> pq = new MinPQ<CubeSum>();
         for (int i = 0; i <= n; i++) {
             pq.insert(new CubeSum(i, i));
