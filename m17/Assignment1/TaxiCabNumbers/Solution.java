@@ -91,7 +91,7 @@ public final class Solution {
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
-        int n = 1200;
+        final int n = 1200;
         Scanner scan = new Scanner(System.in);
         int num = scan.nextInt();
         int values = scan.nextInt();
