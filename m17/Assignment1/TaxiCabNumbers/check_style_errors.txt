@@ -15,6 +15,7 @@ Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m17\Assignment1\TaxiCabNumbers\Solution.java:23:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m17\Assignment1\TaxiCabNumbers\Solution.java:23:26: Parameter that should be final. [FinalParameters]
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m17\Assignment1\TaxiCabNumbers\Solution.java:32:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m17\Assignment1\TaxiCabNumbers\Solution.java:33: Line is longer than 80 characters (found 87). [LineLength]
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m17\Assignment1\TaxiCabNumbers\Solution.java:36: Class Solution should be declared as final. [FinalClass]
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m17\Assignment1\TaxiCabNumbers\Solution.java:36: Missing a Javadoc comment. [JavadocType]
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m17\Assignment1\TaxiCabNumbers\Solution.java:37:5: Missing a Javadoc comment. [JavadocMethod]
@@ -24,4 +25,4 @@ Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m17\Assignment1\TaxiCabNumbers\Solution.java:43:13: Name 'N' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m17\Assignment1\TaxiCabNumbers\Solution.java:44:13: Name 'M' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
 Audit done.
-Checkstyle ends with 24 errors.
+Checkstyle ends with 25 errors.

@@ -30,7 +30,7 @@ class CubeSum implements Comparable<CubeSum> {
         return 0;
     }
     public String toString() {
-        return getSum() + " = " + getI() + "^3" + " + " + getJ() + "^3";
+        return this.getSum() + " = " + this.getI() + "^3" + " + " + this.getJ() + "^3";
     }
 }
 public class Solution {
