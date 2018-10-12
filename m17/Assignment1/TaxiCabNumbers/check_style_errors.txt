@@ -1,5 +1,4 @@
 Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m17\Assignment1\TaxiCabNumbers\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m17\Assignment1\TaxiCabNumbers\Solution.java:94:19: '1200' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 1 errors.
