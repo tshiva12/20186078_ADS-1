@@ -6,10 +6,10 @@ class CubeSum implements Comparable<CubeSum> {
     private final int sum;
     private final int i;
     private final int j;
-    public CubeSum(int i, int j) {
-        this.sum = i * i *  i + j * j * j;
-        this.i = i;
-        this.j = j;
+    public CubeSum(int i1, int j1) {
+        this.sum = i1 * i1 *  i1 + j1 * j1 * j1;
+        this.i = i1;
+        this.j = j1;
     }
     public int getSum() {
         return this.sum;
@@ -24,7 +24,7 @@ class CubeSum implements Comparable<CubeSum> {
         if (this.sum < that.sum) {
             return -1;
         }
-        if (this.sum < that.sum) {
+        if (this.sum > that.sum) {
             return +1;
         }
         return 0;
