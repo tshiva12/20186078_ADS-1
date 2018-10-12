@@ -28,6 +28,7 @@ class CubeSum implements Comparable<CubeSum> {
     }
     /**
      * Gets the sum.
+     * Time complexity is 1.
      *
      * @return     The sum.
      */
@@ -36,6 +37,7 @@ class CubeSum implements Comparable<CubeSum> {
     }
     /**
      * Gets i.
+     * Time complexity is 1.
      *
      * @return     I.
      */
@@ -44,6 +46,7 @@ class CubeSum implements Comparable<CubeSum> {
     }
     /**
      * Gets the j.
+     * Time complexity is 1.
      *
      * @return     The j.
      */
@@ -52,6 +55,7 @@ class CubeSum implements Comparable<CubeSum> {
     }
     /**
      * compareTo method is using to compare the two objects.
+     * Time complexity is 1.
      *
      * @param      that  The that
      *
@@ -68,6 +72,7 @@ class CubeSum implements Comparable<CubeSum> {
     }
     /**
      * Returns a string representation of the object.
+     * Time complexity is 1.
      *
      * @return     String representation of the object.
      */
