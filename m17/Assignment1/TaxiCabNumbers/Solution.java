@@ -51,11 +51,11 @@ class CubeSum implements Comparable<CubeSum> {
         return this.j;
     }
     /**
-     * { function_description }
+     * compareTo method is comparing the two objects.
      *
      * @param      that  The that
      *
-     * @return     { description_of_the_return_value }
+     * @return     return integer value.
      */
     public int compareTo(final CubeSum that) {
         if (this.sum < that.sum) {
