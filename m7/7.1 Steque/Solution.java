@@ -14,7 +14,7 @@ class Node {
     /**
      * Constructs the object.
      */
-    Node () {
+    Node() {
         // default Constructor is not used.
     }
     /**
@@ -22,21 +22,41 @@ class Node {
      *
      * @param      data  The getData
      */
-    Node(final int data) {
-        this.data = data;
+    Node(final int data1) {
+        this.data = data1;
         this.next = null;
     }
+    /**
+     * Gets the data.
+     *
+     * @return     The data.
+     */
     public int getData() {
         return data;
     }
+    /**
+     * Gets the next.
+     *
+     * @return     The next.
+     */
     public Node getNext() {
         return next;
     }
-    public void setData(final int data) {
-        this.data = data;
+    /**
+     * Sets the data.
+     *
+     * @param      data  The data
+     */
+    public void setData(final int data2) {
+        this.data = data2;
     }
-    public void setNext(final Node next) {
-        this.next = next;
+    /**
+     * Sets the next.
+     *
+     * @param      next  The next
+     */
+    public void setNext(final Node next1) {
+        this.next = next1;
     }
 }
 /**
@@ -83,7 +103,7 @@ class Steque {
      *
      * @param      data  The data
      */
-    public void push(int data) {
+    public void push(final int data) {
         Node newnode = new Node(data);
         size++;
         if (first == null) {

@@ -1,13 +1,10 @@
 Starting audit...
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m7\7.1 Steque\Solution.java:17:10: '(' is preceded with whitespace. [MethodParamPad]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m7\7.1 Steque\Solution.java:25:20: 'data' hides a field. [HiddenField]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m7\7.1 Steque\Solution.java:29:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m7\7.1 Steque\Solution.java:32:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m7\7.1 Steque\Solution.java:35:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m7\7.1 Steque\Solution.java:35:35: 'data' hides a field. [HiddenField]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m7\7.1 Steque\Solution.java:38:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m7\7.1 Steque\Solution.java:38:36: 'next' hides a field. [HiddenField]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m7\7.1 Steque\Solution.java:86:22: Parameter data should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m7\7.1 Steque\Solution.java:144: Line has trailing spaces. [RegexpSingleline]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m7\7.1 Steque\Solution.java:23:8: Unused @param tag for 'data'. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m7\7.1 Steque\Solution.java:25:20: Expected @param tag for 'data1'. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m7\7.1 Steque\Solution.java:48:8: Unused @param tag for 'data'. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m7\7.1 Steque\Solution.java:50:35: Expected @param tag for 'data2'. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m7\7.1 Steque\Solution.java:56:8: Unused @param tag for 'next'. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m7\7.1 Steque\Solution.java:58:36: Expected @param tag for 'next1'. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m7\7.1 Steque\Solution.java:164: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 10 errors.
+Checkstyle ends with 7 errors.
