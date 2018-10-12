@@ -113,7 +113,7 @@ class BinarySearchTable<Key extends Comparable<Key>, Value> {
     }
     /**
      * rank is used to give the rank of a value in an array.
-     * Time complexity is N.
+     * Time complexity is logN.
      *
      * @param      key   The key
      *
@@ -273,7 +273,7 @@ class BinarySearchTable<Key extends Comparable<Key>, Value> {
     /**
      * floor method is used to represent the value that
      *  is present in that array or not.
-     * Time complexity is 1.
+     * Time complexity is logN.
      *
      * @param      key   The key
      *
@@ -295,7 +295,7 @@ class BinarySearchTable<Key extends Comparable<Key>, Value> {
     }
     /**
      * ceiling method is used to represent the value that is not there.
-     * Time complexity is 1.
+     * Time complexity is logN.
      *
      * @param      key   The key
      *
@@ -315,7 +315,7 @@ class BinarySearchTable<Key extends Comparable<Key>, Value> {
 
     /**
      * Returns the number of keys in this symbol table in the specified range.
-     * Time complexity is 1.
+     * Time complexity is logN.
      *
      * @param      lo    minimum endpoint
      * @param      hi    maximum endpoint
