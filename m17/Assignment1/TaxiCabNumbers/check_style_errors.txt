@@ -1,4 +1,10 @@
 Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m17\Assignment1\TaxiCabNumbers\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m17\Assignment1\TaxiCabNumbers\Solution.java:24:13: Parameter i1 should be final. [FinalParameters]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m17\Assignment1\TaxiCabNumbers\Solution.java:24:21: Parameter j1 should be final. [FinalParameters]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m17\Assignment1\TaxiCabNumbers\Solution.java:60:26: Parameter that should be final. [FinalParameters]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m17\Assignment1\TaxiCabNumbers\Solution.java:81: Class Solution should be declared as final. [FinalClass]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m17\Assignment1\TaxiCabNumbers\Solution.java:93:29: Parameter args should be final. [FinalParameters]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m17\Assignment1\TaxiCabNumbers\Solution.java:94:19: '1200' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 1 errors.
+Checkstyle ends with 7 errors.
