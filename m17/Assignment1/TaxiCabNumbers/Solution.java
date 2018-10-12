@@ -21,16 +21,16 @@ class CubeSum implements Comparable<CubeSum> {
         return this.j;
     }
     public int compareTo(CubeSum that) {
-        if (this.getSum() < that.getSum()) {
+        if (this.sum < that.sum) {
             return -1;
         }
-        if (this.getSum() < that.getSum()) {
+        if (this.sum < that.sum) {
             return +1;
         }
         return 0;
     }
     public String toString() {
-        return this.getSum() + " = " + this.getI() + "^3" + " + " + this.getJ() + "^3";
+        return sum + " = " + i + "^3" + " + " + j + "^3";
     }
 }
 public class Solution {
