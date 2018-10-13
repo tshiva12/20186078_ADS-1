@@ -79,6 +79,7 @@ public final class Solution {
 		int temp = n;
 		scan.nextLine();
 		for (int i = 0; i < 6; i++) {
+			n = temp;
 			if (i == 0) {
 				MinPQ<String> minpq = new MinPQ<String>();
                 MaxPQ<String> maxpq = new MaxPQ<String>();
