@@ -2,15 +2,15 @@ import java.util.Scanner;
 import java.util.ArrayList;
 class Stock {
 	private String name;
-	private Float perchange;
-	Stock(final String name1, final Float perchange1) {
+	private Double perchange;
+	Stock(final String name1, final Double perchange1) {
 		this.name = name1;
 		this.perchange = perchange1;
 	}
 	public String getName() {
 		return this.name;
 	}
-	public Float getPerchange() {
+	public Double getPerchange() {
 		return this.perchange;
 	}
 	public int compareTo(Stock that) {
@@ -87,7 +87,7 @@ public final class Solution {
                 while (n > 0) {
                 	n--;
                 	String[] token = scan.nextLine().split(",");
-                	Stock s = new Stock(token[0], Float.parseFloat(token[1]));
+                	Stock s = new Stock(token[0], Double.parseDouble(token[1]));
                 	sa.add(s);
                 	minpq.insert(token[1]);
                 	minpq.insert(token[1]);
@@ -104,7 +104,7 @@ public final class Solution {
                 while (n > 0) {
                 	n--;
                 	String[] token = scan.nextLine().split(",");
-                	Stock s = new Stock(token[0], Float.parseFloat(token[1]));
+                	Stock s = new Stock(token[0], Double.parseDouble(token[1]));
                 	sa.add(s);
                 	minpq1.insert(token[1]);
                 	minpq1.insert(token[1]);
