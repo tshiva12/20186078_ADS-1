@@ -72,9 +72,13 @@ Sanofi India 0.21
 Tasty Bite Eat 0.23
 WABCO India 0.33
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 50
-	at StockArray.add(Solution.java:39)
-	at Solution.main(Solution.java:89)
+Merck Ltd 4.83
+Abbott India 0.46
+ICRA 2.84
+Schaeffler India 2.57
+TTK Prestige 2.15
+Exception in thread "main" java.lang.NullPointerException
+	at Solution.main(Solution.java:112)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -150,9 +154,13 @@ Fine Organic Industries Ltd. 0.29
 Vinati Organics 1.03
 Chola Inv Fin 1.47
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 50
-	at StockArray.add(Solution.java:39)
-	at Solution.main(Solution.java:89)
+Vinati Organics 4.03
+Endurance Technologies Ltd. 0.1
+Larsen & Toubro 4.11
+APL Apollo Tube 3.18
+Fine Organic Industries Ltd. 2.29
+Exception in thread "main" java.lang.NullPointerException
+	at Solution.main(Solution.java:112)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -233,9 +241,13 @@ WABCO India 0.33
 1
 3
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 50
-	at StockArray.add(Solution.java:39)
-	at Solution.main(Solution.java:89)
+Merck Ltd 4.83
+Abbott India 0.46
+ICRA 2.84
+Schaeffler India 2.57
+TTK Prestige 2.15
+Exception in thread "main" java.lang.NullPointerException
+	at Solution.main(Solution.java:112)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -316,9 +328,13 @@ Chola Inv Fin 1.47
 4
 0
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 50
-	at StockArray.add(Solution.java:39)
-	at Solution.main(Solution.java:89)
+Vinati Organics 4.03
+Endurance Technologies Ltd. 0.1
+Larsen & Toubro 4.11
+APL Apollo Tube 3.18
+Fine Organic Industries Ltd. 2.29
+Exception in thread "main" java.lang.NullPointerException
+	at Solution.main(Solution.java:112)
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -414,7 +430,11 @@ Schaeffler India
 TTK Prestige
 Tasty Bite Eat
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 50
-	at StockArray.add(Solution.java:39)
-	at Solution.main(Solution.java:89)
+Merck Ltd 4.83
+Abbott India 0.48
+Schaeffler India 2.57
+TTK Prestige 2.15
+ICRA 2.15
+Exception in thread "main" java.lang.NullPointerException
+	at Solution.main(Solution.java:112)
 ----------------------------------------

@@ -84,6 +84,7 @@ public final class Solution {
                 MaxPQ<String> maxpq = new MaxPQ<String>();
                 StockArray sa = new StockArray();
                 while (n > 0) {
+                	n--;
                 	String[] token = scan.nextLine().split(",");
                 	Stock s = new Stock(token[0], Float.parseFloat(token[1]));
                 	sa.add(s);
@@ -99,6 +100,7 @@ public final class Solution {
                 MaxPQ<String> maxpq1 = new MaxPQ<String>();
                 StockArray sa = new StockArray();
                 while (n > 0) {
+                	n--;
                 	String[] token = scan.nextLine().split(",");
                 	Stock s = new Stock(token[0], Float.parseFloat(token[1]));
                 	sa.add(s);
