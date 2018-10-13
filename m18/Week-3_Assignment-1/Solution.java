@@ -118,6 +118,7 @@ public final class Solution {
                 for (int k = listsize - 1; k >= listsize - 5; k--) {
                 	System.out.println(sa.list[k].getName() + " " + sa.list[k].getPerchange());
                 }
+                System.out.println();
 			}
 		}
 		int query = Integer.parseInt(scan.nextLine());
