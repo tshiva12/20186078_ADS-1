@@ -44,7 +44,7 @@ class StockArray {
 	public String show() {
 		String str = "";
 		for (int i = 0; i < size; i++) {
-			str += list[i].getName() + " " + list[i].getPerchange();
+			str += list[i].getName() + " " + list[i].getPerchange() + "\n";
 		}
 		return str;
 	}
