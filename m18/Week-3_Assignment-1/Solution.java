@@ -97,6 +97,11 @@ public final class Solution {
 					System.out.println(sa.list[j].getName() + " " + sa.list[j].getPerchange());                	
                 }
                 System.out.println();
+                 int listsize = sa.getSize();
+                for (int k = listsize - 1; k >= listsize - 5; k--) {
+                	System.out.println(sa.list[k].getName() + " " + sa.list[k].getPerchange());
+                }
+                System.out.println();
 			} else {
 				MinPQ<String> minpq1 = new MinPQ<String>();
                 MaxPQ<String> maxpq1 = new MaxPQ<String>();
