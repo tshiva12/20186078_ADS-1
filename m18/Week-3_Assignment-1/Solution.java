@@ -112,6 +112,7 @@ public final class Solution {
                 for (int j = 0; j < 5; j++) {
 					System.out.println(sa.list[j].getName() + " " + sa.list[j].getPerchange());                	
                 }
+                System.out.println();
                 int listsize = sa.getSize();
                 for (int k = listsize; k >= listsize - 5; k--) {
                 	System.out.println(sa.list[k].getName() + " " + sa.list[k].getPerchange());
