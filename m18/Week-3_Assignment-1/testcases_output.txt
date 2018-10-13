@@ -77,8 +77,9 @@ Abbott India 0.46
 ICRA 2.84
 Schaeffler India 2.57
 TTK Prestige 2.15
+
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:112)
+	at Solution.main(Solution.java:113)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -159,8 +160,9 @@ Endurance Technologies Ltd. 0.1
 Larsen & Toubro 4.11
 APL Apollo Tube 3.18
 Fine Organic Industries Ltd. 2.29
+
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:112)
+	at Solution.main(Solution.java:113)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -246,8 +248,9 @@ Abbott India 0.46
 ICRA 2.84
 Schaeffler India 2.57
 TTK Prestige 2.15
+
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:112)
+	at Solution.main(Solution.java:113)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -333,8 +336,9 @@ Endurance Technologies Ltd. 0.1
 Larsen & Toubro 4.11
 APL Apollo Tube 3.18
 Fine Organic Industries Ltd. 2.29
+
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:112)
+	at Solution.main(Solution.java:113)
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -435,6 +439,7 @@ Abbott India 0.48
 Schaeffler India 2.57
 TTK Prestige 2.15
 ICRA 2.15
+
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:112)
+	at Solution.main(Solution.java:113)
 ----------------------------------------
