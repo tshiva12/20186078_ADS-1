@@ -38,7 +38,7 @@ class StockArray {
 	public void add(Stock list1) {
 		list[size++] = list1;
 	}
-	private int getSize() {
+	public int getSize() {
 		return size;
 	}
 	public String show() {
@@ -110,6 +110,10 @@ public final class Solution {
                 sa.sort();
                 for (int j = 0; j < 5; j++) {
 					System.out.println(sa.list[j].getName() + " " + sa.list[j].getPerchange());                	
+                }
+                int listsize = sa.getSize();
+                for (int k = listsize; k >= listsize - 5; k--) {
+                	System.out.println(sa.list[k].getName() + " " + sa.list[k].getPerchange());
                 }
 			}
 		}
