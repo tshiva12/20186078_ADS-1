@@ -72,7 +72,10 @@ class StockArray {
      * Integer variable.
      */
     private int size;
-    final int fifty = 50;
+    /**
+     * Integer variable.
+     */
+    private final int fifty = 50;
     /**
      * Constructs the object.
      */
@@ -129,14 +132,14 @@ class StockArray {
      * swapping method is used to exchange the two integer variables.
      * Time complexity is 1.
      *
-     * @param      list  The list
+     * @param      list3  The list
      * @param      i     integer variable.
      * @param      j     integer variable.
      */
-    public void swapping(final Stock[] list, final int i, final int j) {
-        Stock temp = list[i];
-        list[i] = list[j];
-        list[j] = temp;
+    public void swapping(final Stock[] list3, final int i, final int j) {
+        Stock temp = list3[i];
+        list3[i] = list3[j];
+        list3[j] = temp;
     }
     /**
      * less method is used to compare the two two integer variables.
@@ -194,7 +197,7 @@ public final class Solution {
                 sa.sort();
                 for (int j = 0; j < five; j++) {
                     System.out.println(sa.list[j].getName()
-                     + " " + sa.list[j].getPerchange());                    
+                     + " " + sa.list[j].getPerchange());
                 }
                 System.out.println();
                  int listsize = sa.getSize();
@@ -236,3 +239,5 @@ public final class Solution {
         }
     }
 }
+
+
