@@ -50,7 +50,7 @@ class StockArray {
 	}
 	public void sort() {
 		for (int i = 0; i < size - 1; i++) {
-			int min = 1;
+			int min = i;
 			for (int j = i + 1; j < size; j++) {
 				if (less(list, j, min)) {
 					min = j;
