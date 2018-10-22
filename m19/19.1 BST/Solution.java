@@ -111,10 +111,12 @@ class BST {
          * @param      val1  The value
          * @param s int size
          */
-        private Node(final Book key1, final int val1) {
+        private Node(final Book key1, final int val1, final int size1) {
             this.key = key1;
             this.val = val1;
-            this.size = 0;
+            this.size = size1;
+            left = null;
+            right = null;
         }
     }
     /**
@@ -186,7 +188,7 @@ class BST {
      */
     private Node put(final Node x, final Book key, final int val) {
         if (x == null) {
-            return new Node(key, val);
+            return new Node(key, val, 1);
         }
         int cmp = key.compareTo(x.key);
         if (cmp < 0) {
