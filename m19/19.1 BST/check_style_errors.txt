@@ -1,0 +1,10 @@
+Starting audit...
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m19\19.1 BST\Solution.java:21:8: Unused @param tag for 'bookname'. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m19\19.1 BST\Solution.java:22:8: Unused @param tag for 'bookauthor'. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m19\19.1 BST\Solution.java:23:8: Unused @param tag for 'bookprice'. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m19\19.1 BST\Solution.java:25:23: Expected @param tag for 'name1'. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m19\19.1 BST\Solution.java:26:30: Expected @param tag for 'author1'. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m19\19.1 BST\Solution.java:26:51: Expected @param tag for 'price1'. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m19\19.1 BST\Solution.java:112:12: Unused @param tag for 's'. [JavadocMethod]
+Audit done.
+Checkstyle ends with 7 errors.
