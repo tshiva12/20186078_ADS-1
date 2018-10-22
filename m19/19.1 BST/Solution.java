@@ -18,9 +18,9 @@ class Book implements Comparable {
     /**
      * Constructs the object.
      *
-     * @param      bookname    The bookname
-     * @param      bookauthor  The bookauthor
-     * @param      bookprice   The bookprice
+     * @param      name1    The bookname
+     * @param      author1  The bookauthor
+     * @param      price1   The bookprice
      */
     Book(final String name1,
                 final String author1, final float price1) {
@@ -108,8 +108,8 @@ class BST {
          * Constructs the object.
          *
          * @param      key1   The key
-         * @param      val1  The value
-         * @param s int size
+         * @param      val1   The value
+         * @param      size1  The size 1
          */
         private Node(final Book key1, final int val1, final int size1) {
             this.key = key1;
