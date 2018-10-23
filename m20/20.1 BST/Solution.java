@@ -202,12 +202,14 @@ class BST {
     }
     /**
      * deleteing minimum element.
+     * Time complexity is 1.
      */
     public void deleteMin() {
         root = deleteMin(root);
     }
     /**
      * deleting minimum element with node value.
+     * Time complexity is logN.
      *
      * @param      x     Node variable.
      *
@@ -223,12 +225,14 @@ class BST {
     }
     /**
      * Removes the largest key and associated value from the symbol table.
+     * Time complexity is 1.
      */
     public void deleteMax() {
         root = deleteMax(root);
     }
     /**
      * Removes the largest element with node value.
+     * Time complexity is logN.
      *
      * @param      x     Node variable.
      *
@@ -245,6 +249,7 @@ class BST {
     /**
      * Removes the specified key and its associated value from this symbol table
      * (if the key is in this symbol table).
+     * Time complexity is 1.
      *
      * @param      key   The key
      */
@@ -254,6 +259,7 @@ class BST {
 
     /**
      * delete the element that given.
+     * Time complexity is N.
      *
      * @param      x     Node variable.
      * @param      key   The key
