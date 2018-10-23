@@ -201,7 +201,7 @@ class BST {
         return x;
     }
     /**
-     * deleteing minimum element. 
+     * deleteing minimum element.
      */
     public void deleteMin() {
         root = deleteMin(root);
@@ -214,7 +214,9 @@ class BST {
      * @return     return x value.
      */
     private Node deleteMin(final Node x) {
-        if (x.left == null) return x.right;
+        if (x.left == null) {
+            return x.right;
+        }
         x.left = deleteMin(x.left);
         x.size = size(x.left) + size(x.right) + 1;
         return x;
@@ -233,7 +235,9 @@ class BST {
      * @return     return x value.
      */
     private Node deleteMax(final Node x) {
-        if (x.right == null) return x.left;
+        if (x.right == null) {
+            return x.left;
+        }
         x.right = deleteMax(x.right);
         x.size = size(x.left) + size(x.right) + 1;
         return x;
@@ -260,11 +264,18 @@ class BST {
         if (x == null) return null;
 
         int cmp = key.compareTo(x.key);
-        if      (cmp < 0) x.left  = delete(x.left,  key);
-        else if (cmp > 0) x.right = delete(x.right, key);
-        else { 
-            if (x.right == null) return x.left;
-            if (x.left  == null) return x.right;
+        if (cmp < 0) {
+            x.left  = delete(x.left,  key);
+        }
+        else if (cmp > 0) {
+            x.right = delete(x.right, key);
+        } else { 
+            if (x.right == null) {
+                return x.left;
+            }
+            if (x.left  == null) {
+                return x.right;
+            }
             Node t = x;
             x = min(t.right);
             x.right = deleteMin(t.right);
