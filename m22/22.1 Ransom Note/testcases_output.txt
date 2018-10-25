@@ -8,7 +8,7 @@ Yes
 Expected Output: 
 No
 Your Output: 
-Yes
+NoYes
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -20,7 +20,7 @@ NoYes
 Expected Output: 
 No
 Your Output: 
-Yes
+NoNoNoNoNoNoNoNoNoNoNoNoNoNoNoNoNoNoNoNoNoNoNoNoNoNoNoNoNoNoYes
 ----------------------------------------
 ########## Testcase 4: Passed ##########
 Expected Output: 

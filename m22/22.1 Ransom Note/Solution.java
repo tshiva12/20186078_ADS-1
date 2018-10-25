@@ -350,7 +350,7 @@ public final class Solution {
         String[] tokens = scan.nextLine().split(" ");
         for (int i = 0; i < tokens.length; i++) {
             if (hash.contains(tokens[i])) {
-                hash.put(tokens[i], hash.get(tokens[i]));
+                hash.put(tokens[i], hash.get(tokens[i]) + 1);
             } else {
                 hash.put(tokens[i], 1);
             }
@@ -361,7 +361,7 @@ public final class Solution {
                 if (hash.get(tokens1[i]) == 0) {
                     System.out.print("No");
                 } else {
-                    hash.put(tokens1[i], hash.get(tokens1[i]));
+                    hash.put(tokens1[i], hash.get(tokens1[i]) - 1);
                 }
             } else {
                 System.out.print("No");
