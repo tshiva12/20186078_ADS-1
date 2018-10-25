@@ -83,8 +83,9 @@ class SequentialSearchST<Key, Value> {
      */
     public Value get(final Key key) {
         for (Node x = first; x != null; x = x.next) {
-            if (key.equals(x.key))
+            if (key.equals(x.key)) {
                 return x.val;
+            }
         }
         return null;
     }
@@ -126,7 +127,9 @@ class SequentialSearchST<Key, Value> {
      * @return     return x.
      */
     private Node delete(final Node x, final Key key) {
-        if (x == null) return null;
+        if (x == null) {
+            return null;
+        }
         if (key.equals(x.key)) {
             n--;
             return x.next;
@@ -141,8 +144,9 @@ class SequentialSearchST<Key, Value> {
      */
     public Iterable<Key> keys()  {
         Queue<Key> queue = new Queue<Key>();
-        for (Node x = first; x != null; x = x.next)
+        for (Node x = first; x != null; x = x.next) {
             queue.enqueue(x.key);
+        }
         return queue;
     }
 }
@@ -183,8 +187,9 @@ class SeparateChainingHashST<Key, Value> {
     public SeparateChainingHashST(final int m) {
         this.m = m;
         st = (SequentialSearchST<Key, Value>[]) new SequentialSearchST[m];
-        for (int i = 0; i < m; i++)
+        for (int i = 0; i < m; i++) {
             st[i] = new SequentialSearchST<Key, Value>();
+        }
     }
     /**
      * resize method.
@@ -236,7 +241,9 @@ class SeparateChainingHashST<Key, Value> {
      * @return     return boolean value.
      */
     public boolean contains(final Key key) {
-        if (key == null) throw new IllegalArgumentException("argument to contains() is null");
+        if (key == null) {
+            throw new IllegalArgumentException("argument to contains() is null");
+        }
         return get(key) != null;
     }
     /**
@@ -247,7 +254,9 @@ class SeparateChainingHashST<Key, Value> {
      * @return     return value.
      */
     public Value get(final Key key) {
-        if (key == null) throw new IllegalArgumentException("key is null");
+        if (key == null) {
+            throw new IllegalArgumentException("key is null");
+        }
         int i = hash(key);
         return st[i].get(key);
     }
@@ -258,14 +267,20 @@ class SeparateChainingHashST<Key, Value> {
      * @param      val   The value
      */
     public void put(final Key key, final Value val) {
-        if (key == null) throw new IllegalArgumentException("first argument to put() is null");
+        if (key == null) {
+            throw new IllegalArgumentException("first argument to put() is null");
+        }
         if (val == null) {
             delete(key);
             return;
         }
-        if (n >= 10*m) resize(2*m);
+        if (n >= 10*m) {
+            resize(2*m);
+        }
         int i = hash(key);
-        if (!st[i].contains(key)) n++;
+        if (!st[i].contains(key)) {
+            n++;
+        }
         st[i].put(key, val);
     } 
     /**
@@ -274,11 +289,17 @@ class SeparateChainingHashST<Key, Value> {
      * @param      key   The key
      */
     public void delete(final Key key) {
-        if (key == null) throw new IllegalArgumentException("argument to delete() is null");
+        if (key == null) {
+            throw new IllegalArgumentException("argument to delete() is null");
+        }
         int i = hash(key);
-        if (st[i].contains(key)) n--;
+        if (st[i].contains(key)) {
+            n--;
+        }
         st[i].delete(key);
-        if (m > INIT_CAPACITY && n <= 2*m) resize(m/2);
+        if (m > INIT_CAPACITY && n <= 2*m) {
+            resize(m/2);
+        }
     }
     /**
      * Iterable.
@@ -288,8 +309,9 @@ class SeparateChainingHashST<Key, Value> {
     public Iterable<Key> keys() {
         Queue<Key> queue = new Queue<Key>();
         for (int i = 0; i < m; i++) {
-            for (Key key : st[i].keys())
+            for (Key key : st[i].keys()) {
                 queue.enqueue(key);
+            }
         }
         return queue;
     }
@@ -297,7 +319,7 @@ class SeparateChainingHashST<Key, Value> {
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
@@ -309,21 +331,22 @@ public class Solution {
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
-        SeparateChainingHashST<String, Integer> hash = new SeparateChainingHashST<String, Integer>();
+        SeparateChainingHashST<String, Integer>
+         hash = new SeparateChainingHashST<String, Integer>();
         String str1 = scan.nextLine();
         String[] tokens = scan.nextLine().split(" ");
-        for(int i = 0; i < tokens.length; i++) {
+        for (int i = 0; i < tokens.length; i++) {
             if (hash.contains(tokens[i])) {
-                hash.put(tokens[i], hash.get(tokens[i])); 
+                hash.put(tokens[i], hash.get(tokens[i]));
             } else {
                 hash.put(tokens[i], 1);
             }
         }
         String[] tokens1 = scan.nextLine().split(" ");
         for (int i = 0; i < tokens1.length; i++) {
-            if (hash.contains(tokens1[i]) ) {
+            if (hash.contains(tokens1[i])) {
                 if (hash.get(tokens1[i]) == 0) {
                     System.out.print("No");
                 } else {
