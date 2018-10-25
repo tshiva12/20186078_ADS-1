@@ -112,6 +112,7 @@ class SequentialSearchST<Key, Value> {
     }
     /**
      * delete.
+     * Time complexity logN.
      *
      * @param      key   The key
      */
@@ -120,6 +121,7 @@ class SequentialSearchST<Key, Value> {
     }
     /**
      * delete.
+     * Time complexity logN.
      *
      * @param      x     Node variable.
      * @param      key   The key
@@ -139,6 +141,7 @@ class SequentialSearchST<Key, Value> {
     }
     /**
      * Iterable.
+     * Time complexity logN.
      *
      * @return     return queue.
      */
