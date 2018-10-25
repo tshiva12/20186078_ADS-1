@@ -1,6 +1,4 @@
 Starting audit...
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m22\22.1 Ransom Note\Solution.java:185:8: Unused @param tag for 'm'. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m22\22.1 Ransom Note\Solution.java:187:38: Expected @param tag for 'm1'. [JavadocMethod]
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m22\22.1 Ransom Note\Solution.java:219:34: '0x7fffffff' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 3 errors.
+Checkstyle ends with 1 errors.

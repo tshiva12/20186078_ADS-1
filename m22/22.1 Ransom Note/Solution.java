@@ -182,7 +182,7 @@ class SeparateChainingHashST<Key, Value> {
     /**
      * Constructs the object.
      *
-     * @param      m     integer variable.
+     * @param      m1    integer variable.
      */
     SeparateChainingHashST(final int m1) {
         this.m = m1;
