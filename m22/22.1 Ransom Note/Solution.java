@@ -181,6 +181,7 @@ class SeparateChainingHashST<Key, Value> {
     }
     /**
      * Constructs the object.
+     * Time complexity N.
      *
      * @param      m1    integer variable.
      */
@@ -193,6 +194,7 @@ class SeparateChainingHashST<Key, Value> {
     }
     /**
      * resize method.
+     * Time complexity logN.
      *
      * @param      chains  The chains
      */
@@ -224,6 +226,7 @@ class SeparateChainingHashST<Key, Value> {
     }
     /**
      * Size.
+     * Time complexity 1.
      *
      * @return     return size.
      */
@@ -240,6 +243,7 @@ class SeparateChainingHashST<Key, Value> {
     }
     /**
      * Contains.
+     * Time complexity logN.
      *
      * @param      key   The key
      *
@@ -254,6 +258,7 @@ class SeparateChainingHashST<Key, Value> {
     }
     /**
      * Get.
+     * Time complexity logN.
      *
      * @param      key   The key
      *
@@ -268,6 +273,7 @@ class SeparateChainingHashST<Key, Value> {
     }
     /**
      * Put.
+     * Time complexity logN.
      *
      * @param      key   The key
      * @param      val   The value
@@ -296,6 +302,7 @@ class SeparateChainingHashST<Key, Value> {
     }
     /**
      * delete.
+     * Time complexity logN.
      *
      * @param      key   The key
      */
