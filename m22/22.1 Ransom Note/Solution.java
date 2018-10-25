@@ -360,11 +360,13 @@ public final class Solution {
             if (hash.contains(tokens1[i])) {
                 if (hash.get(tokens1[i]) == 0) {
                     System.out.print("No");
+                    return;
                 } else {
                     hash.put(tokens1[i], hash.get(tokens1[i]) - 1);
                 }
             } else {
                 System.out.print("No");
+                return;
             }
         }
         System.out.println("Yes");
