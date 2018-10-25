@@ -176,7 +176,7 @@ class SeparateChainingHashST<Key, Value> {
     /**
      * Constructs the object.
      */
-    public SeparateChainingHashST() {
+    SeparateChainingHashST() {
         this(INIT_CAPACITY);
     }
     /**
@@ -184,10 +184,10 @@ class SeparateChainingHashST<Key, Value> {
      *
      * @param      m     integer variable.
      */
-    SeparateChainingHashST(final int m) {
-        this.m = m;
-        st = (SequentialSearchST<Key, Value>[]) new SequentialSearchST[m];
-        for (int i = 0; i < m; i++) {
+    SeparateChainingHashST(final int m1) {
+        this.m = m1;
+        st = (SequentialSearchST<Key, Value>[]) new SequentialSearchST[m1];
+        for (int i = 0; i < m1; i++) {
             st[i] = new SequentialSearchST<Key, Value>();
         }
     }
@@ -269,6 +269,10 @@ class SeparateChainingHashST<Key, Value> {
      * @param      val   The value
      */
     public void put(final Key key, final Value val) {
+        /**
+         * Integer variable.
+         */
+        final int ten = 10;
         if (key == null) {
             throw new
              IllegalArgumentException("first argument to put() is null");
@@ -277,7 +281,7 @@ class SeparateChainingHashST<Key, Value> {
             delete(key);
             return;
         }
-        if (n >= 10 * m) {
+        if (n >= ten * m) {
             resize(2 * m);
         }
         int i = hash(key);
