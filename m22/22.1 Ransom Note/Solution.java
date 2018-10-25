@@ -37,7 +37,7 @@ class SequentialSearchST<Key, Value> {
          * @param      val1   The value 1
          * @param      next1  The next 1
          */
-        public Node(Key key1, Value val1, Node next1)  {
+        Node(final Key key1, final Value val1, final Node next1)  {
             this.key  = key1;
             this.val  = val1;
             this.next = next1;
@@ -71,7 +71,7 @@ class SequentialSearchST<Key, Value> {
      *
      * @return     true if empty, false otherwise.
      */
-    public boolean contains(Key key) {
+    public boolean contains(final Key key) {
         return get(key) != null;
     }
     /**
@@ -81,7 +81,7 @@ class SequentialSearchST<Key, Value> {
      *
      * @return     return x value.
      */
-    public Value get(Key key) {
+    public Value get(final Key key) {
         for (Node x = first; x != null; x = x.next) {
             if (key.equals(x.key))
                 return x.val;
@@ -94,7 +94,7 @@ class SequentialSearchST<Key, Value> {
      * @param      key   The key
      * @param      val   The value
      */
-    public void put(Key key, Value val) {
+    public void put(final Key key, final Value val) {
         if (val == null) {
             delete(key);
             return;
@@ -114,7 +114,7 @@ class SequentialSearchST<Key, Value> {
      *
      * @param      key   The key
      */
-    public void delete(Key key) {
+    public void delete(final Key key) {
         first = delete(first, key);
     }
     /**
@@ -125,7 +125,7 @@ class SequentialSearchST<Key, Value> {
      *
      * @return     return x.
      */
-    private Node delete(Node x, Key key) {
+    private Node delete(final Node x, final Key key) {
         if (x == null) return null;
         if (key.equals(x.key)) {
             n--;
@@ -180,7 +180,7 @@ class SeparateChainingHashST<Key, Value> {
      *
      * @param      m     integer variable.
      */
-    public SeparateChainingHashST(int m) {
+    public SeparateChainingHashST(final int m) {
         this.m = m;
         st = (SequentialSearchST<Key, Value>[]) new SequentialSearchST[m];
         for (int i = 0; i < m; i++)
@@ -191,7 +191,7 @@ class SeparateChainingHashST<Key, Value> {
      *
      * @param      chains  The chains
      */
-    private void resize(int chains) {
+    private void resize(final int chains) {
         SeparateChainingHashST<Key, Value> temp = new SeparateChainingHashST<Key, Value>(chains);
         for (int i = 0; i < m; i++) {
             for (Key key : st[i].keys()) {
@@ -209,7 +209,7 @@ class SeparateChainingHashST<Key, Value> {
      *
      * @return     key variable.
      */
-    private int hash(Key key) {
+    private int hash(final Key key) {
         return (key.hashCode() & 0x7fffffff) % m;
     } 
     /**
@@ -235,7 +235,7 @@ class SeparateChainingHashST<Key, Value> {
      *
      * @return     return boolean value.
      */
-    public boolean contains(Key key) {
+    public boolean contains(final Key key) {
         if (key == null) throw new IllegalArgumentException("argument to contains() is null");
         return get(key) != null;
     }
@@ -246,7 +246,7 @@ class SeparateChainingHashST<Key, Value> {
      *
      * @return     return value.
      */
-    public Value get(Key key) {
+    public Value get(final Key key) {
         if (key == null) throw new IllegalArgumentException("key is null");
         int i = hash(key);
         return st[i].get(key);
@@ -257,7 +257,7 @@ class SeparateChainingHashST<Key, Value> {
      * @param      key   The key
      * @param      val   The value
      */
-    public void put(Key key, Value val) {
+    public void put(final Key key, final Value val) {
         if (key == null) throw new IllegalArgumentException("first argument to put() is null");
         if (val == null) {
             delete(key);
@@ -273,7 +273,7 @@ class SeparateChainingHashST<Key, Value> {
      *
      * @param      key   The key
      */
-    public void delete(Key key) {
+    public void delete(final Key key) {
         if (key == null) throw new IllegalArgumentException("argument to delete() is null");
         int i = hash(key);
         if (st[i].contains(key)) n--;
