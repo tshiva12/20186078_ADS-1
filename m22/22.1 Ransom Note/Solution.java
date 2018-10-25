@@ -208,7 +208,10 @@ class SeparateChainingHashST<Key, Value> {
         this.n  = temp.n;
         this.st = temp.st;
     }
-    final int z = 0x7fffffff;
+    /**
+     * Integer variable.
+     */
+    private final int z = 0x7fffffff;
     /**
      * hash function.
      *
