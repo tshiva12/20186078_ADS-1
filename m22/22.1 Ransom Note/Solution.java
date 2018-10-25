@@ -46,7 +46,7 @@ class SequentialSearchST<Key, Value> {
     /**
      * Constructs the object.
      */
-    public SequentialSearchST() {
+    SequentialSearchST() {
     }
     /**
      * size method.
@@ -184,7 +184,7 @@ class SeparateChainingHashST<Key, Value> {
      *
      * @param      m     integer variable.
      */
-    public SeparateChainingHashST(final int m) {
+    SeparateChainingHashST(final int m) {
         this.m = m;
         st = (SequentialSearchST<Key, Value>[]) new SequentialSearchST[m];
         for (int i = 0; i < m; i++) {
@@ -197,7 +197,8 @@ class SeparateChainingHashST<Key, Value> {
      * @param      chains  The chains
      */
     private void resize(final int chains) {
-        SeparateChainingHashST<Key, Value> temp = new SeparateChainingHashST<Key, Value>(chains);
+        SeparateChainingHashST<Key, Value>
+         temp = new SeparateChainingHashST<Key, Value>(chains);
         for (int i = 0; i < m; i++) {
             for (Key key : st[i].keys()) {
                 temp.put(key, st[i].get(key));
@@ -216,7 +217,7 @@ class SeparateChainingHashST<Key, Value> {
      */
     private int hash(final Key key) {
         return (key.hashCode() & 0x7fffffff) % m;
-    } 
+    }
     /**
      * Size.
      *
@@ -224,7 +225,7 @@ class SeparateChainingHashST<Key, Value> {
      */
     public int size() {
         return n;
-    } 
+    }
     /**
      * Determines if empty.
      *
@@ -242,7 +243,8 @@ class SeparateChainingHashST<Key, Value> {
      */
     public boolean contains(final Key key) {
         if (key == null) {
-            throw new IllegalArgumentException("argument to contains() is null");
+            throw new
+             IllegalArgumentException("argument to contains() is null");
         }
         return get(key) != null;
     }
@@ -268,21 +270,22 @@ class SeparateChainingHashST<Key, Value> {
      */
     public void put(final Key key, final Value val) {
         if (key == null) {
-            throw new IllegalArgumentException("first argument to put() is null");
+            throw new
+             IllegalArgumentException("first argument to put() is null");
         }
         if (val == null) {
             delete(key);
             return;
         }
-        if (n >= 10*m) {
-            resize(2*m);
+        if (n >= 10 * m) {
+            resize(2 * m);
         }
         int i = hash(key);
         if (!st[i].contains(key)) {
             n++;
         }
         st[i].put(key, val);
-    } 
+    }
     /**
      * delete.
      *
@@ -297,8 +300,8 @@ class SeparateChainingHashST<Key, Value> {
             n--;
         }
         st[i].delete(key);
-        if (m > INIT_CAPACITY && n <= 2*m) {
-            resize(m/2);
+        if (m > INIT_CAPACITY && n <= 2 * m) {
+            resize(m / 2);
         }
     }
     /**

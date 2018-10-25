@@ -1,23 +1,7 @@
 Starting audit...
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m22\22.1 Ransom Note\Solution.java:49:5: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] G:\MSIT\1-1\20186078_ADS-1\m22\22.1 Ransom Note\Solution.java:179:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m22\22.1 Ransom Note\Solution.java:187:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m22\22.1 Ransom Note\Solution.java:187:45: 'm' hides a field. [HiddenField]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m22\22.1 Ransom Note\Solution.java:200: Line is longer than 80 characters (found 97). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m22\22.1 Ransom Note\Solution.java:218:34: '0x7fffffff' is a magic number. [MagicNumber]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m22\22.1 Ransom Note\Solution.java:219: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m22\22.1 Ransom Note\Solution.java:227: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m22\22.1 Ransom Note\Solution.java:245: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m22\22.1 Ransom Note\Solution.java:271: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m22\22.1 Ransom Note\Solution.java:277:18: '10' is a magic number. [MagicNumber]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m22\22.1 Ransom Note\Solution.java:277:20: '*' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m22\22.1 Ransom Note\Solution.java:277:21: '*' is not followed by whitespace. [WhitespaceAround]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m22\22.1 Ransom Note\Solution.java:278:21: '*' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m22\22.1 Ransom Note\Solution.java:278:22: '*' is not followed by whitespace. [WhitespaceAround]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m22\22.1 Ransom Note\Solution.java:285: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m22\22.1 Ransom Note\Solution.java:300:40: '*' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m22\22.1 Ransom Note\Solution.java:300:41: '*' is not followed by whitespace. [WhitespaceAround]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m22\22.1 Ransom Note\Solution.java:301:21: '/' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m22\22.1 Ransom Note\Solution.java:301:22: '/' is not followed by whitespace. [WhitespaceAround]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m22\22.1 Ransom Note\Solution.java:187:38: 'm' hides a field. [HiddenField]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m22\22.1 Ransom Note\Solution.java:219:34: '0x7fffffff' is a magic number. [MagicNumber]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m22\22.1 Ransom Note\Solution.java:280:18: '10' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 20 errors.
+Checkstyle ends with 4 errors.
