@@ -208,6 +208,7 @@ class SeparateChainingHashST<Key, Value> {
         this.n  = temp.n;
         this.st = temp.st;
     }
+    final int z = 0x7fffffff;
     /**
      * hash function.
      *
@@ -216,7 +217,7 @@ class SeparateChainingHashST<Key, Value> {
      * @return     key variable.
      */
     private int hash(final Key key) {
-        return (key.hashCode() & 0x7fffffff) % m;
+        return (key.hashCode() & z) % m;
     }
     /**
      * Size.

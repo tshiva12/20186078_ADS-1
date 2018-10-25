@@ -1,4 +1,5 @@
 Starting audit...
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m22\22.1 Ransom Note\Solution.java:219:34: '0x7fffffff' is a magic number. [MagicNumber]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m22\22.1 Ransom Note\Solution.java:211:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m22\22.1 Ransom Note\Solution.java:211:15: Variable 'z' must be private and have accessor methods. [VisibilityModifier]
 Audit done.
-Checkstyle ends with 1 errors.
+Checkstyle ends with 2 errors.
