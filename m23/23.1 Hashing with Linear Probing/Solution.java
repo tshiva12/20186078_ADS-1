@@ -17,7 +17,8 @@ public final class Solution {
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int num = scan.nextInt();
-        LinearProbingHashST<String, Integer> linear = new LinearProbingHashST<>();
+        LinearProbingHashST<String, Integer> linear
+         = new LinearProbingHashST<>();
         for (int i = 0; i <= num; i++) {
             String[] tokens = scan.nextLine().split(" ");
             switch (tokens[0]) {
