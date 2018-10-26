@@ -32,7 +32,7 @@ public final class Solution {
                         str += str1 + ":" + linear.get(str1) + ", ";
                     }
                     System.out.println("{" + str.substring(
-                        0, str.length() - 1) + "}");
+                        0, str.length() - 2) + "}");
                 }
                 break;
                 case "delete":
