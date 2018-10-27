@@ -391,13 +391,19 @@ public class Solution {
         		int val1 = Integer.parseInt(tokens1[1]);
         		if (hash.contains(val1)) {
         			System.out.println(hash.get(val1).getName());
+        		} else {
+        			System.out.println("Student doesn't exists...");
         		}
 
         	} else if (tokens1[2].equals("2")) {
         		int val2 = Integer.parseInt(tokens1[1]);
         		if (hash.contains(val2)) {
         			System.out.println(hash.get(val2).getTotal());
+        		} else {
+        			System.out.println("Student doesn't exists...");
         		}
+        	} else {
+        		System.out.println("Student doesn't exists...");
         	}
         }
     }
