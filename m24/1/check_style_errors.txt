@@ -1,0 +1,19 @@
+Starting audit...
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m24\1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m24\1\Solution.java:2: Missing a Javadoc comment. [JavadocType]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m24\1\Solution.java:3:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m24\1\Solution.java:3:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m24\1\Solution.java:4:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m24\1\Solution.java:5:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m24\1\Solution.java:6: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m24\1\Solution.java:6:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m24\1\Solution.java:11:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m24\1\Solution.java:15:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m24\1\Solution.java:18:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m24\1\Solution.java:21:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m24\1\Solution.java:366: Class Solution should be declared as final. [FinalClass]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m24\1\Solution.java:378:29: Parameter args should be final. [FinalParameters]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m24\1\Solution.java:385: Line is longer than 80 characters (found 107). [LineLength]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m24\1\Solution.java:404: Line has trailing spaces. [RegexpSingleline]
+Audit done.
+Checkstyle ends with 16 errors.
