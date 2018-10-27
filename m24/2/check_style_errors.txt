@@ -1,4 +1,8 @@
 Starting audit...
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m24\2\zz3.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m24\2\Solution.java:5:53: '>' is followed by an illegal character. [GenericWhitespace]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m24\2\Solution.java:5:53: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m24\2\Solution.java:66:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m24\2\Solution.java:393: Line is longer than 80 characters (found 82). [LineLength]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m24\2\Solution.java:451: Line is longer than 80 characters (found 88). [LineLength]
 Audit done.
-Checkstyle ends with 1 errors.
+Checkstyle ends with 5 errors.
