@@ -2,7 +2,7 @@ import java.util.Scanner;
 /**
  * Class for student data.
  */
-class StudentData implements Comparable <StudentData> {
+class StudentData implements Comparable<StudentData> {
     /**
      * Integer variable.
      */
@@ -64,7 +64,7 @@ class StudentData implements Comparable <StudentData> {
         return this.total;
     }
     /**
-     * Comparision.s
+     * Comparision.
      *
      * @param      that  The that
      *
@@ -455,8 +455,8 @@ public final class Solution {
                 float lessthan = Float.parseFloat(tokens1[1]);
                 float greaterthan = Float.parseFloat(tokens1[2]);
                 for (StudentData data : hash.keys()) {
-                    if (data.getTotal() >= lessthan &&
-                     data.getTotal() <= greaterthan) {
+                    if (data.getTotal() >= lessthan 
+                        && data.getTotal() <= greaterthan) {
                         System.out.println(data.getName());
                     }
                 }
