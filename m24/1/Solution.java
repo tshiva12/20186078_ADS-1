@@ -385,7 +385,7 @@ public class Solution {
             hash.put(Integer.parseInt(tokens[0]), new StudentData(tokens[1], Float.parseFloat(tokens[2])));
         }
         int m = Integer.parseInt(scan.nextLine());
-        for (int j = 0; j <= m; j++) {
+        for (int j = 1; j <= m; j++) {
         	String[] tokens1 = scan.nextLine().split(" ");
         	if (tokens1[2].equals("1")) {
         		int val1 = Integer.parseInt(tokens1[1]);

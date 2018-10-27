@@ -1,4 +1,4 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 Clark
 Rivest
@@ -17,11 +17,8 @@ Wayne
 Alice
 Bob
 John
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
-	at Solution.main(Solution.java:389)
 ----------------------------------------
-########## Testcase 1: Failed ##########
+########## Testcase 1: Passed ##########
 Expected Output: 
 100.1
 100.0
@@ -50,9 +47,6 @@ Your Output:
 11.2
 45.4
 99.3
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
-	at Solution.main(Solution.java:389)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -1088,7 +1082,4 @@ Elaine Hall
 Robert Macfarlane
 John Hale
 53.79
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
-	at Solution.main(Solution.java:389)
 ----------------------------------------
