@@ -52,6 +52,7 @@ class LinearProbingHashST<Key, Value> {
     }
     /**
      * Determines if empty.
+     * Time complexity is 1.
      *
      * @return     True if empty, False otherwise.
      */
@@ -60,6 +61,7 @@ class LinearProbingHashST<Key, Value> {
     }
     /**
      * Determines the key is there are not.
+     * Time complexity is logN.
      *
      * @param      key   The key
      *
@@ -73,6 +75,7 @@ class LinearProbingHashST<Key, Value> {
     }
     /**
      * hash.
+     * Time complexity is logN.
      *
      * @param      key   The key
      *
@@ -84,7 +87,8 @@ class LinearProbingHashST<Key, Value> {
     }
     /**
      * Increses the size.
-     *
+     * Time complexity is logN.
+     * 
      * @param      capacity  The capacity
      */
     private void resize(final int capacity) {
@@ -101,6 +105,7 @@ class LinearProbingHashST<Key, Value> {
     }
     /**
      * Put.
+     * Time complexity is logN.
      *
      * @param      key   The key
      * @param      val   The value
@@ -129,6 +134,7 @@ class LinearProbingHashST<Key, Value> {
     }
     /**
      * Get.
+     * Time complexity is logN.
      *
      * @param      key   The key
      *
@@ -146,6 +152,7 @@ class LinearProbingHashST<Key, Value> {
     }
     /**
      * Delete.
+     * Time complexity is logN.
      *
      * @param      key   The key
      */
@@ -179,6 +186,7 @@ class LinearProbingHashST<Key, Value> {
     }
     /**
      * Iterable.
+     * Time complexity is logN.
      *
      * @return     queue.
      */
@@ -193,6 +201,7 @@ class LinearProbingHashST<Key, Value> {
     }
     /**
      * check.
+     * Time complexity is N.
      *
      * @return     return boolean value.
      */
