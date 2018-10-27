@@ -1,7 +1,6 @@
 Starting audit...
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m24\2\Solution.java:5:53: '>' is followed by an illegal character. [GenericWhitespace]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m24\2\Solution.java:5:53: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m24\2\Solution.java:66:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m24\2\Solution.java:451: Line is longer than 80 characters (found 88). [LineLength]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m24\2\Solution.java:5:40: '<' is preceded with whitespace. [GenericWhitespace]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m24\2\Solution.java:66: First sentence should end with a period. [JavadocStyle]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m24\2\Solution.java:458:53: '&&' should be on a new line. [OperatorWrap]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 3 errors.
