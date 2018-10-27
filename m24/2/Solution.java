@@ -2,7 +2,7 @@ import java.util.Scanner;
 /**
  * Class for student data.
  */
-class StudentData {
+class StudentData implements Comparable<StudentData>{
     /**
      * Integer variable.
      */
@@ -62,6 +62,20 @@ class StudentData {
      */
     public Float getTotal() {
         return this.total;
+    }
+    public int compareTo(final StudentData that) {
+        if (this.total > that.total) {
+            return 1;
+        } else if (this.total < that.total) {
+            return -1;
+        } else {
+            if (this.rollnum > that.rollnum) {
+                return 1;
+            } else if (this.rollnum < that.rollnum) {
+                return -1;
+            }
+        }
+        return 0;
     }
 }
 /**
