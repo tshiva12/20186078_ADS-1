@@ -5,10 +5,7 @@ Rivest
 Dan
 Abegg
 Your Output: 
-Rivest
-Clark
-Dan
-Abegg
+
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -1968,16 +1965,6 @@ Kathleen Hale
 Charlie Haas
 Jenna Bush Hager
 Shelley Jackson
-Greg Page
-Alex James
-Marina Palmer
-David Jacobs
-Jeannette Haien
-Daniel Hahn
-Sara Palacios
-Ruby Jackson
-Charles B. Macdonald
-Andrew Macdonald
 Bethany Palmer
 Jeff MacGregor
 Araminta Hall
@@ -2188,43 +2175,6 @@ Sang Pak
 Sara Mackenzie
 Shelley Jackson
 Tracey Jackson
-James B. Maas
-Jeff MacGregor
-Libby Jackson
-Charles Panati
-Thomas Paine
-Kinley MacGregor
-Harvey B. Mackay
-Julie Mac
-M MacCallum
-Kristin Halbrook
-Joshilyn Jackson
-Manoj Pandey
-John W. Jacobs
-James Macdonald
-Jessie Haas
-Liza Palmer
-Richard Mabey
-Tim Page
-Jennifer Page
-Joie Jager-Hyman
-David Hagedorn
-Melissa Jacobs
-Fiona MacKenzie
-Fiona MacDonald
-Burton L. Mack
-Katharina Hagena
-Aparna Pande
-Alex Palmer
-Anna-Liisa Hakkarainen
-Michael Hale
-Nick Page
-Baby Halder
-Jo Jackson King
-Jane MacDougall
-Sarah Jacoby
-Audrey Mackaman
-Mark Haddon
 James B. Maas
 Bethany Palmer
 Jeff MacGregor
@@ -2459,20 +2409,4 @@ Sara Mackenzie
 Shelley Jackson
 Tracey Jackson
 James B. Maas
-Laura Holmes Haddad
-Auston Habershaw
-Al Jaffee
-Vicky Hales-Dutton
-Nasim Marie Jafry
-Rebecca Paley
-Nafisa Haji
-John Jacobs
-Daniel Palmer
-Thelma Page
-Marilyn Hagerty
-Chris Packham
-Shaili Jain M.D.
-Marianna Palk
-David H. Hackworth
-Shelley Jackson
 ----------------------------------------
