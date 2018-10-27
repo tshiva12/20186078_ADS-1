@@ -439,6 +439,22 @@ public final class Solution {
                     }
                 }
             }
+            if (tokens1[0].equals("GE")) {
+                float temp = Float.parseFloat(tokens1[1]);
+                for (StudentData data : hash.keys()) {
+                    if (data.getTotal() <= temp) {
+                        System.out.println(data.getName());
+                    }
+                }
+            }
+            if (tokens1[0].equals("LE")) {
+                float temp1 = Float.parseFloat(tokens1[1]);
+                for (StudentData data : hash.keys()) {
+                    if (data.getTotal() >= temp1) {
+                        System.out.println(data.getName());
+                    }
+                }
+            }
         }
     }
 }
