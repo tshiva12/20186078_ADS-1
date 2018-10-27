@@ -1,7 +1,4 @@
 Starting audit...
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m24\2\Solution.java:66:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m24\2\Solution.java:71: 'else' construct must use '{}'s. [NeedBraces]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m24\2\Solution.java:71: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-1\m24\2\Solution.java:445: Line is longer than 80 characters (found 88). [LineLength]
+[ERROR] G:\MSIT\1-1\20186078_ADS-1\m24\2\Solution.java:437: Line is longer than 80 characters (found 88). [LineLength]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 1 errors.

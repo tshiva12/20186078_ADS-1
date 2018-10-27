@@ -63,14 +63,6 @@ class StudentData {
     public Float getTotal() {
         return this.total;
     }
-    public int compareTo(final StudentData that) {
-        if (this.total > that.total) {
-            return 1;
-        } else if (this.total < that.total) {
-            return -1;
-        } else 
-            return 0;
-    }
 }
 /**
  * Class for sequential search st.
