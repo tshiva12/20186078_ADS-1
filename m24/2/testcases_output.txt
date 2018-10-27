@@ -6,6 +6,8 @@ Dan
 Abegg
 Your Output: 
 Rivest
+Clark
+Dan
 Abegg
 ----------------------------------------
 ########## Testcase 1: Failed ##########

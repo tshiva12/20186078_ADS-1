@@ -71,14 +71,14 @@ class StudentData implements Comparable<StudentData> {
      * @return     { description_of_the_return_value }
      */
     public int compareTo(final StudentData that) {
-        if (this.total < that.total) {
+        if (this.total > that.total) {
             return 1;
-        } else if (this.total > that.total) {
+        } else if (this.total < that.total) {
             return -1;
         } else {
-            if (this.rollnum < that.rollnum) {
+            if (this.rollnum > that.rollnum) {
                 return 1;
-            } else if (this.rollnum > that.rollnum) {
+            } else if (this.rollnum < that.rollnum) {
                 return -1;
             }
         }
@@ -455,8 +455,8 @@ public final class Solution {
                 float lessthan = Float.parseFloat(tokens1[1]);
                 float greaterthan = Float.parseFloat(tokens1[2]);
                 for (StudentData data : hash.keys()) {
-                    if (data.getTotal() > lessthan
-                         && data.getTotal() < greaterthan) {
+                    if (data.getTotal() >= lessthan
+                         && data.getTotal() <= greaterthan) {
                         System.out.println(data.getName());
                     }
                 }
