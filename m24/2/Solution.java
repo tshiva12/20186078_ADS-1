@@ -455,8 +455,8 @@ public final class Solution {
                 float lessthan = Float.parseFloat(tokens1[1]);
                 float greaterthan = Float.parseFloat(tokens1[2]);
                 for (StudentData data : hash.keys()) {
-                    if (data.getTotal() >= lessthan 
-                        && data.getTotal() <= greaterthan) {
+                    if (data.getTotal() >= lessthan
+                         && data.getTotal() <= greaterthan) {
                         System.out.println(data.getName());
                     }
                 }
