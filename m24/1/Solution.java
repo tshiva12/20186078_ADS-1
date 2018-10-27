@@ -1,23 +1,64 @@
 import java.util.Scanner;
+/**
+ * Class for student data.
+ */
 class StudentData {
+	/**
+	 * Integer variable.
+	 */
 	private int rollnum;
+	/**
+	 * String variable.
+	 */
 	private String name;
+	/**
+	 * Float variable.
+	 */
 	private Float total;
+
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      rollnum1  The rollnum 1
+	 * @param      name1     The name 1
+	 * @param      total1    The total 1
+	 */
 	StudentData(final int rollnum1, final String name1, final Float total1) {
 		this.rollnum = rollnum1;
 		this.name = name1;
 		this.total = total1;
 	}
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      name2   The name 2
+	 * @param      total2  The total 2
+	 */
 	StudentData(final String name2, final Float total2) {
 		this.name = name2;
 		this.total = total2;
 	}
+	/**
+	 * Gets the roll number.
+	 *
+	 * @return     The roll number.
+	 */
 	public int getRollNum() {
 		return this.rollnum;
 	}
+	/**
+	 * Gets the name.
+	 *
+	 * @return     The name.
+	 */
 	public String getName() {
 		return this.name;
 	}
+	/**
+	 * Gets the total.
+	 *
+	 * @return     The total.
+	 */
 	public Float getTotal() {
 		return this.total;
 	}
